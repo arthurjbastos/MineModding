@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "doremitales",
+	"version": "${version}",
+	"name": "doremitales",
+	"description": "This is an example description! pipe is the fatest ever",
+	"authors": [
+		"Dorémista"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/doremitales/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.doremista.Doremitales"
+		],
+		"client": [
+			"net.doremista.DoremitalesClient"
+		],
+		"fabric-datagen": [
+			"net.doremista.DoremitalesDataGenerator"
+		]
+	},
+	"mixins": [
+		"doremitales.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
