@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "doremitales:kikianmass"
+    }
+  },
+  "result": {
+    "item": "doremitales:kikianmassblock"
+  }
+}
