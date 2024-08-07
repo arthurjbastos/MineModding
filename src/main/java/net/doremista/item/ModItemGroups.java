@@ -18,6 +18,9 @@ public class ModItemGroups {
                         entries.add(ModItems.KIKIANMASS);
                         entries.add(ModItems.LETTERA);
                         entries.add(ModItems.HEALERBOOK);
+                        entries.add(ModItems.PERFECTTENCAKE);
+                        entries.add(ModItems.KIKIANMASSPICKAXE);
+                        entries.add(ModItems.KIKIANMASSSWORD);
 
                         entries.add(ModBlocks.KIKIANMASSBLOCK);
                         entries.add(ModBlocks.SPACEBOX);

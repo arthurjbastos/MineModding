@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "#north",
+    "down": "doremitales:block/spacebox_bottom",
+    "up": "doremitales:block/spacebox_top",
+    "north": "doremitales:block/spacebox_side",
+    "south": "doremitales:block/spacebox_side",
+    "west": "doremitales:block/spacebox_side",
+    "east": "doremitales:block/spacebox_side"
+  }
+}

@@ -2,6 +2,12 @@
   "item.doremitales.kikianmass": "Kikian Mass",
   "item.doremitales.lettera": "A",
   "item.doremitales.healerbook": "Healer Book",
+  "item.doremitales.perfecttencake": "Perfect Ten Cake!",
+  "item.doremitales.kikianmasspickaxe": "Kikian Mass Pickaxe",
+  "item.doremitales.kikianmasssword": "Kikian Mass Sword",
+
+
+  "tooltip.doremitales.healerbook.tooltip": "Heals the caster through divine knowledge",
 
   "block.doremitales.spacebox": "Mysterious box",
   "block.doremitales.kikianmassblock": "Kikian Mass block",

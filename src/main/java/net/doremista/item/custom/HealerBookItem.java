@@ -1,5 +1,6 @@
 package net.doremista.item.custom;
 
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -8,11 +9,15 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class HealerBookItem extends Item {
     public HealerBookItem(Settings settings) {
@@ -43,7 +48,7 @@ public class HealerBookItem extends Item {
 
                 // Gerar partículas
                 if (world instanceof ServerWorld) {
-                    ((ServerWorld) world).spawnParticles(ParticleTypes.HEART, user.getX(), user.getY() + 1, user.getZ(), 10, 0.5, 0.5, 0.5, 0.1);
+                    ((ServerWorld) world).spawnParticles(ParticleTypes.HEART, user.getX(), user.getY() + 1, user.getZ(), 6, 0.5, 0.5, 0.5, 0.1);
                 }
             }
         }
@@ -57,5 +62,11 @@ public class HealerBookItem extends Item {
     @Override
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.BOW; // Define a ação de uso como a do arco
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
     }
 }

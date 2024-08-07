@@ -16,7 +16,7 @@ public class ModBlocks {
 
     public static final Block SPACEBOX = registerBlock("spacebox",
             new SpaceBoxBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
-                    .strength(3.5f, 6.5f) // Ajuste a resistência e dureza para ser facilmente quebrado
+                    .strength(2.5f, 3.5f) // Ajuste a resistência e dureza para ser facilmente quebrado
 
             ));
 
