@@ -1,6 +1,7 @@
 package net.doremista.block;
 
 import net.doremista.Doremitales;
+import net.doremista.block.custom.SpaceBoxBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -14,10 +15,16 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block SPACEBOX = registerBlock("spacebox",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+            new SpaceBoxBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
+                    .strength(3.5f, 6.5f) // Ajuste a resistência e dureza para ser facilmente quebrado
+
+            ));
 
     public static final Block KIKIANMASSBLOCK = registerBlock("kikianmassblock",
-            new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK)
+                    .strength(4.5f, 6.0f) // Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
+
+            ));
 
 
     private static Block registerBlock(String name, Block block){

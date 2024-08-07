@@ -1,6 +1,8 @@
 package net.doremista;
 
 import net.doremista.block.ModBlocks;
+import net.doremista.block.entity.ModBlockEntities;
+
 import net.doremista.item.ModItemGroups;
 import net.doremista.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -25,5 +27,6 @@ public class Doremitales implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModBlockEntities.registerBlockEntities();
 	}
 }

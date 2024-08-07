@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.KIKIANMASS)).entries((displayContext, entries) -> {
                         entries.add(ModItems.KIKIANMASS);
                         entries.add(ModItems.LETTERA);
+                        entries.add(ModItems.HEALERBOOK);
 
                         entries.add(ModBlocks.KIKIANMASSBLOCK);
                         entries.add(ModBlocks.SPACEBOX);

@@ -1,6 +1,7 @@
 package net.doremista.item;
 
 import net.doremista.Doremitales;
+import net.doremista.item.custom.HealerBookItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -14,6 +15,9 @@ public class ModItems {
 
     public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()));
     public static final Item LETTERA = registerItem("lettera", new Item(new FabricItemSettings()));
+    public static final Item HEALERBOOK = registerItem("healerbook",
+            new HealerBookItem(new FabricItemSettings().maxDamage(120)));
+
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(KIKIANMASS);
