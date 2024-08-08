@@ -17,6 +17,5 @@ public class DoremitalesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeProvider::new);
 
 
-
 	}
 }

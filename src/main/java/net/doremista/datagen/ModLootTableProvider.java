@@ -23,6 +23,23 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.KIKIANMASSBLOCK);
+        addDrop(ModBlocks.ADAGSTEELBLOCK);
+
+        addDrop(ModBlocks.ADAGSTEELORE, oreDrops(ModBlocks.ADAGSTEELORE, ModItems.RAWADAGSTEEL));
+        addDrop(ModBlocks.DEEPSLATEADAGSTEELORE, oreDrops(ModBlocks.DEEPSLATEADAGSTEELORE, ModItems.RAWADAGSTEEL));
+        addDrop(ModBlocks.ADAGSTEELTRAPDOOR);
+        addDrop(ModBlocks.ADAGSTEELFENCE);
+        addDrop(ModBlocks.ADAGSTEELFENCEGATE);
+        addDrop(ModBlocks.ADAGSTEELBUTTON);
+        addDrop(ModBlocks.ADAGSTEELPRESSUREPLATE);
+        addDrop(ModBlocks.ADAGSTEELWALL);
+
+        addDrop(ModBlocks.ADAGSTEELDOOR, doorDrops(ModBlocks.ADAGSTEELDOOR));
+        addDrop(ModBlocks.ADAGSTEELSLAB, slabDrops(ModBlocks.ADAGSTEELSLAB));
+
+
+
+
 
         addDrop(ModBlocks.SPACEBOX, copperLikeOreDrops(ModBlocks.SPACEBOX, ModItems.KIKIANMASS));
     }

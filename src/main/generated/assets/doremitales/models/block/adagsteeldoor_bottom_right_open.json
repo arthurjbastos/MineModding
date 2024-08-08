@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "doremitales:block/adagsteeldoor_bottom",
+    "top": "doremitales:block/adagsteeldoor_top"
+  }
+}

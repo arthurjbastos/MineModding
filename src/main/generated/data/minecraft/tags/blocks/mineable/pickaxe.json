@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "doremitales:kikianmassblock"
+    "doremitales:kikianmassblock",
+    "doremitales:adagsteelblock",
+    "doremitales:adagsteelore",
+    "doremitales:deepslateadagsteelore"
   ]
 }

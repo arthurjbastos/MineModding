@@ -1,16 +1,39 @@
 {
   "item.doremitales.kikianmass": "Kikian Mass",
+  "item.doremitales.adagsteelingot": "Adagsteel ingot",
+  "item.doremitales.rawadagsteel": "Raw Adagsteel",
   "item.doremitales.lettera": "A",
   "item.doremitales.healerbook": "Healer Book",
   "item.doremitales.perfecttencake": "Perfect Ten Cake!",
   "item.doremitales.kikianmasspickaxe": "Kikian Mass Pickaxe",
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
 
+  "item.doremitales.ratchatts": "Ratchatts",
 
-  "tooltip.doremitales.healerbook.tooltip": "Heals the caster through divine knowledge",
+  "item.doremitales.adagsteelpickaxe": "Adagsteel Pickaxe",
+  "item.doremitales.adagsteelsword": "Adagsteel Sword",
+  "item.doremitales.adagsteelshovel": "Adagsteel Shovel",
+  "item.doremitales.adagsteelaxe": "Adagsteel Axe",
+  "item.doremitales.adagsteelhoe": "Adagsteel Hoe",
+
+  "tooltip.doremitales.healerbook.tooltip": "§7Heals the caster through divine knowledge",
+  "tooltip.doremitales.ratchatts.tooltip": "§7A cruel weapon against the soulless",
 
   "block.doremitales.spacebox": "Mysterious box",
+  "block.doremitales.adagsteelblock": "Adagsteel Block",
   "block.doremitales.kikianmassblock": "Kikian Mass block",
+  "block.doremitales.adagsteelore": "Adagsteel ore",
+  "block.doremitales.deepslateadagsteelore": "Deepslate Adagsteel ore",
+  "block.tutorialmod.adagsteelstairs": "Adagsteel Stairs",
+  "block.tutorialmod.adagsteelslab": "Adagsteel Slab",
+  "block.tutorialmod.adagsteelbutton": "Adagsteel Button",
+  "block.tutorialmod.adagsteelpressureplate": "Adagsteel Pressure Plate",
+  "block.tutorialmod.adagsteelfence": "Adagsteel Fence",
+  "block.tutorialmod.adagsteelfencegate": "Adagsteel Fence Gate",
+  "block.tutorialmod.adagsteelwall": "Adagsteel Wall",
+  "block.tutorialmod.adagsteeldoor": "Adagsteel Door",
+  "block.tutorialmod.adagsteeltrapdoor": "Adagsteel Trapdoor",
+
 
   "itemgroup.kikianmass": "Do Re Mi Tales"
 }

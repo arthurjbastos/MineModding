@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "doremitales:block/adagsteelslab"
+    },
+    "type=double": {
+      "model": "doremitales:block/adagsteelblock"
+    },
+    "type=top": {
+      "model": "doremitales:block/adagsteelslab_top"
+    }
+  }
+}

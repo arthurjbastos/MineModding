@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslateadagsteelore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:deepslateadagsteelore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:adagsteelingot_from_blasting_deepslateadagsteelore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslateadagsteelore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:adagsteelingot_from_blasting_deepslateadagsteelore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

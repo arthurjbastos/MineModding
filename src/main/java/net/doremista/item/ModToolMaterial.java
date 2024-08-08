@@ -1,13 +1,26 @@
 package net.doremista.item;
 
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import java.util.function.Supplier;
 
+//WOOD durability = 59, speed = 2.0f, damage = 0.0f, enchantability = 15
+//STONE durability = 131, speed = 4.0f, damage = 0.0f, enchantability = 5
+//IRON durability = 250, speed = 6.0f, damage = 2.0f, enchantability = 14
+//DIAMOND durability = 1561, speed = 8.0f, damage = 3.0f, enchantability = 10
+//GOLD durability = 32, speed = 12.0f, damage = 0.0f, enchantability = 22
+//NETHERITE durability = 2031, speed = 9.0f, damage = 4.0f, enchantability = 15
+
+
 public enum ModToolMaterial implements ToolMaterial {
+
     KIKIANMASS(5, 666, 9.5f, 3.5f, 26,
-            () -> Ingredient.ofItems(ModItems.KIKIANMASS));
+            () -> Ingredient.ofItems(ModItems.KIKIANMASS)),
+
+    ADAGSTEEL(MiningLevels.IRON, 350, 6.0f, 2.5f, 15,
+            () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT));;
 
     private final int miningLevel;
     private final int itemDurability;

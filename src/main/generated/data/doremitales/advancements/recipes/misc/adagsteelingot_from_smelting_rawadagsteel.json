@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rawadagsteel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:rawadagsteel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:adagsteelingot_from_smelting_rawadagsteel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_rawadagsteel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:adagsteelingot_from_smelting_rawadagsteel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

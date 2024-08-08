@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "doremitales:block/adagsteelblock",
+    "side": "doremitales:block/adagsteelblock",
+    "top": "doremitales:block/adagsteelblock"
+  }
+}
