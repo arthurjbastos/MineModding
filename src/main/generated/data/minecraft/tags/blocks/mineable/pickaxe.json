@@ -4,6 +4,16 @@
     "doremitales:kikianmassblock",
     "doremitales:adagsteelblock",
     "doremitales:adagsteelore",
-    "doremitales:deepslateadagsteelore"
+    "doremitales:deepslateadagsteelore",
+    "doremitales:bench",
+    "doremitales:adagsteelfence",
+    "doremitales:adagsteelfencegate",
+    "doremitales:adagsteeldoor",
+    "doremitales:adagsteelbutton",
+    "doremitales:adagsteelslab",
+    "doremitales:adagsteelpressureplate",
+    "doremitales:adagsteeltrapdoor",
+    "doremitales:adagsteelstairs",
+    "doremitales:adagsteelwall"
   ]
 }

@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-08T17:53:53.5221057	doremitales/Recipes
+// 1.20.1	2024-08-12T20:10:15.5108146	doremitales/Recipes
 0a83d54b6946c3ea8d6e5eb8ed74907ad266baec data\doremitales\recipes\adagsteelingot_from_smelting_deepslateadagsteelore.json
 0477a95ff9f84ae4f7cbe39a601760e2ab62b182 data\doremitales\recipes\adagsteelblock.json
 16f2d419433a095e052b59e0ce82e5fe2a64a763 data\doremitales\recipes\adagsteelingot_from_blasting_adagsteelore.json
@@ -17,8 +17,8 @@ a9ad6f9a5204f5cc7ecd6f95b3e13d6db90b5aa9 data\doremitales\recipes\adagsteelaxe.j
 a9f28557f65e834a61ff5e2cd9486e7f36085ff6 data\doremitales\recipes\adagsteelhoe.json
 487d0aa7e07e35034b2777fab7f2fa5a747efbb9 data\doremitales\recipes\adagsteelfencegate.json
 be1ac59b61e7a66fe1175746058c510191d5b15b data\doremitales\recipes\adagsteelingot.json
-38db8fa6522a33707eb91e527b852c4d5c8603ef data\doremitales\advancements\recipes\building_blocks\adagsteelingot.json
 90a4e5528ada1fb8f56d0439c171fe50f0678679 data\doremitales\advancements\recipes\decorations\kikianmassblock.json
+38db8fa6522a33707eb91e527b852c4d5c8603ef data\doremitales\advancements\recipes\building_blocks\adagsteelingot.json
 afa4e5e43485ec37654b5c2f6714af44ee5eed97 data\doremitales\recipes\adagsteelingot_from_smelting_adagsteelore.json
 9fd003fd4c4dbf8342c656d7f3eea9231b609df3 data\doremitales\recipes\kikianmassblock.json
 701c152f83bc1140a59b3ca6a88e8437c4948e2d data\doremitales\advancements\recipes\redstone\adagsteelbutton.json

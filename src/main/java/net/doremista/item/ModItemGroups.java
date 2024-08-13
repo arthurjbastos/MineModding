@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModItems.KIKIANMASSSWORD);
 
                         entries.add(ModItems.RATCHATTS);
+                        entries.add(ModItems.AEONFLUTE);
 
 
                         //ADAGSTEEL TOOLS
@@ -37,6 +38,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELSWORD);
 
                         //BLOCKS
+                        entries.add(ModBlocks.BENCH);
                         entries.add(ModBlocks.KIKIANMASSBLOCK);
                         entries.add(ModBlocks.ADAGSTEELORE);
                         entries.add(ModBlocks.DEEPSLATEADAGSTEELORE);

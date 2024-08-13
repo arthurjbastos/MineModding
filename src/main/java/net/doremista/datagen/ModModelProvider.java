@@ -18,11 +18,9 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIKIANMASSBLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPACEBOX);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADAGSTEELORE);
         BlockStateModelGenerator.BlockTexturePool adagsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ADAGSTEELBLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATEADAGSTEELORE);
-
 
         adagsteelPool.stairs(ModBlocks.ADAGSTEELSTAIRS);
         adagsteelPool.slab(ModBlocks.ADAGSTEELSLAB);
@@ -35,7 +33,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.ADAGSTEELDOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ADAGSTEELTRAPDOOR);
 
-
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPACEBOX);
+        // SPACEBOX GERADO MANUALMENTE
+        // BENCH GERADO MANUALMENTE
     }
 
     @Override
@@ -49,6 +49,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PERFECTTENCAKE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RATCHATTS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AEONFLUTE, Models.GENERATED);
 
         // ADAGSTEEL TOOL
         itemModelGenerator.register(ModItems.ADAGSTEELHOE, Models.GENERATED);
@@ -60,6 +61,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIKIANMASSPICKAXE, Models.GENERATED);
         itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.GENERATED);
 
-
+        //ITEM BENCH GERADO MANUALMENTE
     }
 }

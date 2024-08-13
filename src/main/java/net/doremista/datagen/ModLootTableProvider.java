@@ -27,21 +27,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.ADAGSTEELORE, oreDrops(ModBlocks.ADAGSTEELORE, ModItems.RAWADAGSTEEL));
         addDrop(ModBlocks.DEEPSLATEADAGSTEELORE, oreDrops(ModBlocks.DEEPSLATEADAGSTEELORE, ModItems.RAWADAGSTEEL));
+
         addDrop(ModBlocks.ADAGSTEELTRAPDOOR);
         addDrop(ModBlocks.ADAGSTEELFENCE);
         addDrop(ModBlocks.ADAGSTEELFENCEGATE);
         addDrop(ModBlocks.ADAGSTEELBUTTON);
         addDrop(ModBlocks.ADAGSTEELPRESSUREPLATE);
         addDrop(ModBlocks.ADAGSTEELWALL);
+        addDrop(ModBlocks.ADAGSTEELSTAIRS);
+
+        addDrop(ModBlocks.BENCH);
 
         addDrop(ModBlocks.ADAGSTEELDOOR, doorDrops(ModBlocks.ADAGSTEELDOOR));
         addDrop(ModBlocks.ADAGSTEELSLAB, slabDrops(ModBlocks.ADAGSTEELSLAB));
 
-
-
-
-
-        addDrop(ModBlocks.SPACEBOX, copperLikeOreDrops(ModBlocks.SPACEBOX, ModItems.KIKIANMASS));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

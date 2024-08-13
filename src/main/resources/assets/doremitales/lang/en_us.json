@@ -9,6 +9,8 @@
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
 
   "item.doremitales.ratchatts": "Ratchatts",
+  "item.doremitales.aeonflute": "Aeon Flute",
+
 
   "item.doremitales.adagsteelpickaxe": "Adagsteel Pickaxe",
   "item.doremitales.adagsteelsword": "Adagsteel Sword",
@@ -18,21 +20,25 @@
 
   "tooltip.doremitales.healerbook.tooltip": "§7Heals the caster through divine knowledge",
   "tooltip.doremitales.ratchatts.tooltip": "§7A cruel weapon against the soulless",
+  "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
+
 
   "block.doremitales.spacebox": "Mysterious box",
+  "block.doremitales.bench": "Layla's Bench",
   "block.doremitales.adagsteelblock": "Adagsteel Block",
   "block.doremitales.kikianmassblock": "Kikian Mass block",
   "block.doremitales.adagsteelore": "Adagsteel ore",
   "block.doremitales.deepslateadagsteelore": "Deepslate Adagsteel ore",
-  "block.tutorialmod.adagsteelstairs": "Adagsteel Stairs",
-  "block.tutorialmod.adagsteelslab": "Adagsteel Slab",
-  "block.tutorialmod.adagsteelbutton": "Adagsteel Button",
-  "block.tutorialmod.adagsteelpressureplate": "Adagsteel Pressure Plate",
-  "block.tutorialmod.adagsteelfence": "Adagsteel Fence",
-  "block.tutorialmod.adagsteelfencegate": "Adagsteel Fence Gate",
-  "block.tutorialmod.adagsteelwall": "Adagsteel Wall",
-  "block.tutorialmod.adagsteeldoor": "Adagsteel Door",
-  "block.tutorialmod.adagsteeltrapdoor": "Adagsteel Trapdoor",
+
+  "block.doremitales.adagsteelstairs": "Adagsteel Stairs",
+  "block.doremitales.adagsteelslab": "Adagsteel Slab",
+  "block.doremitales.adagsteelbutton": "Adagsteel Button",
+  "block.doremitales.adagsteelpressureplate": "Adagsteel Pressure Plate",
+  "block.doremitales.adagsteelfence": "Adagsteel Fence",
+  "block.doremitales.adagsteelfencegate": "Adagsteel Fence Gate",
+  "block.doremitales.adagsteelwall": "Adagsteel Wall",
+  "block.doremitales.adagsteeldoor": "Adagsteel Door",
+  "block.doremitales.adagsteeltrapdoor": "Adagsteel Trapdoor",
 
 
   "itemgroup.kikianmass": "Do Re Mi Tales"

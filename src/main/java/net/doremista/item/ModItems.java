@@ -1,6 +1,7 @@
 package net.doremista.item;
 
 import net.doremista.Doremitales;
+import net.doremista.item.custom.AeonFluteItem;
 import net.doremista.item.custom.HealerBookItem;
 import net.doremista.item.custom.RatchattsItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -22,7 +23,7 @@ public class ModItems {
 
     //      TOOLS
     public static final Item HEALERBOOK = registerItem("healerbook",
-            new HealerBookItem(new FabricItemSettings().maxCount(1).maxDamage(120)));
+            new HealerBookItem(new FabricItemSettings().maxCount(1).maxDamage(120).rarity(Rarity.UNCOMMON)));
     public static final Item KIKIANMASSPICKAXE = registerItem("kikianmasspickaxe",
             new PickaxeItem(ModToolMaterial.KIKIANMASS, 3, 4f, new FabricItemSettings()));
     public static final Item KIKIANMASSSWORD = registerItem("kikianmasssword",
@@ -30,6 +31,9 @@ public class ModItems {
 
     public static final Item RATCHATTS = registerItem("ratchatts",
             new RatchattsItem(new FabricItemSettings().maxCount(1).maxDamage(360).rarity(Rarity.UNCOMMON)));
+
+    public static final Item AEONFLUTE = registerItem("aeonflute",
+            new AeonFluteItem(new FabricItemSettings().maxCount(1).maxDamage(360).rarity(Rarity.UNCOMMON)));
 
 
     //      ADAGSTEEL TOOL

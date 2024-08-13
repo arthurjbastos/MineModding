@@ -20,28 +20,54 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE) //    MINERÁVEL C PICARETA
                 .add(ModBlocks.KIKIANMASSBLOCK)
                 .add(ModBlocks.ADAGSTEELBLOCK)
                 .add(ModBlocks.ADAGSTEELORE)
+                .add(ModBlocks.DEEPSLATEADAGSTEELORE)
+                .add(ModBlocks.BENCH)
 
-                .add(ModBlocks.DEEPSLATEADAGSTEELORE);
+                // ** ADAGSTEEL SET **
+                .add(ModBlocks.ADAGSTEELFENCE)
+                .add(ModBlocks.ADAGSTEELFENCEGATE)
+                .add(ModBlocks.ADAGSTEELDOOR)
+                .add(ModBlocks.ADAGSTEELBUTTON)
+                .add(ModBlocks.ADAGSTEELSLAB)
+                .add(ModBlocks.ADAGSTEELPRESSUREPLATE)
+                .add(ModBlocks.ADAGSTEELTRAPDOOR)
+                .add(ModBlocks.ADAGSTEELSTAIRS)
+                .add(ModBlocks.ADAGSTEELWALL);
 
-
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) //    PEDRA
+                .add(ModBlocks.KIKIANMASSBLOCK)
                 .add(ModBlocks.KIKIANMASSBLOCK);
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)    //  IRON
                 .add(ModBlocks.ADAGSTEELORE)
                 .add(ModBlocks.DEEPSLATEADAGSTEELORE)
-                .add(ModBlocks.ADAGSTEELBLOCK);
+                .add(ModBlocks.ADAGSTEELBLOCK)
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+                // ** ADAGSTEEL SET **
+                .add(ModBlocks.ADAGSTEELFENCE)
+                .add(ModBlocks.ADAGSTEELFENCEGATE)
+                .add(ModBlocks.ADAGSTEELDOOR)
+                .add(ModBlocks.ADAGSTEELBUTTON)
+                .add(ModBlocks.ADAGSTEELSLAB)
+                .add(ModBlocks.ADAGSTEELPRESSUREPLATE)
+                .add(ModBlocks.ADAGSTEELTRAPDOOR)
+                .add(ModBlocks.ADAGSTEELSTAIRS)
+                .add(ModBlocks.ADAGSTEELWALL);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);//  DIAMANTE
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_lever_4")));
+        /*
+        *       NETHERITE AQUI
+        *
+         */
 
-
-        getOrCreateTagBuilder(BlockTags.FENCES)
+        getOrCreateTagBuilder(BlockTags.FENCES) //  Tags p identificação d categorias etc
                 .add(ModBlocks.ADAGSTEELFENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.ADAGSTEELFENCEGATE);

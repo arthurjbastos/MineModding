@@ -1,6 +1,7 @@
 package net.doremista.block;
 
 import net.doremista.Doremitales;
+import net.doremista.block.custom.BenchBlock;
 import net.doremista.block.custom.SpaceBoxBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -32,6 +33,11 @@ public class ModBlocks {
 
             ));
 
+    public static final Block BENCH = registerBlock("bench",
+            new BenchBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()// Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
+
+            ));
+
     public static final Block ADAGSTEELORE = registerBlock("adagsteelore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2, 5)
 
@@ -48,20 +54,17 @@ public class ModBlocks {
             new StairsBlock(ModBlocks.ADAGSTEELBLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block ADAGSTEELSLAB = registerBlock("adagsteelslab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-
     public static final Block ADAGSTEELBUTTON = registerBlock("adagsteelbutton",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON, 10, false));
     public static final Block ADAGSTEELPRESSUREPLATE = registerBlock("adagsteelpressureplate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
                     FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
-
     public static final Block ADAGSTEELFENCE = registerBlock("adagsteelfence",
             new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block ADAGSTEELFENCEGATE = registerBlock("adagsteelfencegate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), WoodType.ACACIA));
     public static final Block ADAGSTEELWALL = registerBlock("adagsteelwall",
             new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
-
     public static final Block ADAGSTEELDOOR = registerBlock("adagsteeldoor",
             new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
     public static final Block ADAGSTEELTRAPDOOR = registerBlock("adagsteeltrapdoor",

@@ -3,6 +3,15 @@
   "values": [
     "doremitales:adagsteelore",
     "doremitales:deepslateadagsteelore",
-    "doremitales:adagsteelblock"
+    "doremitales:adagsteelblock",
+    "doremitales:adagsteelfence",
+    "doremitales:adagsteelfencegate",
+    "doremitales:adagsteeldoor",
+    "doremitales:adagsteelbutton",
+    "doremitales:adagsteelslab",
+    "doremitales:adagsteelpressureplate",
+    "doremitales:adagsteeltrapdoor",
+    "doremitales:adagsteelstairs",
+    "doremitales:adagsteelwall"
   ]
 }
