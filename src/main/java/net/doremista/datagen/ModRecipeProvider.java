@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -86,7 +87,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.KIKIANMASS), conditionsFromItem(ModItems.KIKIANMASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALERBOOK)));
 
-        // Adicionar receitas de ferramentas customizadas usando ADAGSTEELINGOT
+        // ferramentas usando ADAGSTEELINGOT
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELSWORD) // Espada
                 .pattern(" A ")
                 .pattern(" A ")
@@ -147,6 +149,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELHOE)));
+
+        // Adicionar receitas de armaduras usando ADAGSTEELINGOT
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELHELMET) // Capacete
+                .pattern("AAA")
+                .pattern("A A")
+                .input('A', ModItems.ADAGSTEELINGOT)
+                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELHELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELCHESTPLATE) // Peitoral
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .input('A', ModItems.ADAGSTEELINGOT)
+                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELCHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELLEGGINGS) // Calças
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .input('A', ModItems.ADAGSTEELINGOT)
+                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELLEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELBOOTS) // Botas
+                .pattern("A A")
+                .pattern("A A")
+                .input('A', ModItems.ADAGSTEELINGOT)
+                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELBOOTS)));
+
     }
 
 }

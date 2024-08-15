@@ -1,0 +1,16 @@
+{
+  "aeonfluteplay": {
+    "subtitle": "sounds.doremitales.aeonfluteplay",
+    "sounds": [
+      "doremitales:aeonfluteplay"
+    ]
+  },
+  "evelyntheme": {
+    "sounds": [
+      {
+        "name": "doremitales:evelyntheme",
+        "stream": true
+      }
+    ]
+  }
+}

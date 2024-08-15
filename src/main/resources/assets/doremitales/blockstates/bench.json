@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "doremitales:block/bench" },
+    "facing=east": { "model": "doremitales:block/bench", "y": 90 },
+    "facing=south": { "model": "doremitales:block/bench", "y": 180 },
+    "facing=west": { "model": "doremitales:block/bench", "y": 270 }
+  }
+}

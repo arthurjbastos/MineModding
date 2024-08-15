@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "doremitales:item/adagsteelleggings",
+    "layer1": "minecraft:trims/items/leggings_trim_emerald"
+  }
+}

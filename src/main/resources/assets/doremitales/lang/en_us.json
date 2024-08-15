@@ -1,5 +1,7 @@
 {
+  "item.doremitales.codexpage1": "Códex A - First Page",
   "item.doremitales.kikianmass": "Kikian Mass",
+  "item.doremitales.ilum": "Condensed Ilum",
   "item.doremitales.adagsteelingot": "Adagsteel ingot",
   "item.doremitales.rawadagsteel": "Raw Adagsteel",
   "item.doremitales.lettera": "A",
@@ -7,6 +9,9 @@
   "item.doremitales.perfecttencake": "Perfect Ten Cake!",
   "item.doremitales.kikianmasspickaxe": "Kikian Mass Pickaxe",
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
+
+  "item.doremitales.evelynthememusicdisc": "Music Disc",
+  "item.doremitales.evelynthememusicdisc.desc": "Blonde Redhead - Evelyn Theme (Remixed)",
 
   "item.doremitales.ratchatts": "Ratchatts",
   "item.doremitales.aeonflute": "Aeon Flute",
@@ -17,10 +22,22 @@
   "item.doremitales.adagsteelshovel": "Adagsteel Shovel",
   "item.doremitales.adagsteelaxe": "Adagsteel Axe",
   "item.doremitales.adagsteelhoe": "Adagsteel Hoe",
+  "item.doremitales.adagsteelhelmet": "Adagsteel Helmet",
+  "item.doremitales.adagsteelchestplate": "Adagsteel Chestplate",
+  "item.doremitales.adagsteelleggings": "Adagsteel Leggings",
+  "item.doremitales.adagsteelboots": "Adagsteel Boots",
 
+  "tooltip.doremitales.ilum.tooltip": "§7'§oThese sounds were bestowed a name, which was sung by Isabel,",
+  "tooltip.doremitales.ilum.tooltip_2": "§7§oand the sounds were made into the Ilums, by the decree of Isabel.'",
   "tooltip.doremitales.healerbook.tooltip": "§7Heals the caster through divine knowledge",
   "tooltip.doremitales.ratchatts.tooltip": "§7A cruel weapon against the soulless",
+
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
+  "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",
+
+  "tooltip.doremitales.tooltip.shift": "Press §eSHIFT§r for more info",
+
+  "tooltip.doremitales.codexpage1.tooltip": "§7Exudes a harmonious, peaceful aura",
 
 
   "block.doremitales.spacebox": "Mysterious box",
@@ -40,6 +57,7 @@
   "block.doremitales.adagsteeldoor": "Adagsteel Door",
   "block.doremitales.adagsteeltrapdoor": "Adagsteel Trapdoor",
 
+  "sounds.doremitales.aeonfluteplay": "Aeon Flute is playing",
 
   "itemgroup.kikianmass": "Do Re Mi Tales"
 }

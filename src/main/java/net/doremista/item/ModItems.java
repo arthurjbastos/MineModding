@@ -1,19 +1,29 @@
 package net.doremista.item;
 
 import net.doremista.Doremitales;
-import net.doremista.item.custom.AeonFluteItem;
-import net.doremista.item.custom.HealerBookItem;
-import net.doremista.item.custom.RatchattsItem;
+import net.doremista.item.custom.*;
+import net.doremista.sound.ModSounds;
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public class ModItems {
+
+    public static final Item ILUM = registerItem("ilum", new IlumItem(new FabricItemSettings()));
+    public static final Item EVELYNTHEMEMUSICDISC = registerItem("evelynthememusicdisc",
+            new MusicDiscItem(7, ModSounds.EVELYNTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 140));
+
+    public static final Item CODEXPAGE1 = registerItem("codexpage1",
+            new CodexPage1Item(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
     public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()));
     public static final Item ADAGSTEELINGOT = registerItem("adagsteelingot", new Item(new FabricItemSettings()));
@@ -33,26 +43,36 @@ public class ModItems {
             new RatchattsItem(new FabricItemSettings().maxCount(1).maxDamage(360).rarity(Rarity.UNCOMMON)));
 
     public static final Item AEONFLUTE = registerItem("aeonflute",
-            new AeonFluteItem(new FabricItemSettings().maxCount(1).maxDamage(360).rarity(Rarity.UNCOMMON)));
+            new AeonFluteItem(new FabricItemSettings().maxCount(1).maxDamage(560).rarity(Rarity.UNCOMMON)));
 
 
     //      ADAGSTEEL TOOL
     public static final Item ADAGSTEELSWORD = registerItem("adagsteelsword",
-            new SwordItem(ModToolMaterial.ADAGSTEEL, 3, -2.5f, new FabricItemSettings()));
+            new SwordItem(ModToolMaterial.ADAGSTEEL, 3, -2.4f, new FabricItemSettings()));
     public static final Item ADAGSTEELPICKAXE = registerItem("adagsteelpickaxe",
             new PickaxeItem(ModToolMaterial.ADAGSTEEL, 1, -2.8f, new FabricItemSettings()));
     public static final Item ADAGSTEELAXE = registerItem("adagsteelaxe",
-            new AxeItem(ModToolMaterial.ADAGSTEEL, 6, -3.1f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterial.ADAGSTEEL, 6.0f, -3.1f, new FabricItemSettings()));
     public static final Item ADAGSTEELSHOVEL = registerItem("adagsteelshovel",
             new ShovelItem(ModToolMaterial.ADAGSTEEL, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item ADAGSTEELHOE = registerItem("adagsteelhoe",
-            new HoeItem(ModToolMaterial.ADAGSTEEL, -2, 1.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.ADAGSTEEL, -2, -3.0f, new FabricItemSettings()));
+
+    public static final Item ADAGSTEELHELMET = registerItem("adagsteelhelmet",
+            new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ADAGSTEELCHESTPLATE = registerItem("adagsteelchestplate",
+            new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ADAGSTEELLEGGINGS = registerItem("adagsteelleggings",
+            new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ADAGSTEELBOOTS = registerItem("adagsteelboots",
+            new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         entries.add(KIKIANMASS);
         entries.add(LETTERA);
         entries.add(ADAGSTEELINGOT);
+        entries.add(ILUM);
     }
 
     private static Item registerItem(String name, Item item){
@@ -63,4 +83,5 @@ public class ModItems {
         Doremitales.LOGGER.info("Registring Mod Items for " + Doremitales.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
+
 }

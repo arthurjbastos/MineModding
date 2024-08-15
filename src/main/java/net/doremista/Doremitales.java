@@ -5,6 +5,8 @@ import net.doremista.block.entity.ModBlockEntities;
 
 import net.doremista.item.ModItemGroups;
 import net.doremista.item.ModItems;
+import net.doremista.sound.ModSounds;
+import net.doremista.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -28,6 +30,7 @@ public class Doremitales implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerBlockEntities();
-
+		ModSounds.registerSounds();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }

@@ -19,7 +19,7 @@ public enum ModToolMaterial implements ToolMaterial {
     KIKIANMASS(5, 666, 9.5f, 3.5f, 26,
             () -> Ingredient.ofItems(ModItems.KIKIANMASS)),
 
-    ADAGSTEEL(MiningLevels.IRON, 350, 6.0f, 2.5f, 15,
+    ADAGSTEEL(MiningLevels.IRON, 350, 6.0f, 2.0f, 15,
             () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT));;
 
     private final int miningLevel;
