@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "doremitales:ilumshard"
+    },
+    "V": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    " O ",
+    "SVS",
+    " O "
+  ],
+  "result": {
+    "item": "doremitales:adagioreducer"
+  },
+  "show_notification": true
+}
