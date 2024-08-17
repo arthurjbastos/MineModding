@@ -61,10 +61,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELSLAB)));
 
-        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ADAGSTEELPRESSUREPLATE, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
-                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELPRESSUREPLATE)));
-
         createTrapdoorRecipe(ModBlocks.ADAGSTEELTRAPDOOR, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELTRAPDOOR)));
@@ -72,10 +68,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.ADAGSTEELSTAIRS, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELSTAIRS)));
-
-        createTransmutationRecipe(ModBlocks.ADAGSTEELBUTTON, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
-                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELBUTTON)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HEALERBOOK, 1)
                 .pattern("###")
@@ -86,6 +78,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.BOOK), conditionsFromItem(Items.BOOK))
                 .criterion(hasItem(ModItems.KIKIANMASS), conditionsFromItem(ModItems.KIKIANMASS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALERBOOK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ADAGIOREDUCER, 1)
+                .pattern(" O ")
+                .pattern("SVS")
+                .pattern(" O ")
+                .input('S', ModItems.ILUMSHARD)
+                .input('O', Items.GOLD_INGOT)
+                .input('V', Items.GLASS_PANE)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(ModItems.ILUMSHARD), conditionsFromItem(ModItems.ILUMSHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGIOREDUCER)));
+
 
         // ferramentas usando ADAGSTEELINGOT
 

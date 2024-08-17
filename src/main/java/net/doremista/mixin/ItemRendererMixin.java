@@ -30,4 +30,12 @@ public abstract class ItemRendererMixin {
         }
         return value;
     }
+
+    @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
+    public BakedModel useExtractorModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
+        if (stack.isOf(ModItems.FREQUENCYEXTRACTOR) && renderMode != ModelTransformationMode.GUI) {
+            return ((ItemRendererAccessor) this).mccourse$getModels().getModelManager().getModel(new ModelIdentifier(Doremitales.MOD_ID, "frequencyextractor_3d", "inventory"));
+        }
+        return value;
+    }
 }

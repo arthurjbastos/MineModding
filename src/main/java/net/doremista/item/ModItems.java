@@ -15,10 +15,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ModItems {
 
-    public static final Item ILUM = registerItem("ilum", new IlumItem(new FabricItemSettings()));
+    public static final Item ILUMSHARD = registerItem("ilumshard", new IlumItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item ILUM = registerItem("ilum", new IlumItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item EVELYNTHEMEMUSICDISC = registerItem("evelynthememusicdisc",
             new MusicDiscItem(7, ModSounds.EVELYNTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 140));
 
@@ -26,6 +31,23 @@ public class ModItems {
             new CodexPage1Item(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
     public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()));
+
+    public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
+            new Item(new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.translatable("tooltip.doremitales.adagioreducer.tooltip"));
+                    tooltip.add(Text.translatable("tooltip.doremitales.adagioreducer.tooltip_2"));
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+
+                @Override
+                public boolean hasGlint(ItemStack stack) {
+                    return true;
+                }
+            }
+    );
+
     public static final Item ADAGSTEELINGOT = registerItem("adagsteelingot", new Item(new FabricItemSettings()));
     public static final Item RAWADAGSTEEL = registerItem("rawadagsteel", new Item(new FabricItemSettings()));
     public static final Item LETTERA = registerItem("lettera", new Item(new FabricItemSettings()));
@@ -44,6 +66,9 @@ public class ModItems {
 
     public static final Item AEONFLUTE = registerItem("aeonflute",
             new AeonFluteItem(new FabricItemSettings().maxCount(1).maxDamage(560).rarity(Rarity.UNCOMMON)));
+
+    public static final Item FREQUENCYEXTRACTOR = registerItem("frequencyextractor",
+            new FrequencyExtractorItem(new FabricItemSettings().maxCount(1).maxDamage(150).rarity(Rarity.UNCOMMON)));
 
 
     //      ADAGSTEEL TOOL
@@ -73,6 +98,8 @@ public class ModItems {
         entries.add(LETTERA);
         entries.add(ADAGSTEELINGOT);
         entries.add(ILUM);
+        entries.add(ILUMSHARD);
+        entries.add(ADAGIOREDUCER);
     }
 
     private static Item registerItem(String name, Item item){

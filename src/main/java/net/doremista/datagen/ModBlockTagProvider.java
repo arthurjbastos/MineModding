@@ -31,9 +31,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ADAGSTEELFENCE)
                 .add(ModBlocks.ADAGSTEELFENCEGATE)
                 .add(ModBlocks.ADAGSTEELDOOR)
-                .add(ModBlocks.ADAGSTEELBUTTON)
                 .add(ModBlocks.ADAGSTEELSLAB)
-                .add(ModBlocks.ADAGSTEELPRESSUREPLATE)
                 .add(ModBlocks.ADAGSTEELTRAPDOOR)
                 .add(ModBlocks.ADAGSTEELSTAIRS)
                 .add(ModBlocks.ADAGSTEELWALL);
@@ -52,9 +50,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ADAGSTEELFENCE)
                 .add(ModBlocks.ADAGSTEELFENCEGATE)
                 .add(ModBlocks.ADAGSTEELDOOR)
-                .add(ModBlocks.ADAGSTEELBUTTON)
                 .add(ModBlocks.ADAGSTEELSLAB)
-                .add(ModBlocks.ADAGSTEELPRESSUREPLATE)
                 .add(ModBlocks.ADAGSTEELTRAPDOOR)
                 .add(ModBlocks.ADAGSTEELSTAIRS)
                 .add(ModBlocks.ADAGSTEELWALL);

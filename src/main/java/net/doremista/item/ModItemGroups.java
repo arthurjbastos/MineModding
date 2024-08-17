@@ -18,6 +18,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CODEXPAGE1);
                         entries.add(ModItems.KIKIANMASS);
                         entries.add(ModItems.ILUM);
+                        entries.add(ModItems.ILUMSHARD);
+                        entries.add(ModItems.ADAGIOREDUCER);
                         entries.add(ModItems.ADAGSTEELINGOT);
                         entries.add(ModItems.RAWADAGSTEEL);
                         entries.add(ModItems.LETTERA);
@@ -31,6 +33,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.RATCHATTS);
                         entries.add(ModItems.AEONFLUTE);
+                        entries.add(ModItems.FREQUENCYEXTRACTOR);
 
 
                         //ADAGSTEEL TOOLS
@@ -46,16 +49,15 @@ public class ModItemGroups {
 
                         //BLOCKS
                         entries.add(ModBlocks.BENCH);
+                        //entries.add(ModBlocks.SURREALCRYSTAL);
                         entries.add(ModBlocks.KIKIANMASSBLOCK);
                         entries.add(ModBlocks.ADAGSTEELORE);
                         entries.add(ModBlocks.DEEPSLATEADAGSTEELORE);
                         entries.add(ModBlocks.SPACEBOX);
                         entries.add(ModBlocks.ADAGSTEELBLOCK);
-                        entries.add(ModBlocks.ADAGSTEELBUTTON);
                         entries.add(ModBlocks.ADAGSTEELDOOR);
                         entries.add(ModBlocks.ADAGSTEELFENCE);
                         entries.add(ModBlocks.ADAGSTEELFENCEGATE);
-                        entries.add(ModBlocks.ADAGSTEELPRESSUREPLATE);
                         entries.add(ModBlocks.ADAGSTEELTRAPDOOR);
                         entries.add(ModBlocks.ADAGSTEELWALL);
                         entries.add(ModBlocks.ADAGSTEELSLAB);

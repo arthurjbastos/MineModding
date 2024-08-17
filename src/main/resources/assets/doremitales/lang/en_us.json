@@ -2,6 +2,8 @@
   "item.doremitales.codexpage1": "Códex A - First Page",
   "item.doremitales.kikianmass": "Kikian Mass",
   "item.doremitales.ilum": "Condensed Ilum",
+  "item.doremitales.ilumshard": "Ilum Shard",
+  "item.doremitales.adagioreducer": "Adagio Reducer",
   "item.doremitales.adagsteelingot": "Adagsteel ingot",
   "item.doremitales.rawadagsteel": "Raw Adagsteel",
   "item.doremitales.lettera": "A",
@@ -15,7 +17,7 @@
 
   "item.doremitales.ratchatts": "Ratchatts",
   "item.doremitales.aeonflute": "Aeon Flute",
-
+  "item.doremitales.frequencyextractor": "Frequency Extractor",
 
   "item.doremitales.adagsteelpickaxe": "Adagsteel Pickaxe",
   "item.doremitales.adagsteelsword": "Adagsteel Sword",
@@ -27,13 +29,23 @@
   "item.doremitales.adagsteelleggings": "Adagsteel Leggings",
   "item.doremitales.adagsteelboots": "Adagsteel Boots",
 
+  "tooltip.doremitales.space.tooltip": "",
+
   "tooltip.doremitales.ilum.tooltip": "§7'§oThese sounds were bestowed a name, which was sung by Isabel,",
   "tooltip.doremitales.ilum.tooltip_2": "§7§oand the sounds were made into the Ilums, by the decree of Isabel.'",
   "tooltip.doremitales.healerbook.tooltip": "§7Heals the caster through divine knowledge",
+  "tooltip.doremitales.healerbook.tooltip.description": "§7Regenerates two hearts from the caster",
   "tooltip.doremitales.ratchatts.tooltip": "§7A cruel weapon against the soulless",
+  "tooltip.doremitales.adagioreducer.tooltip": "§7Slows down the rhythm of primal sounds",
+  "tooltip.doremitales.adagioreducer.tooltip_2": "§7Essencial for handling noise particles",
+
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
   "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",
+  "tooltip.doremitales.mutemagic.tooltip": "§4Mute Magic - This object alters forbidden properties§r",
+
+  "tooltip.doremitales.frequencyextractor.tooltip": "§7Captures hidden particles of harmony",
+  "tooltip.doremitales.frequencyextractor.tooltip.description": "§7Can slowly extract Ilum fragments from specific blocks",
 
   "tooltip.doremitales.tooltip.shift": "Press §eSHIFT§r for more info",
 
@@ -46,11 +58,10 @@
   "block.doremitales.kikianmassblock": "Kikian Mass block",
   "block.doremitales.adagsteelore": "Adagsteel ore",
   "block.doremitales.deepslateadagsteelore": "Deepslate Adagsteel ore",
+  "block.doremitales.surrealcrystal": "Surreal Crystal",
 
   "block.doremitales.adagsteelstairs": "Adagsteel Stairs",
   "block.doremitales.adagsteelslab": "Adagsteel Slab",
-  "block.doremitales.adagsteelbutton": "Adagsteel Button",
-  "block.doremitales.adagsteelpressureplate": "Adagsteel Pressure Plate",
   "block.doremitales.adagsteelfence": "Adagsteel Fence",
   "block.doremitales.adagsteelfencegate": "Adagsteel Fence Gate",
   "block.doremitales.adagsteelwall": "Adagsteel Wall",

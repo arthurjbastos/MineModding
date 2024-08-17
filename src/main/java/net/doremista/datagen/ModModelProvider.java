@@ -25,8 +25,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         adagsteelPool.stairs(ModBlocks.ADAGSTEELSTAIRS);
         adagsteelPool.slab(ModBlocks.ADAGSTEELSLAB);
-        adagsteelPool.button(ModBlocks.ADAGSTEELBUTTON);
-        adagsteelPool.pressurePlate(ModBlocks.ADAGSTEELPRESSUREPLATE);
         adagsteelPool.fence(ModBlocks.ADAGSTEELFENCE);
         adagsteelPool.fenceGate(ModBlocks.ADAGSTEELFENCEGATE);
         adagsteelPool.wall(ModBlocks.ADAGSTEELWALL);
@@ -37,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPACEBOX);
         // SPACEBOX GERADO MANUALMENTE
         // BENCH GERADO MANUALMENTE
+        // crystal manual tb
     }
 
     @Override
@@ -44,6 +43,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.CODEXPAGE1, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ILUMSHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ADAGIOREDUCER, Models.GENERATED);
         itemModelGenerator.register(ModItems.KIKIANMASS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAGSTEELINGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAWADAGSTEEL, Models.GENERATED);
@@ -54,6 +55,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.RATCHATTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.AEONFLUTE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FREQUENCYEXTRACTOR, Models.GENERATED);
 
         // ADAGSTEEL TOOL
         itemModelGenerator.register(ModItems.ADAGSTEELHOE, Models.HANDHELD);

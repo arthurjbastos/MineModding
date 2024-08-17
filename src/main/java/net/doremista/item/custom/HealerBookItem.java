@@ -1,5 +1,6 @@
 package net.doremista.item.custom;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -35,9 +36,12 @@ public class HealerBookItem extends Item {
         if (!world.isClient) {
             int useDuration = this.getMaxUseTime(stack) - remainingUseTicks;
             if (useDuration >= 20) {
+
                 // Curar o jogador
-                if (user instanceof PlayerEntity) {
+                if (user instanceof PlayerEntity player) {
+
                     ((PlayerEntity) user).heal(4.5F); // Cura 2 corações e meio
+                    player.getItemCooldownManager().set(this, 90);
 
                     //Toca som de cure
                     world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_EXPERIENCE_ORB_PICKUP, SoundCategory.PLAYERS, 1.0F, 1.0F);
@@ -51,6 +55,7 @@ public class HealerBookItem extends Item {
                     ((ServerWorld) world).spawnParticles(ParticleTypes.HEART, user.getX(), user.getY() + 1, user.getZ(), 6, 0.5, 0.5, 0.5, 0.1);
                 }
             }
+
         }
     }
 
@@ -66,7 +71,14 @@ public class HealerBookItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip"));
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip"));
+            tooltip.add(Text.translatable("tooltip.doremitales.space.tooltip"));
+            tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip.description"));
+        } else {
+            tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip"));
+            tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+        }
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

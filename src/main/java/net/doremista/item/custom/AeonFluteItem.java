@@ -9,10 +9,13 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.server.world.ServerWorld;
 import org.jetbrains.annotations.Nullable;
@@ -20,6 +23,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 public class AeonFluteItem extends Item {
     private static final int USAGE_DURATION_TICKS = 36; // Tempo de uso em ticks
@@ -47,11 +51,17 @@ public class AeonFluteItem extends Item {
             playerUseMap.entrySet().removeIf(entry -> {
                 PlayerEntity player = entry.getKey();
                 int remainingTicks = entry.getValue() - 1;
+                float randomPitch = 0.5f + (1.5f - 0.5f) * new Random().nextFloat();
 
-                // Toca o som apenas se não estiver tocando
-                if (remainingTicks % 5 == 0 && !playerSoundPlayingMap.getOrDefault(player, false)) {
-                    player.getWorld().playSound(null, player.getBlockPos(), ModSounds.AEONFLUTEPLAY, SoundCategory.PLAYERS, 1.0F, 1.0F);
-                    playerSoundPlayingMap.put(player, true);
+                // Toca o som continuamente enquanto o item está em uso
+                if (remainingTicks % 5 == 0 && playerSoundPlayingMap.getOrDefault(player, false)) {
+                    player.getWorld().playSound(null, player.getBlockPos(), ModSounds.AEONFLUTEPLAY, SoundCategory.PLAYERS, 1.0F, randomPitch);
+
+                    // Iniciar partículas contínuas
+                    World world = player.getWorld();
+                    if (world instanceof ServerWorld serverWorld) {
+                        serverWorld.spawnParticles(ParticleTypes.SMALL_FLAME, player.getX(), player.getY() + 1.0, player.getZ(), 13, 0.0, 0.0, 0.0, 0.1);
+                    }
                 }
 
                 if (remainingTicks <= 0) {
@@ -69,6 +79,7 @@ public class AeonFluteItem extends Item {
                 return false;
             });
         });
+
     }
 
     @Override
@@ -82,7 +93,7 @@ public class AeonFluteItem extends Item {
         user.setCurrentHand(hand);
         if (!world.isClient) {
             playerUseMap.put(user, USAGE_DURATION_TICKS);
-            playerSoundPlayingMap.put(user, false); // Inicializa a flag do som
+            playerSoundPlayingMap.put(user, true); // Marca o som como ativo
         }
 
         return new TypedActionResult<>(ActionResult.SUCCESS, stack);
@@ -137,7 +148,9 @@ public class AeonFluteItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.doremitales.aeonflute.tooltip"));
+            tooltip.add(Text.translatable("tooltip.doremitales.space.tooltip"));
             tooltip.add(Text.translatable("tooltip.doremitales.aeonflute.tooltip.description"));
+            tooltip.add(Text.translatable("tooltip.doremitales.mutemagic.tooltip"));
         } else {
             tooltip.add(Text.translatable("tooltip.doremitales.aeonflute.tooltip"));
             tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));

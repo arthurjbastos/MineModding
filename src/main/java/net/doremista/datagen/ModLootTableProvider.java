@@ -31,8 +31,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ADAGSTEELTRAPDOOR);
         addDrop(ModBlocks.ADAGSTEELFENCE);
         addDrop(ModBlocks.ADAGSTEELFENCEGATE);
-        addDrop(ModBlocks.ADAGSTEELBUTTON);
-        addDrop(ModBlocks.ADAGSTEELPRESSUREPLATE);
         addDrop(ModBlocks.ADAGSTEELWALL);
         addDrop(ModBlocks.ADAGSTEELSTAIRS);
 

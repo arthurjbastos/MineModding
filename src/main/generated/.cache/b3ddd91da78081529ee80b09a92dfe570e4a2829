@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-14T21:08:53.9724531	doremitales/Block Loot Tables
+// 1.20.1	2024-08-16T14:41:08.9922002	doremitales/Block Loot Tables
 ef37859ea4ef255355af0513f059293113117f12 data\doremitales\loot_tables\blocks\adagsteeldoor.json
 393dffea04c6dc2d9b8c17cb42666b09734cde0f data\doremitales\loot_tables\blocks\kikianmassblock.json
 e1ed52f298ddb933375e606104bd02c3e039b2e7 data\doremitales\loot_tables\blocks\adagsteelore.json
@@ -6,10 +6,8 @@ e1ed52f298ddb933375e606104bd02c3e039b2e7 data\doremitales\loot_tables\blocks\ada
 b4af64b23897c20c40633bfa27d1a55e038f9604 data\doremitales\loot_tables\blocks\adagsteeltrapdoor.json
 83cd55ba6286d78e2ed2b2bc59703b3c17e556af data\doremitales\loot_tables\blocks\adagsteelfence.json
 499e783f8a1b780721595b2a06c7fd057c5f4332 data\doremitales\loot_tables\blocks\adagsteelblock.json
-2cfb0e8536843f876a59c5386a7b39993cf9204c data\doremitales\loot_tables\blocks\adagsteelstairs.json
 51f15e9cdf1670da95905fb164f3421cc78d8a49 data\doremitales\loot_tables\blocks\adagsteelwall.json
+2cfb0e8536843f876a59c5386a7b39993cf9204c data\doremitales\loot_tables\blocks\adagsteelstairs.json
 fd0e215d8385afd69d67c17a853fcb03e232c0fa data\doremitales\loot_tables\blocks\deepslateadagsteelore.json
-468da2f6a0031d878ebf984bb38a42ba08c73565 data\doremitales\loot_tables\blocks\adagsteelbutton.json
 5a65a74925be653e75304b3cdbd68b00392348c1 data\doremitales\loot_tables\blocks\adagsteelslab.json
 3d83a0189880fd06f10cbe216c377e49608c05be data\doremitales\loot_tables\blocks\adagsteelfencegate.json
-17b8231edb64d8ae12b07627b357a059c1b2524e data\doremitales\loot_tables\blocks\adagsteelpressureplate.json
