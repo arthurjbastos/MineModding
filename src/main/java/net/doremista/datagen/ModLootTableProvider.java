@@ -47,7 +47,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VERDANOVASAPLING);
 
         addDrop(ModBlocks.VERDANOVALEAVES, leavesDrops(ModBlocks.VERDANOVALEAVES,
-                ModBlocks.VERDANOVASAPLING, 0.0200f)); //   SAPLING DROP AQUI TODO
+                ModBlocks.VERDANOVASAPLING, 0.0140f)); //   SAPLING DROP
 
     }
 

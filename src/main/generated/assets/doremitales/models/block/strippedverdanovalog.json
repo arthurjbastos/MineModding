@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "doremitales:block/strippedverdanovalog_top",
+    "side": "doremitales:block/strippedverdanovalog"
+  }
+}

@@ -11,9 +11,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup KIKIANMASS_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Doremitales.MOD_ID, "kikianmass"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.kikianmass"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.miscgroup"))
                     .icon(() -> new ItemStack(ModItems.KIKIANMASS)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CODEXPAGE1);
                         entries.add(ModItems.KIKIANMASS);
@@ -28,6 +28,7 @@ public class ModItemGroups {
 
                         // TOOLS
                         entries.add(ModItems.HEALERBOOK);
+                        entries.add(ModBlocks.VERDANOVASAPLING);
                         entries.add(ModItems.KIKIANMASSPICKAXE);
                         entries.add(ModItems.KIKIANMASSSWORD);
 
@@ -47,6 +48,14 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELLEGGINGS);
                         entries.add(ModItems.ADAGSTEELBOOTS);
 
+
+            }).build());
+
+    public static final ItemGroup BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(Doremitales.MOD_ID, "kikianmassblock"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.blocksgroup"))
+                    .icon(() -> new ItemStack(ModBlocks.KIKIANMASSBLOCK)).entries((displayContext, entries) -> {
+
                         //BLOCKS
                         entries.add(ModBlocks.BENCH);
                         //entries.add(ModBlocks.SURREALCRYSTAL);
@@ -63,7 +72,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ADAGSTEELSLAB);
                         entries.add(ModBlocks.ADAGSTEELSTAIRS);
                         //VERDANOVA SET
-                        entries.add(ModBlocks.VERDANOVASAPLING);
                         entries.add(ModBlocks.VERDANOVALOG);
                         entries.add(ModBlocks.VERDANOVAWOOD);
                         entries.add(ModBlocks.STRIPPEDVERDANOVALOG);
@@ -71,7 +79,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VERDANOVAPLANKS);
                         entries.add(ModBlocks.VERDANOVALEAVES);
 
-            }).build());
+                    }).build());
 
     public static void registerItemGroups(){
         Doremitales.LOGGER.info("Registering Item Groups for DoremiTales");

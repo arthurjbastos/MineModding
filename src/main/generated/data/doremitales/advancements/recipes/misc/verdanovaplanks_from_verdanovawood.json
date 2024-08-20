@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:verdanovaplanks_from_verdanovawood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdanovawood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:verdanovawood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdanovawood",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:verdanovaplanks_from_verdanovawood"
+    ]
+  },
+  "sends_telemetry_event": false
+}

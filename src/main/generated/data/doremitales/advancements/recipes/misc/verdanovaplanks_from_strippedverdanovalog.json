@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_strippedverdanovalog": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:strippedverdanovalog"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:verdanovaplanks_from_strippedverdanovalog"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_strippedverdanovalog",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:verdanovaplanks_from_strippedverdanovalog"
+    ]
+  },
+  "sends_telemetry_event": false
+}

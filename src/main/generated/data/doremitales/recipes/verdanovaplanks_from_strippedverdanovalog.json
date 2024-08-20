@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "building_blocks",
+  "ingredients": [
+    {
+      "item": "doremitales:strippedverdanovalog"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "doremitales:verdanovaplanks"
+  }
+}
