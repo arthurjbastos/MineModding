@@ -39,6 +39,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ADAGSTEELDOOR, doorDrops(ModBlocks.ADAGSTEELDOOR));
         addDrop(ModBlocks.ADAGSTEELSLAB, slabDrops(ModBlocks.ADAGSTEELSLAB));
 
+        addDrop(ModBlocks.VERDANOVALOG);
+        addDrop(ModBlocks.VERDANOVAWOOD);
+        addDrop(ModBlocks.STRIPPEDVERDANOVALOG);
+        addDrop(ModBlocks.STRIPPEDVERDANOVAWOOD);
+        addDrop(ModBlocks.VERDANOVAPLANKS);
+        addDrop(ModBlocks.VERDANOVASAPLING);
+
+        addDrop(ModBlocks.VERDANOVALEAVES, leavesDrops(ModBlocks.VERDANOVALEAVES,
+                ModBlocks.VERDANOVASAPLING, 0.0200f)); //   SAPLING DROP AQUI TODO
+
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

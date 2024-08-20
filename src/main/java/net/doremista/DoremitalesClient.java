@@ -14,6 +14,9 @@ public class DoremitalesClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADAGSTEELDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADAGSTEELTRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VERDANOVALEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VERDANOVASAPLING, RenderLayer.getCutout());
         EntityRendererRegistry.register(ModEntities.RATCHATTSPROJECTILE, RatchattsProjectileRenderer::new);
+
     }
 }

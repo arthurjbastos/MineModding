@@ -30,6 +30,7 @@
   "item.doremitales.adagsteelboots": "Adagsteel Boots",
 
   "tooltip.doremitales.space.tooltip": "",
+  "tooltip.doremitales.test.tooltip": "§6WORK IN PROGRESS! - This item is not finished!",
 
   "tooltip.doremitales.ilum.tooltip": "§7'§oThese sounds were bestowed a name, which was sung by Isabel,",
   "tooltip.doremitales.ilum.tooltip_2": "§7§oand the sounds were made into the Ilums, by the decree of Isabel.'",
@@ -67,6 +68,14 @@
   "block.doremitales.adagsteelwall": "Adagsteel Wall",
   "block.doremitales.adagsteeldoor": "Adagsteel Door",
   "block.doremitales.adagsteeltrapdoor": "Adagsteel Trapdoor",
+
+  "block.doremitales.verdanovasapling": "Verdanova Sapling",
+  "block.doremitales.verdanovalog": "Verdanova Log",
+  "block.doremitales.verdanovawood": "Verdanova Wood",
+  "block.doremitales.strippedverdanovalog": "Stripped Verdanova Log",
+  "block.doremitales.strippedverdanovawood": "Stripped Verdanova Wood",
+  "block.doremitales.verdanovaplanks": "Verdanova Planks",
+  "block.doremitales.verdanovaleaves": "Verdanova Leaves",
 
   "sounds.doremitales.aeonfluteplay": "Aeon Flute is playing",
 

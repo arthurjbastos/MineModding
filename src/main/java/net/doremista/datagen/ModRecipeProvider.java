@@ -15,6 +15,8 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -44,6 +46,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ADAGSTEELINGOT, RecipeCategory.DECORATIONS,
                 ModBlocks.ADAGSTEELBLOCK);
+
+        // CRAFT DE PLANKS/LOG
+            offerPlanksRecipe2(exporter, ModBlocks.VERDANOVAPLANKS, ItemTags.LOGS, 4);
+            offerShapelessRecipe(exporter, ModBlocks.VERDANOVAPLANKS, ModBlocks.STRIPPEDVERDANOVALOG, RecipeCategory.BUILDING_BLOCKS.getName(), 4);
+            offerShapelessRecipe(exporter, ModBlocks.VERDANOVAPLANKS, ModBlocks.STRIPPEDVERDANOVAWOOD, RecipeCategory.BUILDING_BLOCKS.getName(), 4);
+            offerShapelessRecipe(exporter, ModBlocks.VERDANOVAPLANKS, ModBlocks.VERDANOVAWOOD, RecipeCategory.BUILDING_BLOCKS.getName(), 4);
+        //
 
         createDoorRecipe(ModBlocks.ADAGSTEELDOOR, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))

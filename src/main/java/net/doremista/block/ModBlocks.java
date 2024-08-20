@@ -4,6 +4,8 @@ import net.doremista.Doremitales;
 import net.doremista.block.custom.BenchBlock;
 import net.doremista.block.custom.SpaceBoxBlock;
 import net.doremista.block.custom.SurrealCrystalBlock;
+import net.doremista.world.tree.VerdanovaSaplingGenerator;
+import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -25,13 +27,11 @@ public class ModBlocks {
     public static final Block KIKIANMASSBLOCK = registerBlock("kikianmassblock",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK)
                     .strength(4.5f, 6.0f) // Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
-
             ));
 
     public static final Block ADAGSTEELBLOCK = registerBlock("adagsteelblock",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
                     .strength(6.5f, 7.5f) // Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
-
             ));
 
     public static final Block BENCH = registerBlock("bench",
@@ -71,6 +71,25 @@ public class ModBlocks {
     public static final Block ADAGSTEELTRAPDOOR = registerBlock("adagsteeltrapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
 
+    //  VERDANOVA WOOD
+
+    public static final Block VERDANOVALOG = registerBlock("verdanovalog",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+    public static final Block VERDANOVAWOOD = registerBlock("verdanovawood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+    public static final Block STRIPPEDVERDANOVALOG = registerBlock("strippedverdanovalog",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+    public static final Block STRIPPEDVERDANOVAWOOD = registerBlock("strippedverdanovawood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final Block VERDANOVASAPLING = registerBlock("verdanovasapling",
+            new SaplingBlock(new VerdanovaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block VERDANOVAPLANKS = registerBlock("verdanovaplanks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block VERDANOVALEAVES = registerBlock("verdanovaleaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+    //      FIM DA VERDOVA WOOD
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

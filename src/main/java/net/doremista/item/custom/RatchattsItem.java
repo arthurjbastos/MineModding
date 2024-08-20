@@ -73,6 +73,7 @@ public class RatchattsItem extends AxeItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.doremitales.ratchatts.tooltip"));
+        tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

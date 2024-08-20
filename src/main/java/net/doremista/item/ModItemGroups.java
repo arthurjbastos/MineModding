@@ -62,6 +62,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ADAGSTEELWALL);
                         entries.add(ModBlocks.ADAGSTEELSLAB);
                         entries.add(ModBlocks.ADAGSTEELSTAIRS);
+                        //VERDANOVA SET
+                        entries.add(ModBlocks.VERDANOVASAPLING);
+                        entries.add(ModBlocks.VERDANOVALOG);
+                        entries.add(ModBlocks.VERDANOVAWOOD);
+                        entries.add(ModBlocks.STRIPPEDVERDANOVALOG);
+                        entries.add(ModBlocks.STRIPPEDVERDANOVAWOOD);
+                        entries.add(ModBlocks.VERDANOVAPLANKS);
+                        entries.add(ModBlocks.VERDANOVALEAVES);
 
             }).build());
 

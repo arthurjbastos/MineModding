@@ -32,6 +32,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.ADAGSTEELDOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ADAGSTEELTRAPDOOR);
 
+        blockStateModelGenerator.registerLog(ModBlocks.VERDANOVALOG).log(ModBlocks.VERDANOVALOG).wood(ModBlocks.VERDANOVAWOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPEDVERDANOVALOG).log(ModBlocks.STRIPPEDVERDANOVALOG).wood(ModBlocks.STRIPPEDVERDANOVAWOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVALEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVAPLANKS);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.VERDANOVASAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPACEBOX);
         // SPACEBOX GERADO MANUALMENTE
         // BENCH GERADO MANUALMENTE
@@ -72,5 +78,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.HANDHELD);
 
         //ITEM BENCH GERADO MANUALMENTE
+
     }
 }

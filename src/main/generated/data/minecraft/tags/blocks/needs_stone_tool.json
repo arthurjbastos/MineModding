@@ -1,7 +1,11 @@
 {
   "replace": false,
   "values": [
-    "doremitales:kikianmassblock",
+    "doremitales:verdanovalog",
+    "doremitales:verdanovaplanks",
+    "doremitales:verdanovawood",
+    "doremitales:strippedverdanovalog",
+    "doremitales:strippedverdanovalog",
     "doremitales:kikianmassblock"
   ]
 }

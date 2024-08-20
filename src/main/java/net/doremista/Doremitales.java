@@ -2,12 +2,16 @@ package net.doremista;
 
 import net.doremista.block.ModBlocks;
 import net.doremista.block.entity.ModBlockEntities;
+import net.doremista.datagen.ModWorldGenerator;
 import net.doremista.item.ModItemGroups;
 import net.doremista.item.ModItems;
 import net.doremista.sound.ModSounds;
 import net.doremista.util.ModLootTableModifiers;
+import net.doremista.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.JukeboxBlockEntity;
 import net.minecraft.entity.ItemEntity;
@@ -37,6 +41,18 @@ public class Doremitales implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifyLootTables();
+		ModWorldGeneration.generateModWorldGen();
+
+		StrippableBlockRegistry.register(ModBlocks.VERDANOVALOG, ModBlocks.STRIPPEDVERDANOVALOG);
+		StrippableBlockRegistry.register(ModBlocks.VERDANOVAWOOD, ModBlocks.STRIPPEDVERDANOVAWOOD);
+		//valores default p/ inflamavel:
+		//planks: 5, 20; logs: 5, 5; leaves: 30, 60;
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERDANOVALOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERDANOVAWOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPEDVERDANOVALOG, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPEDVERDANOVAWOOD, 5, 5);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERDANOVAPLANKS, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERDANOVALEAVES, 1, 1);
 
 		// Registrar o evento de quebra de bloco
 		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, blockEntity) -> {

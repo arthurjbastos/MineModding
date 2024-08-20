@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -36,8 +37,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ADAGSTEELSTAIRS)
                 .add(ModBlocks.ADAGSTEELWALL);
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE) //    MINERÁVEL C MACHADO
+                .add(ModBlocks.VERDANOVALOG)
+                .add(ModBlocks.VERDANOVAPLANKS)
+                .add(ModBlocks.VERDANOVAWOOD)
+                .add(ModBlocks.STRIPPEDVERDANOVALOG)
+                .add(ModBlocks.STRIPPEDVERDANOVALOG);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) //    PEDRA
-                .add(ModBlocks.KIKIANMASSBLOCK)
+                .add(ModBlocks.VERDANOVALOG)
+                .add(ModBlocks.VERDANOVAPLANKS)
+                .add(ModBlocks.VERDANOVAWOOD)
+                .add(ModBlocks.STRIPPEDVERDANOVALOG)
+                .add(ModBlocks.STRIPPEDVERDANOVALOG)
                 .add(ModBlocks.KIKIANMASSBLOCK);
 
 
@@ -69,6 +81,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ADAGSTEELFENCEGATE);
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ADAGSTEELWALL);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN) //uso como combustivel
+                .add(ModBlocks.VERDANOVALOG)
+                .add(ModBlocks.VERDANOVAWOOD)
+                .add(ModBlocks.VERDANOVAPLANKS)
+                .add(ModBlocks.STRIPPEDVERDANOVALOG)
+                .add(ModBlocks.STRIPPEDVERDANOVAWOOD);
 
     }
 }

@@ -22,6 +22,46 @@ import java.util.List;
 
 public class ModItems {
 
+    //              TEST ITEMS
+
+    public static final Item LETTERA = registerItem("lettera", new Item(new FabricItemSettings()){
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+
+    public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()) {
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+
+    public static final Item KIKIANMASSPICKAXE = registerItem("kikianmasspickaxe",
+            new PickaxeItem(ModToolMaterial.KIKIANMASS, 3, 4f, new FabricItemSettings()){
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+
+
+    public static final Item KIKIANMASSSWORD = registerItem("kikianmasssword",
+            new SwordItem(ModToolMaterial.KIKIANMASS, 8, 3f, new FabricItemSettings()){
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+
+    //              FIM DOS TEST ITEMS
+
+
     public static final Item ILUMSHARD = registerItem("ilumshard", new IlumItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item ILUM = registerItem("ilum", new IlumItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item EVELYNTHEMEMUSICDISC = registerItem("evelynthememusicdisc",
@@ -30,10 +70,8 @@ public class ModItems {
     public static final Item CODEXPAGE1 = registerItem("codexpage1",
             new CodexPage1Item(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
-    public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()));
-
     public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
-            new Item(new FabricItemSettings()) {
+            new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)) {
                 @Override
                 public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
                     tooltip.add(Text.translatable("tooltip.doremitales.adagioreducer.tooltip"));
@@ -50,23 +88,15 @@ public class ModItems {
 
     public static final Item ADAGSTEELINGOT = registerItem("adagsteelingot", new Item(new FabricItemSettings()));
     public static final Item RAWADAGSTEEL = registerItem("rawadagsteel", new Item(new FabricItemSettings()));
-    public static final Item LETTERA = registerItem("lettera", new Item(new FabricItemSettings()));
     public static final Item PERFECTTENCAKE = registerItem("perfecttencake", new Item(new FabricItemSettings().food(ModFoodComponents.PERFECTTENCAKE)));
 
     //      TOOLS
     public static final Item HEALERBOOK = registerItem("healerbook",
             new HealerBookItem(new FabricItemSettings().maxCount(1).maxDamage(120).rarity(Rarity.UNCOMMON)));
-    public static final Item KIKIANMASSPICKAXE = registerItem("kikianmasspickaxe",
-            new PickaxeItem(ModToolMaterial.KIKIANMASS, 3, 4f, new FabricItemSettings()));
-    public static final Item KIKIANMASSSWORD = registerItem("kikianmasssword",
-            new SwordItem(ModToolMaterial.KIKIANMASS, 8, 3f, new FabricItemSettings()));
-
     public static final Item RATCHATTS = registerItem("ratchatts",
             new RatchattsItem(new FabricItemSettings().maxCount(1).maxDamage(360).rarity(Rarity.UNCOMMON)));
-
     public static final Item AEONFLUTE = registerItem("aeonflute",
             new AeonFluteItem(new FabricItemSettings().maxCount(1).maxDamage(560).rarity(Rarity.UNCOMMON)));
-
     public static final Item FREQUENCYEXTRACTOR = registerItem("frequencyextractor",
             new FrequencyExtractorItem(new FabricItemSettings().maxCount(1).maxDamage(150).rarity(Rarity.UNCOMMON)));
 
