@@ -1,11 +1,11 @@
-// 1.20.1	2024-08-20T18:08:38.3021416	doremitales/Tags for minecraft:block
-5b1b74db54b6b628e8dc597f66283e0bccda5678 data\minecraft\tags\blocks\needs_stone_tool.json
-f165d07313e182e834853c364f78e0b424d0e8a9 data\minecraft\tags\blocks\fences.json
+// 1.20.1	2024-08-20T22:02:35.9180361	doremitales/Tags for minecraft:block
+06020f3cd2d317f4f1e4e5209c7e0a6110aa82ad data\minecraft\tags\blocks\fences.json
 4eda054622e1fe9cfdb162cd2a01a7138dbc1b3c data\minecraft\tags\blocks\logs_that_burn.json
+667645854266b4c75267f371761083149f50d92c data\minecraft\tags\blocks\needs_stone_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
-1cb2a1669c008c7ec451f4bebdfbe3590fc434e6 data\minecraft\tags\blocks\mineable\axe.json
+db7e672141ae2ea7369227a8cf6c1c4594d79922 data\minecraft\tags\blocks\mineable\axe.json
 f7c51df41c06a02c8028fe90f49ade507d9425c8 data\minecraft\tags\blocks\needs_iron_tool.json
 e563409a82c785f8b9ff5c5cfa002966325cc2a6 data\minecraft\tags\blocks\mineable\pickaxe.json
-dea8653813babd14d696e5f73b16d734c8ce14a0 data\minecraft\tags\blocks\fence_gates.json
 b889f2cb9f4027191ad1e8111043dd12b9b7b468 data\minecraft\tags\blocks\walls.json
+8e505dd1716ab2256a1a0ac75f844e561d3d692d data\minecraft\tags\blocks\fence_gates.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_lever_4.json

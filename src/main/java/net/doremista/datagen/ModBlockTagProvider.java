@@ -42,12 +42,24 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VERDANOVAPLANKS)
                 .add(ModBlocks.VERDANOVAWOOD)
                 .add(ModBlocks.STRIPPEDVERDANOVALOG)
-                .add(ModBlocks.STRIPPEDVERDANOVALOG);
+                .add(ModBlocks.STRIPPEDVERDANOVALOG)
+                .add(ModBlocks.VERDANOVAFENCE)
+                .add(ModBlocks.VERDANOVAFENCEGATE)
+                .add(ModBlocks.VERDANOVADOOR)
+                .add(ModBlocks.VERDANOVASLAB)
+                .add(ModBlocks.VERDANOVATRAPDOOR)
+                .add(ModBlocks.VERDANOVASTAIRS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL) //    PEDRA
                 .add(ModBlocks.VERDANOVALOG)
                 .add(ModBlocks.VERDANOVAPLANKS)
                 .add(ModBlocks.VERDANOVAWOOD)
+                .add(ModBlocks.VERDANOVAFENCE)
+                .add(ModBlocks.VERDANOVAFENCEGATE)
+                .add(ModBlocks.VERDANOVADOOR)
+                .add(ModBlocks.VERDANOVASLAB)
+                .add(ModBlocks.VERDANOVATRAPDOOR)
+                .add(ModBlocks.VERDANOVASTAIRS)
                 .add(ModBlocks.STRIPPEDVERDANOVALOG)
                 .add(ModBlocks.STRIPPEDVERDANOVALOG)
                 .add(ModBlocks.KIKIANMASSBLOCK);
@@ -76,9 +88,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
          */
 
         getOrCreateTagBuilder(BlockTags.FENCES) //  Tags p identificação d categorias etc
-                .add(ModBlocks.ADAGSTEELFENCE);
+                .add(ModBlocks.ADAGSTEELFENCE)
+                .add(ModBlocks.VERDANOVAFENCE);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.ADAGSTEELFENCEGATE);
+                .add(ModBlocks.ADAGSTEELFENCEGATE)
+                .add(ModBlocks.VERDANOVAFENCEGATE);
+
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.ADAGSTEELWALL);
 

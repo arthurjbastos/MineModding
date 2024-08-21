@@ -124,12 +124,7 @@ public class ModItems {
 
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
-        entries.add(KIKIANMASS);
-        entries.add(LETTERA);
-        entries.add(ADAGSTEELINGOT);
-        entries.add(ILUM);
-        entries.add(ILUMSHARD);
-        entries.add(ADAGIOREDUCER);
+        // items p/ tab de ingredientes padrao do mine, n sei pq serve n
     }
 
     private static Item registerItem(String name, Item item){

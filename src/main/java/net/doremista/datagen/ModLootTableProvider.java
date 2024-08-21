@@ -39,12 +39,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ADAGSTEELDOOR, doorDrops(ModBlocks.ADAGSTEELDOOR));
         addDrop(ModBlocks.ADAGSTEELSLAB, slabDrops(ModBlocks.ADAGSTEELSLAB));
 
+        // verdanova set
+
+        addDrop(ModBlocks.VERDANOVADOOR, doorDrops(ModBlocks.VERDANOVADOOR));
+        addDrop(ModBlocks.VERDANOVASLAB, slabDrops(ModBlocks.VERDANOVASLAB));
+
         addDrop(ModBlocks.VERDANOVALOG);
         addDrop(ModBlocks.VERDANOVAWOOD);
         addDrop(ModBlocks.STRIPPEDVERDANOVALOG);
         addDrop(ModBlocks.STRIPPEDVERDANOVAWOOD);
         addDrop(ModBlocks.VERDANOVAPLANKS);
         addDrop(ModBlocks.VERDANOVASAPLING);
+        addDrop(ModBlocks.VERDANOVATRAPDOOR);
+        addDrop(ModBlocks.VERDANOVAFENCE);
+        addDrop(ModBlocks.VERDANOVAFENCEGATE);
+        addDrop(ModBlocks.VERDANOVASTAIRS);
 
         addDrop(ModBlocks.VERDANOVALEAVES, leavesDrops(ModBlocks.VERDANOVALEAVES,
                 ModBlocks.VERDANOVASAPLING, 0.0140f)); //   SAPLING DROP

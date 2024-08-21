@@ -77,6 +77,13 @@
   "block.doremitales.verdanovaplanks": "Verdanova Planks",
   "block.doremitales.verdanovaleaves": "Verdanova Leaves",
 
+  "block.doremitales.verdanovastairs": "Verdanova Stairs",
+  "block.doremitales.verdanovaslab": "Verdanova Slab",
+  "block.doremitales.verdanovafence": "Verdanova Fence",
+  "block.doremitales.verdanovafencegate": "Verdanova Fence Gate",
+  "block.doremitales.verdanovadoor": "Verdanova Door",
+  "block.doremitales.verdanovatrapdoor": "Verdanova Trapdoor",
+
   "sounds.doremitales.aeonfluteplay": "Aeon Flute is playing",
 
   "itemgroup.miscgroup": "DRM Tales Misc.",

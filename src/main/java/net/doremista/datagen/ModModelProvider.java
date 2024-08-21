@@ -21,6 +21,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.KIKIANMASSBLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADAGSTEELORE);
         BlockStateModelGenerator.BlockTexturePool adagsteelPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ADAGSTEELBLOCK);
+        BlockStateModelGenerator.BlockTexturePool verdanovaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VERDANOVAPLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATEADAGSTEELORE);
 
         adagsteelPool.stairs(ModBlocks.ADAGSTEELSTAIRS);
@@ -28,17 +29,23 @@ public class ModModelProvider extends FabricModelProvider {
         adagsteelPool.fence(ModBlocks.ADAGSTEELFENCE);
         adagsteelPool.fenceGate(ModBlocks.ADAGSTEELFENCEGATE);
         adagsteelPool.wall(ModBlocks.ADAGSTEELWALL);
-
         blockStateModelGenerator.registerDoor(ModBlocks.ADAGSTEELDOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ADAGSTEELTRAPDOOR);
+
+        // verdanova set
+
+        verdanovaPool.stairs(ModBlocks.VERDANOVASTAIRS);
+        verdanovaPool.slab(ModBlocks.VERDANOVASLAB);
+        verdanovaPool.fence(ModBlocks.VERDANOVAFENCE);
+        verdanovaPool.fenceGate(ModBlocks.VERDANOVAFENCEGATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.VERDANOVADOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.VERDANOVATRAPDOOR);
 
         blockStateModelGenerator.registerLog(ModBlocks.VERDANOVALOG).log(ModBlocks.VERDANOVALOG).wood(ModBlocks.VERDANOVAWOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPEDVERDANOVALOG).log(ModBlocks.STRIPPEDVERDANOVALOG).wood(ModBlocks.STRIPPEDVERDANOVAWOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVALEAVES);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVAPLANKS);
         blockStateModelGenerator.registerTintableCross(ModBlocks.VERDANOVASAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPACEBOX);
         // SPACEBOX GERADO MANUALMENTE
         // BENCH GERADO MANUALMENTE
         // crystal manual tb

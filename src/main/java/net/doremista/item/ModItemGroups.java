@@ -64,13 +64,14 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATEADAGSTEELORE);
                         entries.add(ModBlocks.SPACEBOX);
                         entries.add(ModBlocks.ADAGSTEELBLOCK);
+                        entries.add(ModBlocks.ADAGSTEELSTAIRS);
+                        entries.add(ModBlocks.ADAGSTEELWALL);
+                        entries.add(ModBlocks.ADAGSTEELSLAB);
                         entries.add(ModBlocks.ADAGSTEELDOOR);
                         entries.add(ModBlocks.ADAGSTEELFENCE);
                         entries.add(ModBlocks.ADAGSTEELFENCEGATE);
                         entries.add(ModBlocks.ADAGSTEELTRAPDOOR);
-                        entries.add(ModBlocks.ADAGSTEELWALL);
-                        entries.add(ModBlocks.ADAGSTEELSLAB);
-                        entries.add(ModBlocks.ADAGSTEELSTAIRS);
+
                         //VERDANOVA SET
                         entries.add(ModBlocks.VERDANOVALOG);
                         entries.add(ModBlocks.VERDANOVAWOOD);
@@ -78,6 +79,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPEDVERDANOVAWOOD);
                         entries.add(ModBlocks.VERDANOVAPLANKS);
                         entries.add(ModBlocks.VERDANOVALEAVES);
+                        entries.add(ModBlocks.VERDANOVASTAIRS);
+                        entries.add(ModBlocks.VERDANOVASLAB);
+                        entries.add(ModBlocks.VERDANOVADOOR);
+                        entries.add(ModBlocks.VERDANOVAFENCE);
+                        entries.add(ModBlocks.VERDANOVAFENCEGATE);
+                        entries.add(ModBlocks.VERDANOVATRAPDOOR);
 
                     }).build());
 

@@ -54,6 +54,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             offerShapelessRecipe(exporter, ModBlocks.VERDANOVAPLANKS, ModBlocks.VERDANOVAWOOD, RecipeCategory.BUILDING_BLOCKS.getName(), 4);
         //
 
+        // VERDANOVA SET
+
+            createDoorRecipe(ModBlocks.VERDANOVADOOR, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
+                    .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
+                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVADOOR)));
+
+            createFenceRecipe(ModBlocks.VERDANOVAFENCE, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
+                    .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
+                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVAFENCE)));
+
+            createFenceGateRecipe(ModBlocks.VERDANOVAFENCEGATE, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
+                    .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
+                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVAFENCEGATE)));
+
+            createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANOVASLAB, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
+                    .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
+                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVASLAB)));
+
+            createTrapdoorRecipe(ModBlocks.VERDANOVATRAPDOOR, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
+                    .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
+                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVATRAPDOOR)));
+
+            createStairsRecipe(ModBlocks.VERDANOVASTAIRS, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
+                    .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
+                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVASTAIRS)));
+
+        //
+
         createDoorRecipe(ModBlocks.ADAGSTEELDOOR, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELDOOR)));

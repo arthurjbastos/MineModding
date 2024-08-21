@@ -74,20 +74,33 @@ public class ModBlocks {
     //  VERDANOVA WOOD
 
     public static final Block VERDANOVALOG = registerBlock("verdanovalog",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
-    public static final Block VERDANOVAWOOD = registerBlock("verdanovawood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
-    public static final Block STRIPPEDVERDANOVALOG = registerBlock("strippedverdanovalog",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
-    public static final Block STRIPPEDVERDANOVAWOOD = registerBlock("strippedverdanovawood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
+                new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+        public static final Block VERDANOVAWOOD = registerBlock("verdanovawood",
+                new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+        public static final Block STRIPPEDVERDANOVALOG = registerBlock("strippedverdanovalog",
+                new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
+        public static final Block STRIPPEDVERDANOVAWOOD = registerBlock("strippedverdanovawood",
+                new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
 
-    public static final Block VERDANOVASAPLING = registerBlock("verdanovasapling",
-            new SaplingBlock(new VerdanovaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
-    public static final Block VERDANOVAPLANKS = registerBlock("verdanovaplanks",
-            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
-    public static final Block VERDANOVALEAVES = registerBlock("verdanovaleaves",
-            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+        public static final Block VERDANOVASAPLING = registerBlock("verdanovasapling",
+                new SaplingBlock(new VerdanovaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+        public static final Block VERDANOVAPLANKS = registerBlock("verdanovaplanks",
+                new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+        public static final Block VERDANOVALEAVES = registerBlock("verdanovaleaves",
+                new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).nonOpaque()));
+
+        public static final Block VERDANOVASTAIRS = registerBlock("verdanovastairs",
+                new StairsBlock(ModBlocks.VERDANOVAPLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+        public static final Block VERDANOVASLAB = registerBlock("verdanovaslab",
+                new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
+        public static final Block VERDANOVAFENCE = registerBlock("verdanovafence",
+                new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+        public static final Block VERDANOVAFENCEGATE = registerBlock("verdanovafencegate",
+                new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.ACACIA));
+        public static final Block VERDANOVADOOR = registerBlock("verdanovadoor",
+                new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR).nonOpaque(), BlockSetType.OAK));
+        public static final Block VERDANOVATRAPDOOR = registerBlock("verdanovatrapdoor",
+                new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR).nonOpaque(), BlockSetType.OAK));
 
     //      FIM DA VERDOVA WOOD
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "doremitales:block/verdanovaslab"
+    },
+    "type=double": {
+      "model": "doremitales:block/verdanovaplanks"
+    },
+    "type=top": {
+      "model": "doremitales:block/verdanovaslab_top"
+    }
+  }
+}
