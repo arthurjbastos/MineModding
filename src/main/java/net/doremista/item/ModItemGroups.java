@@ -16,15 +16,18 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.miscgroup"))
                     .icon(() -> new ItemStack(ModItems.KIKIANMASS)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CODEXPAGE1);
+                        entries.add(ModItems.EVELYNLORE);
                         entries.add(ModItems.KIKIANMASS);
                         entries.add(ModItems.ILUM);
                         entries.add(ModItems.ILUMSHARD);
                         entries.add(ModItems.ADAGIOREDUCER);
+                        entries.add(ModItems.VERDANOVAWOODSPLINTERS);
+                        entries.add(ModItems.VERDANOVASAP);
+                        entries.add(ModItems.VERDANOVASAPBOTTLE);
                         entries.add(ModItems.ADAGSTEELINGOT);
                         entries.add(ModItems.RAWADAGSTEEL);
                         entries.add(ModItems.LETTERA);
                         entries.add(ModItems.PERFECTTENCAKE);
-                        entries.add(ModItems.EVELYNTHEMEMUSICDISC);
 
                         // TOOLS
                         entries.add(ModItems.HEALERBOOK);
@@ -47,6 +50,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELCHESTPLATE);
                         entries.add(ModItems.ADAGSTEELLEGGINGS);
                         entries.add(ModItems.ADAGSTEELBOOTS);
+
+                        // music disc no final
+                        entries.add(ModItems.EVELYNTHEMEMUSICDISC);
+                        entries.add(ModItems.SUSUTHEMEMUSICDISC);
+                        entries.add(ModItems.ELEPHASTICTHEMEMUSICDISC);
 
 
             }).build());

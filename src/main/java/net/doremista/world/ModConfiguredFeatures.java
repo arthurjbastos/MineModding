@@ -44,7 +44,7 @@ public class ModConfiguredFeatures {
                 // i = altura até onde cresce antes de inclinar
                 // j = quantidade de blocos p/ inclinar (ou var de altura)
                 // k = quao longe arvore se inclina
-                new DarkOakTrunkPlacer(7,2,7),
+                new DarkOakTrunkPlacer(7, 2, 2),
 
                 BlockStateProvider.of(ModBlocks.VERDANOVALEAVES),
                 new DarkOakFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0)),

@@ -24,7 +24,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider  {
                 .add(ModItems.ADAGSTEELBOOTS);
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
-                .add(ModItems.EVELYNTHEMEMUSICDISC);
+                .add(ModItems.EVELYNTHEMEMUSICDISC)
+                .add(ModItems.ELEPHASTICTHEMEMUSICDISC)
+                .add(ModItems.SUSUTHEMEMUSICDISC);
 
         getOrCreateTagBuilder(ItemTags.PLANKS) //uso das planks como madeira comum p craft
                 .add(ModBlocks.VERDANOVAPLANKS.asItem());

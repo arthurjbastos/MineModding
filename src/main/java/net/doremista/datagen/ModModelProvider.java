@@ -55,6 +55,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
         itemModelGenerator.register(ModItems.CODEXPAGE1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EVELYNLORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUMSHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAGIOREDUCER, Models.GENERATED);
@@ -65,10 +66,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HEALERBOOK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PERFECTTENCAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EVELYNTHEMEMUSICDISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SUSUTHEMEMUSICDISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ELEPHASTICTHEMEMUSICDISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RATCHATTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.AEONFLUTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.FREQUENCYEXTRACTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VERDANOVAWOODSPLINTERS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VERDANOVASAP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VERDANOVASAPBOTTLE, Models.GENERATED);
 
         // ADAGSTEEL TOOL
         itemModelGenerator.register(ModItems.ADAGSTEELHOE, Models.HANDHELD);

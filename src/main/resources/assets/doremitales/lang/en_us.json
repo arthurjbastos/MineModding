@@ -1,5 +1,7 @@
 {
   "item.doremitales.codexpage1": "Códex A - First Page",
+  "item.doremitales.evelynlore": "Evelyn's Lore",
+
   "item.doremitales.kikianmass": "Kikian Mass",
   "item.doremitales.ilum": "Condensed Ilum",
   "item.doremitales.ilumshard": "Ilum Shard",
@@ -13,7 +15,11 @@
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
 
   "item.doremitales.evelynthememusicdisc": "Music Disc",
+  "item.doremitales.susuthememusicdisc": "Music Disc",
+  "item.doremitales.elephasticthememusicdisc": "Music Disc",
   "item.doremitales.evelynthememusicdisc.desc": "Blonde Redhead - Evelyn Theme (Remixed)",
+  "item.doremitales.susuthememusicdisc.desc": "§6WORK IN PROGRESS! - This item is not finished!",
+  "item.doremitales.elephasticthememusicdisc.desc": "Susumu Hirasawa - Elephastic Quintet Theme (Instrumental)",
 
   "item.doremitales.ratchatts": "Ratchatts",
   "item.doremitales.aeonflute": "Aeon Flute",
@@ -39,6 +45,10 @@
   "tooltip.doremitales.ratchatts.tooltip": "§7A cruel weapon against the soulless",
   "tooltip.doremitales.adagioreducer.tooltip": "§7Slows down the rhythm of primal sounds",
   "tooltip.doremitales.adagioreducer.tooltip_2": "§7Essencial for handling noise particles",
+  "tooltip.doremitales.verdanovasap.tooltip": "§7'§oNevertheless, this protection came at a price;",
+  "tooltip.doremitales.verdanovasap.tooltip_2": "§7§othe Lumandias became reliant upon the sap of the Tree of Life.'",
+  "tooltip.doremitales.evelynlore.tooltip": "§7§o'Evelyn believed him to be Lokhran's herald, as written in the Codex,",
+  "tooltip.doremitales.evelynlore.tooltip_2": "§7§oand thus raised him to a position of great authority.'",
 
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
@@ -83,6 +93,10 @@
   "block.doremitales.verdanovafencegate": "Verdanova Fence Gate",
   "block.doremitales.verdanovadoor": "Verdanova Door",
   "block.doremitales.verdanovatrapdoor": "Verdanova Trapdoor",
+  "item.doremitales.verdanovawoodsplinters": "Verdanova Wood Bark",
+  "item.doremitales.verdanovasap": "Verdanova Sap",
+  "item.doremitales.verdanovasapbottle": "Verdanova Sap Bottle",
+
 
   "sounds.doremitales.aeonfluteplay": "Aeon Flute is playing",
 

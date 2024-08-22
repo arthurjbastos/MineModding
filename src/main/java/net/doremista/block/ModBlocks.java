@@ -4,17 +4,28 @@ import net.doremista.Doremitales;
 import net.doremista.block.custom.BenchBlock;
 import net.doremista.block.custom.SpaceBoxBlock;
 import net.doremista.block.custom.SurrealCrystalBlock;
+import net.doremista.item.ModItems;
 import net.doremista.world.tree.VerdanovaSaplingGenerator;
 import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.hit.BlockHitResult;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.World;
 
 public class ModBlocks {
 
@@ -74,9 +85,57 @@ public class ModBlocks {
     //  VERDANOVA WOOD
 
     public static final Block VERDANOVALOG = registerBlock("verdanovalog",
-                new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
-        public static final Block VERDANOVAWOOD = registerBlock("verdanovawood",
-                new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)) {
+                @Override
+                public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+                    ItemStack stack = player.getStackInHand(hand);
+                    if (stack.getItem() instanceof AxeItem) {
+                        if (!world.isClient) {
+                            // Muda estado do bloco p/ stripped
+                            world.setBlockState(pos, ModBlocks.STRIPPEDVERDANOVALOG.getDefaultState());
+                            ItemStack dropStack = new ItemStack(ModItems.VERDANOVAWOODSPLINTERS);
+
+                            // Toca o som de descascar
+                            world.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+
+                            // Remove durabilidade do machado
+                            stack.damage(1, player, p -> p.sendToolBreakStatus(hand));
+                            Block.dropStack(world, pos, dropStack);
+                        }
+                        return ActionResult.success(world.isClient);
+                    }
+                    return ActionResult.PASS;
+                }
+            });
+
+
+    public static final Block VERDANOVAWOOD = registerBlock("verdanovawood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)) {
+                @Override
+                public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+                    ItemStack stack = player.getStackInHand(hand);
+                    if (stack.getItem() instanceof AxeItem) {
+                        if (!world.isClient) {
+                            // Muda estado do bloco p/ stripped
+                            world.setBlockState(pos, ModBlocks.STRIPPEDVERDANOVAWOOD.getDefaultState());
+
+                            // Toca o som de descascar
+                            world.playSound(null, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+
+                            // Remove durabilidade do machado
+                            stack.damage(1, player, p -> p.sendToolBreakStatus(hand));
+
+                            // Dropa o item desejado
+                            ItemStack dropStack = new ItemStack(ModItems.VERDANOVAWOODSPLINTERS);
+                            Block.dropStack(world, pos, dropStack);
+                        }
+                        return ActionResult.success(world.isClient);
+                    }
+                    return ActionResult.PASS;
+                }
+            });
+
+
         public static final Block STRIPPEDVERDANOVALOG = registerBlock("strippedverdanovalog",
                 new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
         public static final Block STRIPPEDVERDANOVAWOOD = registerBlock("strippedverdanovawood",

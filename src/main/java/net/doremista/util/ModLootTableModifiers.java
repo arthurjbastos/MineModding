@@ -25,6 +25,15 @@ public class ModLootTableModifiers {
     private static final Identifier VILLAGE_WEAPONSMITH_ID =
             new Identifier("minecraft", "chests/village/village_weaponsmith");
 
+    private static final Identifier BASTION_BRIDGE_ID =
+            new Identifier("minecraft", "chests/bastion_bridge");
+
+    public static final Identifier FISHING_TREASURE_ID =
+            new Identifier("minecraft", "gameplay/fishing/treasure");
+
+    public static final Identifier ABANDONED_MINESHAFT_ID =
+            new Identifier("minecraft", "chests/abandoned_mineshaft");
+
     private static final Identifier VILLAGE_ARMORER_ID =
             new Identifier("minecraft", "chests/village/village_armorer");
 
@@ -47,7 +56,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } // CÓDEX I PAGE
 
                 //              ADAGSTEEL EM VILA
 
@@ -70,7 +79,7 @@ public class ModLootTableModifiers {
                         tableBuilder.pool(poolBuilder.build());
                     }
 
-                        //  ----------
+            //              DISCOS
 
             if(SIMPLE_DUNGEON_ID.equals(id)) { // disco em dungeon
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -82,8 +91,52 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
+            if (SIMPLE_DUNGEON_ID.equals(id)) { // disco em dungeon
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.2f))
+                        .with(ItemEntry.builder(ModItems.ELEPHASTICTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (FISHING_TREASURE_ID.equals(id)) { // disco em pesca
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.2f))
+                        .with(ItemEntry.builder(ModItems.ELEPHASTICTHEMEMUSICDISC))
+                        .with(ItemEntry.builder(ModItems.EVELYNTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (ABANDONED_MINESHAFT_ID.equals(id)) { // disco em mineshaft
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .with(ItemEntry.builder(ModItems.ELEPHASTICTHEMEMUSICDISC))
+                        .with(ItemEntry.builder(ModItems.EVELYNTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (BASTION_BRIDGE_ID.equals(id)) { // disco em bastion
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.ELEPHASTICTHEMEMUSICDISC))
+                        .with(ItemEntry.builder(ModItems.EVELYNTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
         });
 
+        //      SUS SAND & GRAVEL
 
         LootTableEvents.REPLACE.register((resourceManager1, lootManager1, id, original, source1) -> {
                 if(SUSPICIOUS_GRAVEL_ID.equals(id)){

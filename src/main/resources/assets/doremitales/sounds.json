@@ -12,5 +12,21 @@
         "stream": true
       }
     ]
+  },
+  "susutheme": {
+    "sounds": [
+      {
+        "name": "doremitales:susutheme",
+        "stream": true
+      }
+    ]
+  },
+  "elephastictheme": {
+    "sounds": [
+      {
+        "name": "doremitales:elephastictheme",
+        "stream": true
+      }
+    ]
   }
 }

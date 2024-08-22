@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:verdanovasap_from_smelting_verdanovawoodsplinters"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdanovawoodsplinters": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:verdanovawoodsplinters"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdanovawoodsplinters",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:verdanovasap_from_smelting_verdanovawoodsplinters"
+    ]
+  },
+  "sends_telemetry_event": false
+}

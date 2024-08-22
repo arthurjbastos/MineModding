@@ -12,6 +12,10 @@ public class ModSounds {
 
     public static final SoundEvent EVELYNTHEME = registerSoundEvent("evelyntheme");
 
+    public static final SoundEvent SUSUTHEME = registerSoundEvent("susutheme");
+
+    public static final SoundEvent ELEPHASTICTHEME = registerSoundEvent("elephastictheme");
+
     private static SoundEvent registerSoundEvent(String name){
         Identifier id = new Identifier(Doremitales.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));

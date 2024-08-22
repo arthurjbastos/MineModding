@@ -28,6 +28,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             ModBlocks.ADAGSTEELORE, ModBlocks.DEEPSLATEADAGSTEELORE);
 
 
+    private static final List<ItemConvertible> VERDANOVASAPSMELTABLES = List.of(ModItems.VERDANOVAWOODSPLINTERS);
+
+
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
     }
@@ -37,15 +40,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Recipes existentes
         offerSmelting(exporter, ADAGSTEELSMELTABLES, RecipeCategory.MISC, ModItems.ADAGSTEELINGOT,
-                0.7f, 200, "adagsteelingot");
+                0.5f, 200, "adagsteelingot");
         offerBlasting(exporter, ADAGSTEELSMELTABLES, RecipeCategory.MISC, ModItems.ADAGSTEELINGOT,
-                0.7f, 100, "adagsteelingot");
+                0.5f, 100, "adagsteelingot");
+
+        offerSmelting(exporter, VERDANOVASAPSMELTABLES, RecipeCategory.MISC, ModItems.VERDANOVASAP,
+                0.5f, 450, "verdanovasap");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.KIKIANMASS, RecipeCategory.DECORATIONS,
                 ModBlocks.KIKIANMASSBLOCK);
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ADAGSTEELINGOT, RecipeCategory.DECORATIONS,
                 ModBlocks.ADAGSTEELBLOCK);
+
+
+        // LORE'S CRAFT VIA MUSIC DISCS
+        offerSingleOutputShapelessRecipe(exporter, ModItems.EVELYNLORE, ModItems.EVELYNTHEMEMUSICDISC, "evelynlore");
+        offerSingleOutputShapelessRecipe(exporter, ModItems.EVELYNTHEMEMUSICDISC, ModItems.EVELYNLORE, "evelynthememusicdisc");
+        //
 
         // CRAFT DE PLANKS/LOG
             offerPlanksRecipe2(exporter, ModBlocks.VERDANOVAPLANKS, ItemTags.LOGS, 4);
@@ -105,6 +117,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.ADAGSTEELSTAIRS, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELSTAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VERDANOVASAPBOTTLE, 1)
+                .pattern("###")
+                .pattern("#B#")
+                .pattern("###")
+                .input('#', ModItems.VERDANOVASAP)
+                .input('B', Items.GLASS_BOTTLE)
+                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
+                .criterion(hasItem(ModItems.VERDANOVASAP), conditionsFromItem(ModItems.VERDANOVASAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VERDANOVASAPBOTTLE)));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HEALERBOOK, 1)
                 .pattern("###")

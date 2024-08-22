@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -56,7 +57,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VERDANOVASTAIRS);
 
         addDrop(ModBlocks.VERDANOVALEAVES, leavesDrops(ModBlocks.VERDANOVALEAVES,
-                ModBlocks.VERDANOVASAPLING, 0.0140f)); //   SAPLING DROP
+                ModBlocks.VERDANOVASAPLING, 0.0180f)); //   SAPLING DROP
 
     }
 

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 450,
+  "experience": 0.5,
+  "group": "verdanovasap",
+  "ingredient": {
+    "item": "doremitales:verdanovawoodsplinters"
+  },
+  "result": "doremitales:verdanovasap"
+}

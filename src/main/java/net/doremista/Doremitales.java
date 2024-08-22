@@ -43,8 +43,6 @@ public class Doremitales implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
 
-		StrippableBlockRegistry.register(ModBlocks.VERDANOVALOG, ModBlocks.STRIPPEDVERDANOVALOG);
-		StrippableBlockRegistry.register(ModBlocks.VERDANOVAWOOD, ModBlocks.STRIPPEDVERDANOVAWOOD);
 		//valores default p/ inflamavel:
 		//planks: 5, 20; logs: 5, 5; leaves: 30, 60;
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.VERDANOVALOG, 5, 5);
@@ -56,6 +54,7 @@ public class Doremitales implements ModInitializer {
 
 		// Registrar o evento de quebra de bloco
 		PlayerBlockBreakEvents.BEFORE.register((world, player, pos, state, blockEntity) -> {
+
 			if (!world.isClient && state.isOf(Blocks.JUKEBOX)) {
 				// Verificar se a Jukebox está tocando
 				if (blockEntity instanceof JukeboxBlockEntity jukebox && state.get(HAS_RECORD)) {
@@ -85,6 +84,7 @@ public class Doremitales implements ModInitializer {
 			// Retorna true para permitir que o bloco seja quebrado normalmente se não tiver disco tocando
 			return true;
 		});
+
 	}
 
 	private void dropIlumShard(World world, BlockPos pos) {

@@ -1,29 +1,25 @@
 package net.doremista.item.custom;
 
-import net.doremista.screen.CodexPageScreen;
+import net.doremista.screen.EvelynLoreScreen;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.sound.SoundInstance;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
-import net.minecraft.client.MinecraftClient;
 import org.jetbrains.annotations.Nullable;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 
 import java.util.List;
 
-public class CodexPage1Item extends Item {
+public class EvelynLoreItem extends Item {
 
-    public CodexPage1Item(Settings settings) {
+    public EvelynLoreItem(Settings settings) {
         super(settings);
     }
 
@@ -37,13 +33,14 @@ public class CodexPage1Item extends Item {
 
     @Environment(EnvType.CLIENT)
     private void openScreen() {
-        MinecraftClient.getInstance().setScreen(new CodexPageScreen());
+        MinecraftClient.getInstance().setScreen(new EvelynLoreScreen());
     }
 
     @Override
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.doremitales.codexpage1.tooltip"));
+        tooltip.add(Text.translatable("tooltip.doremitales.evelynlore.tooltip"));
+        tooltip.add(Text.translatable("tooltip.doremitales.evelynlore.tooltip_2"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

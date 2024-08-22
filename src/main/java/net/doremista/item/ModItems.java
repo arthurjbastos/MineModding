@@ -25,6 +25,7 @@ public class ModItems {
     //              TEST ITEMS
 
     public static final Item LETTERA = registerItem("lettera", new Item(new FabricItemSettings()){
+        //todo
         @Override
         public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
             tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
@@ -33,6 +34,7 @@ public class ModItems {
     });
 
     public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()) {
+        //todo
         @Override
         public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
             tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
@@ -66,9 +68,19 @@ public class ModItems {
     public static final Item ILUM = registerItem("ilum", new IlumItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item EVELYNTHEMEMUSICDISC = registerItem("evelynthememusicdisc",
             new MusicDiscItem(7, ModSounds.EVELYNTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 140));
+    public static final Item SUSUTHEMEMUSICDISC = registerItem("susuthememusicdisc",
+            new MusicDiscItem(7, ModSounds.SUSUTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 73));
+    public static final Item ELEPHASTICTHEMEMUSICDISC = registerItem("elephasticthememusicdisc",
+            new MusicDiscItem(7, ModSounds.ELEPHASTICTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 197));
+
+    //todo musica HORRIVEL MEU DEUS FAZ DIREITO DPS OK
 
     public static final Item CODEXPAGE1 = registerItem("codexpage1",
             new CodexPage1Item(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+
+    public static final Item EVELYNLORE = registerItem("evelynlore",
+            new EvelynLoreItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+
 
     public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)) {
@@ -86,9 +98,14 @@ public class ModItems {
             }
     );
 
+
     public static final Item ADAGSTEELINGOT = registerItem("adagsteelingot", new Item(new FabricItemSettings()));
     public static final Item RAWADAGSTEEL = registerItem("rawadagsteel", new Item(new FabricItemSettings()));
     public static final Item PERFECTTENCAKE = registerItem("perfecttencake", new Item(new FabricItemSettings().food(ModFoodComponents.PERFECTTENCAKE)));
+    public static final Item VERDANOVAWOODSPLINTERS = registerItem("verdanovawoodsplinters", new Item(new FabricItemSettings()));
+    public static final Item VERDANOVASAP = registerItem("verdanovasap", new VerdanovaSapItem(new FabricItemSettings().food(ModFoodComponents.VERDANOVASAP).rarity(Rarity.UNCOMMON)));
+    public static final Item VERDANOVASAPBOTTLE = registerItem("verdanovasapbottle", new VerdanovaSapBottleItem(new FabricItemSettings().food(ModFoodComponents.VERDANOVASAPBOTTLE).maxCount(16).rarity(Rarity.UNCOMMON)));
+
 
     //      TOOLS
     public static final Item HEALERBOOK = registerItem("healerbook",
@@ -113,6 +130,7 @@ public class ModItems {
     public static final Item ADAGSTEELHOE = registerItem("adagsteelhoe",
             new HoeItem(ModToolMaterial.ADAGSTEEL, -2, -3.0f, new FabricItemSettings()));
 
+    //      ADAGSTEEL ARMOR
     public static final Item ADAGSTEELHELMET = registerItem("adagsteelhelmet",
             new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item ADAGSTEELCHESTPLATE = registerItem("adagsteelchestplate",
@@ -121,7 +139,6 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ADAGSTEELBOOTS = registerItem("adagsteelboots",
             new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
-
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         // items p/ tab de ingredientes padrao do mine, n sei pq serve n

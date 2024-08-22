@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_evelynlore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:evelynlore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:evelynthememusicdisc_from_evelynlore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_evelynlore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:evelynthememusicdisc_from_evelynlore"
+    ]
+  },
+  "sends_telemetry_event": false
+}
