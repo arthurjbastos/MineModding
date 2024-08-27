@@ -28,5 +28,29 @@
         "stream": true
       }
     ]
+  },
+  "rubberchicken_ambient": {
+    "subtitle": "sounds.doremitales.rubberchicken_ambient",
+    "sounds": [
+      "doremitales:rubberchicken_ambient"
+    ]
+  },
+  "rubberchicken_hurt": {
+    "subtitle": "sounds.doremitales.rubberchicken_hurt",
+    "sounds": [
+      "doremitales:rubberchicken_hurt"
+    ]
+  },
+  "rubberchicken_death": {
+    "subtitle": "sounds.doremitales.rubberchicken_death",
+    "sounds": [
+      "doremitales:rubberchicken_death"
+    ]
+  },
+  "rubberchicken_attack": {
+    "subtitle": "sounds.doremitales.rubberchicken_attack",
+    "sounds": [
+      "doremitales:rubberchicken_attack"
+    ]
   }
 }

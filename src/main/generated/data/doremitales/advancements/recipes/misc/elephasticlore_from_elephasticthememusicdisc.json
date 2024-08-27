@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_elephasticthememusicdisc": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:elephasticthememusicdisc"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:elephasticlore_from_elephasticthememusicdisc"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_elephasticthememusicdisc",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:elephasticlore_from_elephasticthememusicdisc"
+    ]
+  },
+  "sends_telemetry_event": false
+}

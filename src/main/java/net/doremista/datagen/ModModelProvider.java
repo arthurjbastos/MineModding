@@ -9,6 +9,8 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
+import java.util.Optional;
+
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -56,6 +58,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.CODEXPAGE1, Models.GENERATED);
         itemModelGenerator.register(ModItems.EVELYNLORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ELEPHASTICLORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUMSHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAGIOREDUCER, Models.GENERATED);
@@ -91,6 +94,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.HANDHELD);
 
         //ITEM BENCH GERADO MANUALMENTE
+
+        // egg
+
+        itemModelGenerator.register(ModItems.RUBBERCHICKENSPAWNEGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
     }
 }

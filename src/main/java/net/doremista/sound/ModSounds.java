@@ -16,6 +16,12 @@ public class ModSounds {
 
     public static final SoundEvent ELEPHASTICTHEME = registerSoundEvent("elephastictheme");
 
+    public static final SoundEvent RUBBERCHICKEN_DEATH = registerSoundEvent("rubberchicken_death");
+    public static final SoundEvent RUBBERCHICKEN_HURT = registerSoundEvent("rubberchicken_hurt");
+    public static final SoundEvent RUBBERCHICKEN_AMBIENT = registerSoundEvent("rubberchicken_ambient");
+    public static final SoundEvent RUBBERCHICKEN_ATTACK = registerSoundEvent("rubberchicken_attack");
+
+
     private static SoundEvent registerSoundEvent(String name){
         Identifier id = new Identifier(Doremitales.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));

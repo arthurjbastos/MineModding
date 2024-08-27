@@ -57,6 +57,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // LORE'S CRAFT VIA MUSIC DISCS
         offerSingleOutputShapelessRecipe(exporter, ModItems.EVELYNLORE, ModItems.EVELYNTHEMEMUSICDISC, "evelynlore");
         offerSingleOutputShapelessRecipe(exporter, ModItems.EVELYNTHEMEMUSICDISC, ModItems.EVELYNLORE, "evelynthememusicdisc");
+
+        offerSingleOutputShapelessRecipe(exporter, ModItems.ELEPHASTICLORE, ModItems.ELEPHASTICTHEMEMUSICDISC, "elephasticlore");
+        offerSingleOutputShapelessRecipe(exporter, ModItems.ELEPHASTICTHEMEMUSICDISC, ModItems.ELEPHASTICLORE, "elephasticthememusicdisc");
         //
 
         // CRAFT DE PLANKS/LOG

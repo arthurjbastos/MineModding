@@ -15,8 +15,6 @@ public class ModItemGroups {
             new Identifier(Doremitales.MOD_ID, "kikianmass"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.miscgroup"))
                     .icon(() -> new ItemStack(ModItems.KIKIANMASS)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.CODEXPAGE1);
-                        entries.add(ModItems.EVELYNLORE);
                         entries.add(ModItems.KIKIANMASS);
                         entries.add(ModItems.ILUM);
                         entries.add(ModItems.ILUMSHARD);
@@ -51,10 +49,18 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELLEGGINGS);
                         entries.add(ModItems.ADAGSTEELBOOTS);
 
+                        // lores at the end
+                        entries.add(ModItems.CODEXPAGE1);
+                        entries.add(ModItems.EVELYNLORE);
+                        entries.add(ModItems.ELEPHASTICLORE);
+
                         // music disc no final
                         entries.add(ModItems.EVELYNTHEMEMUSICDISC);
                         entries.add(ModItems.SUSUTHEMEMUSICDISC);
                         entries.add(ModItems.ELEPHASTICTHEMEMUSICDISC);
+
+                        // spawn egg
+                        entries.add(ModItems.RUBBERCHICKENSPAWNEGG);
 
 
             }).build());

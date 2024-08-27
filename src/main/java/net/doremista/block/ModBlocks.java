@@ -142,7 +142,7 @@ public class ModBlocks {
                 new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
 
         public static final Block VERDANOVASAPLING = registerBlock("verdanovasapling",
-                new SaplingBlock(new VerdanovaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+                new SaplingBlock(new VerdanovaSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.DARK_OAK_SAPLING)));
         public static final Block VERDANOVAPLANKS = registerBlock("verdanovaplanks",
                 new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
         public static final Block VERDANOVALEAVES = registerBlock("verdanovaleaves",

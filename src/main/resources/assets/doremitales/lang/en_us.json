@@ -1,6 +1,7 @@
 {
   "item.doremitales.codexpage1": "Códex A - First Page",
   "item.doremitales.evelynlore": "Evelyn's Lore",
+  "item.doremitales.elephasticlore": "Elephastic Quintet's Lore",
 
   "item.doremitales.kikianmass": "Kikian Mass",
   "item.doremitales.ilum": "Condensed Ilum",
@@ -13,6 +14,7 @@
   "item.doremitales.perfecttencake": "Perfect Ten Cake!",
   "item.doremitales.kikianmasspickaxe": "Kikian Mass Pickaxe",
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
+  "item.doremitales.rubberchickenspawnegg": "Rubber Chicken Spawn Egg",
 
   "item.doremitales.evelynthememusicdisc": "Music Disc",
   "item.doremitales.susuthememusicdisc": "Music Disc",
@@ -49,6 +51,8 @@
   "tooltip.doremitales.verdanovasap.tooltip_2": "§7§othe Lumandias became reliant upon the sap of the Tree of Life.'",
   "tooltip.doremitales.evelynlore.tooltip": "§7§o'Evelyn believed him to be Lokhran's herald, as written in the Codex,",
   "tooltip.doremitales.evelynlore.tooltip_2": "§7§oand thus raised him to a position of great authority.'",
+  "tooltip.doremitales.elephasticlore.tooltip": "§7§o'There, the Pachyderms cultivated a new way of life,",
+  "tooltip.doremitales.elephasticlore.tooltip_2": "§7§oadapting to the depths of the caves, named as 'Surreal'",
 
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
@@ -96,9 +100,14 @@
   "item.doremitales.verdanovawoodsplinters": "Verdanova Wood Bark",
   "item.doremitales.verdanovasap": "Verdanova Sap",
   "item.doremitales.verdanovasapbottle": "Verdanova Sap Bottle",
+  "entity.doremitales.rubberchicken": "Rubber Chicken",
 
 
   "sounds.doremitales.aeonfluteplay": "Aeon Flute is playing",
+  "sounds.doremitales.rubberchicken_ambient": "Rubber Chicken screams",
+  "sounds.doremitales.rubberchicken_hurt": "Rubber Chicken got hurt",
+  "sounds.doremitales.rubberchicken_death": "Rubber Chicken dies",
+  "sounds.doremitales.rubberchicken_attack": "Rubber Chicken attacks",
 
   "itemgroup.miscgroup": "DRM Tales Misc.",
   "itemgroup.blocksgroup": "DRM Tales Blocks"

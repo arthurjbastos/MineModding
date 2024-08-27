@@ -3,6 +3,9 @@ package net.doremista;
 import net.doremista.block.ModBlocks;
 import net.doremista.block.entity.ModBlockEntities;
 import net.doremista.datagen.ModWorldGenerator;
+import net.doremista.entity.ModEntities;
+import net.doremista.entity.ModEntitiesSpawn;
+import net.doremista.entity.custom.RubberChickenEntity;
 import net.doremista.item.ModItemGroups;
 import net.doremista.item.ModItems;
 import net.doremista.sound.ModSounds;
@@ -10,6 +13,7 @@ import net.doremista.util.ModLootTableModifiers;
 import net.doremista.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Blocks;
@@ -42,6 +46,9 @@ public class Doremitales implements ModInitializer {
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifyLootTables();
 		ModWorldGeneration.generateModWorldGen();
+		ModEntities.registerModEntities();
+		FabricDefaultAttributeRegistry.register(ModEntities.RUBBERCHICKEN, RubberChickenEntity.createRubberChickenAttributes());
+		ModEntitiesSpawn.addEntitySpawn();
 
 		//valores default p/ inflamavel:
 		//planks: 5, 20; logs: 5, 5; leaves: 30, 60;

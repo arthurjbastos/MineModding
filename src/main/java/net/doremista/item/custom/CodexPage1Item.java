@@ -46,4 +46,9 @@ public class CodexPage1Item extends Item {
         tooltip.add(Text.translatable("tooltip.doremitales.codexpage1.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
 }

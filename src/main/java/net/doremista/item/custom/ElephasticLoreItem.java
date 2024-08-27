@@ -1,5 +1,6 @@
 package net.doremista.item.custom;
 
+import net.doremista.screen.ElephasticLoreScreen;
 import net.doremista.screen.EvelynLoreScreen;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -18,9 +19,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class EvelynLoreItem extends Item {
+public class ElephasticLoreItem extends Item {
 
-    public EvelynLoreItem(Settings settings) {
+    public ElephasticLoreItem(Settings settings) {
         super(settings);
     }
 
@@ -29,7 +30,7 @@ public class EvelynLoreItem extends Item {
         if (world.isClient) {
             openScreen();
             if (MinecraftClient.getInstance().player != null) {
-                MinecraftClient.getInstance().player.sendMessage(Text.literal("Read more at: ").styled(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://doremiworld.fandom.com/pt-br/wiki/Evelyn"))).append(Text.literal("https://doremiworld.fandom.com/pt-br/wiki/Evelyn").styled(style -> style.withUnderline(true).withColor(0x00AACC))));
+                MinecraftClient.getInstance().player.sendMessage(Text.literal("Read more at: ").styled(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://doremiworld.fandom.com/pt-br/wiki/Quinteto_Elefástico"))).append(Text.literal("https://doremiworld.fandom.com/pt-br/wiki/Quinteto_Elefástico").styled(style -> style.withUnderline(true).withColor(0x00AACC))));
             }
         }
         return new TypedActionResult<>(ActionResult.SUCCESS, user.getStackInHand(hand));
@@ -37,14 +38,14 @@ public class EvelynLoreItem extends Item {
 
     @Environment(EnvType.CLIENT)
     private void openScreen() {
-        MinecraftClient.getInstance().setScreen(new EvelynLoreScreen());
+        MinecraftClient.getInstance().setScreen(new ElephasticLoreScreen());
     }
 
     @Override
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.doremitales.evelynlore.tooltip"));
-        tooltip.add(Text.translatable("tooltip.doremitales.evelynlore.tooltip_2"));
+        tooltip.add(Text.translatable("tooltip.doremitales.elephasticlore.tooltip"));
+        tooltip.add(Text.translatable("tooltip.doremitales.elephasticlore.tooltip_2"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 
@@ -52,5 +53,4 @@ public class EvelynLoreItem extends Item {
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
-
 }

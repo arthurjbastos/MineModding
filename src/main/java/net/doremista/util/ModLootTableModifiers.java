@@ -25,6 +25,9 @@ public class ModLootTableModifiers {
     private static final Identifier VILLAGE_WEAPONSMITH_ID =
             new Identifier("minecraft", "chests/village/village_weaponsmith");
 
+    private static final Identifier DESERT_PYRAMID_ID =
+            new Identifier("minecraft", "chests/village/desert_pyramid");
+
     private static final Identifier BASTION_BRIDGE_ID =
             new Identifier("minecraft", "chests/bastion_bridge");
 
@@ -115,7 +118,7 @@ public class ModLootTableModifiers {
             if (ABANDONED_MINESHAFT_ID.equals(id)) { // disco em mineshaft
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.4f))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
                         .with(ItemEntry.builder(ModItems.ELEPHASTICTHEMEMUSICDISC))
                         .with(ItemEntry.builder(ModItems.EVELYNTHEMEMUSICDISC))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
@@ -129,6 +132,16 @@ public class ModLootTableModifiers {
                         .conditionally(RandomChanceLootCondition.builder(0.1f))
                         .with(ItemEntry.builder(ModItems.ELEPHASTICTHEMEMUSICDISC))
                         .with(ItemEntry.builder(ModItems.EVELYNTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if (DESERT_PYRAMID_ID.equals(id)) { // codex em piramide
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.08f))
+                        .with(ItemEntry.builder(ModItems.CODEXPAGE1))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());

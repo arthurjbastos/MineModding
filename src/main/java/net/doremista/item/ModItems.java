@@ -1,6 +1,7 @@
 package net.doremista.item;
 
 import net.doremista.Doremitales;
+import net.doremista.entity.ModEntities;
 import net.doremista.item.custom.*;
 import net.doremista.sound.ModSounds;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
@@ -81,6 +82,9 @@ public class ModItems {
     public static final Item EVELYNLORE = registerItem("evelynlore",
             new EvelynLoreItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
+    public static final Item ELEPHASTICLORE = registerItem("elephasticlore",
+            new ElephasticLoreItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
+
 
     public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)) {
@@ -140,6 +144,11 @@ public class ModItems {
     public static final Item ADAGSTEELBOOTS = registerItem("adagsteelboots",
             new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    // MOBS
+
+    public static final Item RUBBERCHICKENSPAWNEGG = registerItem("rubberchickenspawnegg",
+            new SpawnEggItem(ModEntities.RUBBERCHICKEN, 0xFF0000, 0xFF0000, new FabricItemSettings()));
+    
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         // items p/ tab de ingredientes padrao do mine, n sei pq serve n
     }

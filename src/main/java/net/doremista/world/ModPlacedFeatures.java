@@ -20,7 +20,7 @@ public class ModPlacedFeatures {
 
     public static void bootstrap(Registerable<PlacedFeature> context){
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
-        // blame kaupenjoe for the var name i've just stole his tutorial
+        // blame kaupenjoe for the var name i just stole his tutorial
         register(context, ADAGSTEELOREPLACEKEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ADAGSTEELOREKEY),
                 ModOrePlacement.modifiersWithCount(11, // vein p/ chunk
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-64), YOffset.fixed(80))));
