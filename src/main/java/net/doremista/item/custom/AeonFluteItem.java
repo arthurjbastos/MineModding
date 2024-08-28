@@ -9,13 +9,10 @@ import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.server.world.ServerWorld;
 import org.jetbrains.annotations.Nullable;
@@ -51,7 +48,7 @@ public class AeonFluteItem extends Item {
             playerUseMap.entrySet().removeIf(entry -> {
                 PlayerEntity player = entry.getKey();
                 int remainingTicks = entry.getValue() - 1;
-                float randomPitch = 0.5f + (1.5f - 0.5f) * new Random().nextFloat();
+                float randomPitch = 0.5f + new Random().nextFloat();
 
                 // Toca o som continuamente enquanto o item está em uso
                 if (remainingTicks % 5 == 0 && playerSoundPlayingMap.getOrDefault(player, false)) {

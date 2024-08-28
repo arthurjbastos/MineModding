@@ -40,7 +40,7 @@ public class HealerBookItem extends Item {
                 // Curar o jogador
                 if (user instanceof PlayerEntity player) {
 
-                    ((PlayerEntity) user).heal(4.5F); // Cura 2 corações e meio
+                    (user).heal(4.5F); // Cura 2 corações e meio
                     player.getItemCooldownManager().set(this, 90);
 
                     //Toca som de cure

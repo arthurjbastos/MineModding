@@ -10,7 +10,7 @@ import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
-import net.minecraft.resource.ResourceManager;
+
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;

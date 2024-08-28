@@ -1,24 +1,23 @@
 package net.doremista.item.custom;
 
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterials;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.UseAction;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 public class RatchattsItem extends AxeItem {
+
+    // TODO -------- WORK IN PROGRESS ----------
+
+
     public RatchattsItem(Settings settings) {
         super(ToolMaterials.IRON, 3.5F, -2.7F, settings);
     }
@@ -30,7 +29,15 @@ public class RatchattsItem extends AxeItem {
 
         return TypedActionResult.consume(itemStack);
     }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.translatable("tooltip.doremitales.ratchatts.tooltip"));
+        tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
+        super.appendTooltip(stack, world, tooltip, context);
+    }
 }
+
 //
 //    @Override
 //    public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
@@ -70,9 +77,3 @@ public class RatchattsItem extends AxeItem {
 //    }
 
 
-//    @Override
-//    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-//        tooltip.add(Text.translatable("tooltip.doremitales.ratchatts.tooltip"));
-//        tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
-//        super.appendTooltip(stack, world, tooltip, context);
-//    }

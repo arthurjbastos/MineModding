@@ -87,6 +87,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ADAGSTEELTRAPDOOR);
 
                         //VERDANOVA SET
+
+                        entries.add(ModBlocks.CARNATION);
                         entries.add(ModBlocks.VERDANOVALOG);
                         entries.add(ModBlocks.VERDANOVAWOOD);
                         entries.add(ModBlocks.STRIPPEDVERDANOVALOG);

@@ -36,6 +36,8 @@ public class ModModelProvider extends FabricModelProvider {
 
         // verdanova set
 
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CARNATION, ModBlocks.POTTEDCARNATION, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         verdanovaPool.stairs(ModBlocks.VERDANOVASTAIRS);
         verdanovaPool.slab(ModBlocks.VERDANOVASLAB);
         verdanovaPool.fence(ModBlocks.VERDANOVAFENCE);
@@ -45,8 +47,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(ModBlocks.VERDANOVALOG).log(ModBlocks.VERDANOVALOG).wood(ModBlocks.VERDANOVAWOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPEDVERDANOVALOG).log(ModBlocks.STRIPPEDVERDANOVALOG).wood(ModBlocks.STRIPPEDVERDANOVAWOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVALEAVES);
+        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVALEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.VERDANOVASAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
         // SPACEBOX GERADO MANUALMENTE
         // BENCH GERADO MANUALMENTE
@@ -101,4 +104,5 @@ public class ModModelProvider extends FabricModelProvider {
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
     }
+
 }

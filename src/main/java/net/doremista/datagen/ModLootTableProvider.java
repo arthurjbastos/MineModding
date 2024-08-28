@@ -7,8 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
@@ -45,6 +43,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VERDANOVADOOR, doorDrops(ModBlocks.VERDANOVADOOR));
         addDrop(ModBlocks.VERDANOVASLAB, slabDrops(ModBlocks.VERDANOVASLAB));
 
+        addDrop(ModBlocks.CARNATION);
+        addPottedPlantDrops(ModBlocks.POTTEDCARNATION);
         addDrop(ModBlocks.VERDANOVALOG);
         addDrop(ModBlocks.VERDANOVAWOOD);
         addDrop(ModBlocks.STRIPPEDVERDANOVALOG);

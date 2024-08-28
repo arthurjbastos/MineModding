@@ -1,0 +1,8 @@
+{
+  "parent": "doremitales:block/verdanovaleaves",
+  "textures": {
+    "layer0": "doremitales:block/verdanovaleaves"
+  },
+  "overrides": [],
+  "tintindex": 0
+}

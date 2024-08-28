@@ -53,7 +53,8 @@
   "tooltip.doremitales.evelynlore.tooltip_2": "§7§oand thus raised him to a position of great authority.'",
   "tooltip.doremitales.elephasticlore.tooltip": "§7§o'There, the Pachyderms cultivated a new way of life,",
   "tooltip.doremitales.elephasticlore.tooltip_2": "§7§oadapting to the depths of the caves, named as 'Surreal'",
-
+  "tooltip.doremitales.carnation.tooltip": "§7§o'The sound caused the roots to dance,",
+  "tooltip.doremitales.carnation.tooltip_2": "§7§oand the roots did manifest the first emotion, joy.'",
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
   "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",
@@ -90,6 +91,7 @@
   "block.doremitales.strippedverdanovawood": "Stripped Verdanova Wood",
   "block.doremitales.verdanovaplanks": "Verdanova Planks",
   "block.doremitales.verdanovaleaves": "Verdanova Leaves",
+  "block.doremitales.carnation": "Carnation",
 
   "block.doremitales.verdanovastairs": "Verdanova Stairs",
   "block.doremitales.verdanovaslab": "Verdanova Slab",

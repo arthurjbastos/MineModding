@@ -9,8 +9,6 @@ import net.minecraft.util.Identifier;
 
 public class CodexPageScreen extends Screen {
     private static final Identifier TEXTURE = new Identifier("doremitales", "textures/gui/page_gui.png"); // Altere "modid" para o ID do seu mod
-    private final int textureWidth = 236;
-    private final int textureHeight = 308;
 
     public CodexPageScreen() {
         super(Text.of("Codex Page"));
@@ -29,7 +27,9 @@ public class CodexPageScreen extends Screen {
         RenderSystem.setShaderColor(1f, 1f, 1f, 1f);
         RenderSystem.setShaderTexture(0, TEXTURE);
 
+        int textureWidth = 236;
         int x = (this.width - textureWidth) / 2;
+        int textureHeight = 308;
         int y = (this.height - textureHeight) / 2;
 
         // Desenhar a textura com a escala correta

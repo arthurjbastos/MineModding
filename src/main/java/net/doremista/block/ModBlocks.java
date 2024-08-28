@@ -2,11 +2,11 @@ package net.doremista.block;
 
 import net.doremista.Doremitales;
 import net.doremista.block.custom.BenchBlock;
+import net.doremista.block.custom.CarnationBlock;
 import net.doremista.block.custom.SpaceBoxBlock;
 import net.doremista.block.custom.SurrealCrystalBlock;
 import net.doremista.item.ModItems;
 import net.doremista.world.tree.VerdanovaSaplingGenerator;
-import net.fabricmc.fabric.api.block.v1.FabricBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -82,6 +82,15 @@ public class ModBlocks {
     public static final Block ADAGSTEELTRAPDOOR = registerBlock("adagsteeltrapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
 
+    //  ************* ALCATRAZ SET ************
+
+    public static final Block CARNATION = registerBlock("carnation",
+            new CarnationBlock(FabricBlockSettings.copyOf(Blocks.DANDELION).nonOpaque().noCollision().breakInstantly()));
+
+    public static final Block POTTEDCARNATION = Registry.register(Registries.BLOCK,
+            new Identifier(Doremitales.MOD_ID, "pottedcarnation"),
+            new FlowerPotBlock(CARNATION, FabricBlockSettings.copyOf(Blocks.POTTED_DANDELION).nonOpaque()));
+
     //  VERDANOVA WOOD
 
     public static final Block VERDANOVALOG = registerBlock("verdanovalog",
@@ -108,7 +117,6 @@ public class ModBlocks {
                 }
             });
 
-
     public static final Block VERDANOVAWOOD = registerBlock("verdanovawood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)) {
                 @Override
@@ -134,7 +142,6 @@ public class ModBlocks {
                     return ActionResult.PASS;
                 }
             });
-
 
         public static final Block STRIPPEDVERDANOVALOG = registerBlock("strippedverdanovalog",
                 new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));

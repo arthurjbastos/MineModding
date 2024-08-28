@@ -1,7 +1,6 @@
 package net.doremista.item.custom;
 
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;

@@ -1,7 +1,6 @@
 package net.doremista.item.custom;
 
 import net.doremista.screen.ElephasticLoreScreen;
-import net.doremista.screen.EvelynLoreScreen;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;

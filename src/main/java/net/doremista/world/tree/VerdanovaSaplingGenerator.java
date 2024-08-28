@@ -2,7 +2,6 @@ package net.doremista.world.tree;
 
 import net.doremista.world.ModConfiguredFeatures;
 import net.minecraft.block.sapling.LargeTreeSaplingGenerator;
-import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
