@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "doremitales:adagsteelingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "R": {
+      "item": "doremitales:adagioreducer"
+    }
+  },
+  "pattern": [
+    " AD",
+    " RA",
+    "A  "
+  ],
+  "result": {
+    "item": "doremitales:frequencyextractor"
+  },
+  "show_notification": true
+}

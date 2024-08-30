@@ -1,7 +1,7 @@
 package net.doremista.block.custom;
 
 import net.doremista.block.entity.ModBlockEntities;
-import net.doremista.block.entity.SpaceBoxBlockEntity;
+import net.doremista.block.entity.custom.SpaceBoxBlockEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;

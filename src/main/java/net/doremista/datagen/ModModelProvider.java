@@ -47,13 +47,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(ModBlocks.VERDANOVALOG).log(ModBlocks.VERDANOVALOG).wood(ModBlocks.VERDANOVAWOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPEDVERDANOVALOG).log(ModBlocks.STRIPPEDVERDANOVALOG).wood(ModBlocks.STRIPPEDVERDANOVAWOOD);
-        //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VERDANOVALEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.VERDANOVASAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-
-        // SPACEBOX GERADO MANUALMENTE
-        // BENCH GERADO MANUALMENTE
-        // crystal manual tb
+        // ----- MODELOS GERADOS MANUALMENTE por JSON-----
+        // SPACEBOX
+        // HARDAGSTEEL FORGE
+        // BENCH BLOCK
+        // SURREAL CYSTAL
+        // VERDANOVA LEAVES
     }
 
     @Override
@@ -68,6 +69,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIKIANMASS, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAGSTEELINGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAWADAGSTEEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HARDAGSTEELMOLD, Models.GENERATED);
         itemModelGenerator.register(ModItems.LETTERA, Models.GENERATED);
         itemModelGenerator.register(ModItems.HEALERBOOK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PERFECTTENCAKE, Models.GENERATED);
@@ -96,10 +98,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.KIKIANMASSPICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.HANDHELD);
 
-        //ITEM BENCH GERADO MANUALMENTE
+        // ----- ITEM MODEL GERADO MANUALMENTE POR JSON -----
+        //ITEM BENCH
 
-        // egg
-
+        // egg spawn
         itemModelGenerator.register(ModItems.RUBBERCHICKENSPAWNEGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 

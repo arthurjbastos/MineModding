@@ -5,14 +5,18 @@ import net.doremista.entity.ModEntities;
 import net.doremista.entity.client.ModModelLayers;
 import net.doremista.entity.client.RubberChickenModel;
 import net.doremista.entity.client.RubberChickenRenderer;
+import net.doremista.screen.HardagsteelForgeScreen;
+import net.doremista.screen.ModScreenHandlers;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.color.world.BiomeColors;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 
+import static net.doremista.block.ModBlocks.HARDAGSTEELFORGE;
 import static net.doremista.block.ModBlocks.VERDANOVALEAVES;
 
 
@@ -44,5 +48,8 @@ public class DoremitalesClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.RUBBERCHICKEN, RubberChickenModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.RUBBERCHICKEN, RubberChickenRenderer::new);
+
+        HandledScreens.register(ModScreenHandlers.HARDAGSTEEL_FORGE_SCREEN_HANDLER, HardagsteelForgeScreen::new);
+
     }
 }

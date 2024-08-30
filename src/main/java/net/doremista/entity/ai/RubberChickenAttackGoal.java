@@ -52,7 +52,7 @@ public class RubberChickenAttackGoal extends MeleeAttackGoal {
     }
 
     private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy, double pDistance) {
-        return pDistance <= this.getSquaredMaxAttackDistance(pEnemy) * 2.50; // TODO
+        return pDistance <= this.getSquaredMaxAttackDistance(pEnemy) * 2.50;
     }
 
     protected void resetAttackCooldown() {

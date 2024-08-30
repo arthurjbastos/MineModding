@@ -1,5 +1,6 @@
 package net.doremista.item.custom;
 
+import net.doremista.block.ModBlocks;
 import net.doremista.item.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -77,7 +78,7 @@ public class FrequencyExtractorItem extends Item {
             boolean correctBlock = currentBlockPos != null &&
                     (world.getBlockState(currentBlockPos).isOf(Blocks.JUKEBOX) || world.getBlockState(currentBlockPos).isOf(Blocks.NOTE_BLOCK) ||
                             world.getBlockState(currentBlockPos).isOf(Blocks.AMETHYST_BLOCK) || world.getBlockState(currentBlockPos).isOf(Blocks.BELL) ||
-                            world.getBlockState(currentBlockPos).isOf(Blocks.SCULK_SENSOR));
+                            world.getBlockState(currentBlockPos).isOf(Blocks.SCULK_SENSOR)) || world.getBlockState(currentBlockPos).isOf(ModBlocks.CARNATION);
 
             if (correctBlock) {
                 stack.damage(1, user, (p) -> p.sendToolBreakStatus(user.getActiveHand()));

@@ -30,7 +30,7 @@ public class ModConfiguredFeatures {
 
         context.register(CARNATIONKEY, new ConfiguredFeature<>(Feature.RANDOM_PATCH,
                 new RandomPatchFeatureConfig(
-                        24,  // número de tentativas
+                        14,  // número de tentativas
                         4,   // distância máxima no eixo XZ
                         2,   // distância máxima no eixo Y
                         PlacedFeatures.createEntry(

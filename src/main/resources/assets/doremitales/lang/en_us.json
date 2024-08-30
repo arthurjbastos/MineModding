@@ -9,6 +9,7 @@
   "item.doremitales.adagioreducer": "Adagio Reducer",
   "item.doremitales.adagsteelingot": "Adagsteel ingot",
   "item.doremitales.rawadagsteel": "Raw Adagsteel",
+  "item.doremitales.hardagsteelmold": "Hardagsteel Mold",
   "item.doremitales.lettera": "A",
   "item.doremitales.healerbook": "Healer Book",
   "item.doremitales.perfecttencake": "Perfect Ten Cake!",
@@ -83,6 +84,7 @@
   "block.doremitales.adagsteelwall": "Adagsteel Wall",
   "block.doremitales.adagsteeldoor": "Adagsteel Door",
   "block.doremitales.adagsteeltrapdoor": "Adagsteel Trapdoor",
+  "block.doremitales.hardagsteelforge": "Hardagsteel Forge",
 
   "block.doremitales.verdanovasapling": "Verdanova Sapling",
   "block.doremitales.verdanovalog": "Verdanova Log",

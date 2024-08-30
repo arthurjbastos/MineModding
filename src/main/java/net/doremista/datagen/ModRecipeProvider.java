@@ -147,6 +147,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ILUMSHARD), conditionsFromItem(ModItems.ILUMSHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGIOREDUCER)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FREQUENCYEXTRACTOR, 1)
+                .pattern(" AD")
+                .pattern(" RA")
+                .pattern("A  ")
+                .input('R', ModItems.ADAGIOREDUCER)
+                .input('A', ModItems.ADAGSTEELINGOT)
+                .input('D', Items.DIAMOND)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(ModItems.ADAGIOREDUCER), conditionsFromItem(ModItems.ADAGIOREDUCER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FREQUENCYEXTRACTOR)));
+
 
         // ferramentas usando ADAGSTEELINGOT
 
@@ -211,7 +222,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELHOE)));
 
-        // Adicionar receitas de armaduras usando ADAGSTEELINGOT
+        //  armaduras ADAGSTEELINGOT
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELHELMET) // Capacete
                 .pattern("AAA")
                 .pattern("A A")

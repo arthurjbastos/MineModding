@@ -1,5 +1,6 @@
-package net.doremista.block.entity;
+package net.doremista.block.entity.custom;
 
+import net.doremista.block.entity.ModBlockEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.NbtCompound;

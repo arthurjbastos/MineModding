@@ -24,12 +24,12 @@ public class ModItemGroups {
                         entries.add(ModItems.VERDANOVASAPBOTTLE);
                         entries.add(ModItems.ADAGSTEELINGOT);
                         entries.add(ModItems.RAWADAGSTEEL);
+                        entries.add(ModItems.HARDAGSTEELMOLD);
                         entries.add(ModItems.LETTERA);
                         entries.add(ModItems.PERFECTTENCAKE);
 
                         // TOOLS
                         entries.add(ModItems.HEALERBOOK);
-                        entries.add(ModBlocks.VERDANOVASAPLING);
                         entries.add(ModItems.KIKIANMASSPICKAXE);
                         entries.add(ModItems.KIKIANMASSSWORD);
 
@@ -77,6 +77,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ADAGSTEELORE);
                         entries.add(ModBlocks.DEEPSLATEADAGSTEELORE);
                         entries.add(ModBlocks.SPACEBOX);
+                        entries.add(ModBlocks.HARDAGSTEELFORGE);
                         entries.add(ModBlocks.ADAGSTEELBLOCK);
                         entries.add(ModBlocks.ADAGSTEELSTAIRS);
                         entries.add(ModBlocks.ADAGSTEELWALL);
@@ -89,6 +90,7 @@ public class ModItemGroups {
                         //VERDANOVA SET
 
                         entries.add(ModBlocks.CARNATION);
+                        entries.add(ModBlocks.VERDANOVASAPLING);
                         entries.add(ModBlocks.VERDANOVALOG);
                         entries.add(ModBlocks.VERDANOVAWOOD);
                         entries.add(ModBlocks.STRIPPEDVERDANOVALOG);

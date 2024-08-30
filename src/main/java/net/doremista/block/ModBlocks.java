@@ -1,15 +1,13 @@
 package net.doremista.block;
 
 import net.doremista.Doremitales;
-import net.doremista.block.custom.BenchBlock;
-import net.doremista.block.custom.CarnationBlock;
-import net.doremista.block.custom.SpaceBoxBlock;
-import net.doremista.block.custom.SurrealCrystalBlock;
+import net.doremista.block.custom.*;
 import net.doremista.item.ModItems;
 import net.doremista.world.tree.VerdanovaSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
@@ -19,39 +17,51 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ModBlocks {
 
     public static final Block SPACEBOX = registerBlock("spacebox",
             new SpaceBoxBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
-                    .strength(1.0f, 1.5f) // Ajuste a resistência e dureza para ser facilmente quebrado
+                    .strength(1.0f, 1.5f) // a resistência e dureza para ser facilmente quebrado
 
             ));
 
     public static final Block KIKIANMASSBLOCK = registerBlock("kikianmassblock",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK)
-                    .strength(4.5f, 6.0f) // Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
-            ));
+                    .strength(4.5f, 6.0f) //
+            ) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
+                    tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
+                    super.appendTooltip(stack, world, tooltip, options);
+                }
+            }
+    );
 
     public static final Block ADAGSTEELBLOCK = registerBlock("adagsteelblock",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
-                    .strength(6.5f, 7.5f) // Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
+                    .strength(6.5f, 7.5f) //  
             ));
 
     public static final Block BENCH = registerBlock("bench",
-            new BenchBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()// Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
+            new BenchBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()//  
 
             ));
 
     public static final Block SURREALCRYSTAL = registerBlock("surrealcrystal",
-            new SurrealCrystalBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).nonOpaque()// Ajuste a resistência e dureza para que o bloco seja fácil de quebrar
+            new SurrealCrystalBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).nonOpaque()//  
 
             ));
 
@@ -82,10 +92,13 @@ public class ModBlocks {
     public static final Block ADAGSTEELTRAPDOOR = registerBlock("adagsteeltrapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
 
+    public static final Block HARDAGSTEELFORGE = registerBlock("hardagsteelforge",
+            new HardagsteelForgeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
     //  ************* ALCATRAZ SET ************
 
     public static final Block CARNATION = registerBlock("carnation",
-            new CarnationBlock(FabricBlockSettings.copyOf(Blocks.DANDELION).nonOpaque().noCollision().breakInstantly()));
+            new CarnationBlock(FabricBlockSettings.copyOf(Blocks.DANDELION).nonOpaque().noCollision().breakInstantly().luminance(state -> 6)));
 
     public static final Block POTTEDCARNATION = Registry.register(Registries.BLOCK,
             new Identifier(Doremitales.MOD_ID, "pottedcarnation"),

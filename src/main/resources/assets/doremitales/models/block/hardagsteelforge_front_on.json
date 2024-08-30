@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "particle": "#front",
+    "front": "doremitales:block/hardagsteelforge_front_on",
+    "side": "doremitales:block/hardagsteelforge_side",
+    "top": "doremitales:block/hardagsteelforge_top"
+  }
+}

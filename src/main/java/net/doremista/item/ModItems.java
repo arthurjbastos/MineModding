@@ -105,6 +105,9 @@ public class ModItems {
 
     public static final Item ADAGSTEELINGOT = registerItem("adagsteelingot", new Item(new FabricItemSettings()));
     public static final Item RAWADAGSTEEL = registerItem("rawadagsteel", new Item(new FabricItemSettings()));
+    public static final Item HARDAGSTEELMOLD = registerItem("hardagsteelmold", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+
+
     public static final Item PERFECTTENCAKE = registerItem("perfecttencake", new Item(new FabricItemSettings().food(ModFoodComponents.PERFECTTENCAKE)));
     public static final Item VERDANOVAWOODSPLINTERS = registerItem("verdanovawoodsplinters", new Item(new FabricItemSettings()));
     public static final Item VERDANOVASAP = registerItem("verdanovasap", new VerdanovaSapItem(new FabricItemSettings().food(ModFoodComponents.VERDANOVASAP).rarity(Rarity.UNCOMMON)));
