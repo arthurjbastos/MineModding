@@ -49,6 +49,12 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELLEGGINGS);
                         entries.add(ModItems.ADAGSTEELBOOTS);
 
+                        //  HARDAGSTEEL
+                        entries.add(ModItems.ADAGSTEELIMBUED);
+                        entries.add(ModItems.MELTEDADAGSTEELALLOY);
+                        entries.add(ModItems.HARDAGSTEELALLOY);
+
+
                         // lores at the end
                         entries.add(ModItems.CODEXPAGE1);
                         entries.add(ModItems.EVELYNLORE);

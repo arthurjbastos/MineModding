@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "doremitales:adagsteelblock"
+    },
+    "C": {
+      "item": "minecraft:deepslate_tiles"
+    },
+    "G": {
+      "item": "minecraft:magma_block"
+    },
+    "M": {
+      "item": "doremitales:hardagsteelmold"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "AMA",
+    "CGC"
+  ],
+  "result": {
+    "item": "doremitales:hardagsteelforge"
+  },
+  "show_notification": true
+}

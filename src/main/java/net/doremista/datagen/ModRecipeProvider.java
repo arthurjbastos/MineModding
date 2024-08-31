@@ -4,6 +4,7 @@ import net.doremista.block.ModBlocks;
 import net.doremista.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -157,6 +158,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .criterion(hasItem(ModItems.ADAGIOREDUCER), conditionsFromItem(ModItems.ADAGIOREDUCER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.FREQUENCYEXTRACTOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.HARDAGSTEELFORGE, 1)
+                .pattern("CCC")
+                .pattern("AMA")
+                .pattern("CGC")
+                .input('M', ModItems.HARDAGSTEELMOLD)
+                .input('A', ModBlocks.ADAGSTEELBLOCK)
+                .input('G', Blocks.MAGMA_BLOCK)
+                .input('C', Blocks.DEEPSLATE_TILES)
+                .criterion(hasItem(Blocks.MAGMA_BLOCK), conditionsFromItem(Blocks.MAGMA_BLOCK))
+                .criterion(hasItem(ModItems.HARDAGSTEELMOLD), conditionsFromItem(ModItems.HARDAGSTEELMOLD))
+                .criterion(hasItem(ModBlocks.ADAGSTEELBLOCK), conditionsFromItem(ModBlocks.ADAGSTEELBLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.HARDAGSTEELFORGE)));
 
 
         // ferramentas usando ADAGSTEELINGOT

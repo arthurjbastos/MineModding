@@ -34,7 +34,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ADAGSTEELSLAB)
                 .add(ModBlocks.ADAGSTEELTRAPDOOR)
                 .add(ModBlocks.ADAGSTEELSTAIRS)
-                .add(ModBlocks.ADAGSTEELWALL);
+                .add(ModBlocks.ADAGSTEELWALL)
+
+
+                .add(ModBlocks.HARDAGSTEELFORGE);
+
+
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE) //    MINERÁVEL C MACHADO
                 .add(ModBlocks.VERDANOVALOG)
@@ -76,7 +81,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ADAGSTEELSLAB)
                 .add(ModBlocks.ADAGSTEELTRAPDOOR)
                 .add(ModBlocks.ADAGSTEELSTAIRS)
-                .add(ModBlocks.ADAGSTEELWALL);
+                .add(ModBlocks.ADAGSTEELWALL)
+
+                .add(ModBlocks.HARDAGSTEELFORGE);
+
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);//  DIAMANTE
 

@@ -1,12 +1,13 @@
-// 1.20.1	2024-08-30T17:37:50.2735248	doremitales/Block Loot Tables
-15119653bfe6f38346bfa41f04a87285612b10a4 data\doremitales\loot_tables\blocks\strippedverdanovawood.json
+// 1.20.1	2024-08-31T15:55:38.6936613	doremitales/Block Loot Tables
 393dffea04c6dc2d9b8c17cb42666b09734cde0f data\doremitales\loot_tables\blocks\kikianmassblock.json
+15119653bfe6f38346bfa41f04a87285612b10a4 data\doremitales\loot_tables\blocks\strippedverdanovawood.json
 299ac285754783efb9c08af63eaa6993a5b31f92 data\doremitales\loot_tables\blocks\pottedcarnation.json
 2cfb0e8536843f876a59c5386a7b39993cf9204c data\doremitales\loot_tables\blocks\adagsteelstairs.json
 0b89bb0605e4829e2f11df0bd447076b72ff722a data\doremitales\loot_tables\blocks\verdanovaleaves.json
 fd0e215d8385afd69d67c17a853fcb03e232c0fa data\doremitales\loot_tables\blocks\deepslateadagsteelore.json
 523f66eaadf88214346499cf329d652af1898c8d data\doremitales\loot_tables\blocks\verdanovasapling.json
 d353f6755648505103fb7a37bc88699e1c6048d5 data\doremitales\loot_tables\blocks\strippedverdanovalog.json
+30ec3fa0834aefa6c0247208a609737c90cafc4c data\doremitales\loot_tables\blocks\hardagsteelforge.json
 3d83a0189880fd06f10cbe216c377e49608c05be data\doremitales\loot_tables\blocks\adagsteelfencegate.json
 898ce7685f8e98962fc2d7d0ce4d7d69c5c80c9b data\doremitales\loot_tables\blocks\verdanovafencegate.json
 ef37859ea4ef255355af0513f059293113117f12 data\doremitales\loot_tables\blocks\adagsteeldoor.json

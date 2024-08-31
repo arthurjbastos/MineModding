@@ -21,7 +21,5 @@ public class ModEntities {
 
     public static void registerModEntities() {
         Doremitales.LOGGER.info("Registering Entities for " + Doremitales.MOD_ID);
-
-        // Additional registration-related logic could be added here if necessary
     }
 }

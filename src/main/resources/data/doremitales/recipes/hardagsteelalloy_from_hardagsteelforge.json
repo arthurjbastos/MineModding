@@ -5,14 +5,14 @@
       "item": "minecraft:coal"
     },
     {
-      "item": "doremitales:adagsteelingot"
+      "item": "doremitales:meltedadagsteelalloy"
     },
     {
-      "item": "minecraft:diamond"
+      "item": "doremitales:adagsteelingot"
     }
   ],
   "output": {
-    "item": "doremitales:adagioreducer",
+    "item": "doremitales:hardagsteelalloy",
     "count": 1
   }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "doremitales:hardagsteelforge",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "doremitales:adagsteelingot"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "doremitales:adagsteelimbued",
+    "count": 1
+  }
+}

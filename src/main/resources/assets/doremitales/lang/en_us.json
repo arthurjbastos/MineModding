@@ -37,6 +37,9 @@
   "item.doremitales.adagsteelchestplate": "Adagsteel Chestplate",
   "item.doremitales.adagsteelleggings": "Adagsteel Leggings",
   "item.doremitales.adagsteelboots": "Adagsteel Boots",
+  "item.doremitales.adagsteelimbued": "Adagsteel Imbued",
+  "item.doremitales.meltedadagsteelalloy": "Melted Adagsteel Alloy",
+  "item.doremitales.hardagsteelalloy": "Hardagsteel Alloy",
 
   "tooltip.doremitales.space.tooltip": "",
   "tooltip.doremitales.test.tooltip": "§6WORK IN PROGRESS! - This item is not finished!",
@@ -56,6 +59,10 @@
   "tooltip.doremitales.elephasticlore.tooltip_2": "§7§oadapting to the depths of the caves, named as 'Surreal'",
   "tooltip.doremitales.carnation.tooltip": "§7§o'The sound caused the roots to dance,",
   "tooltip.doremitales.carnation.tooltip_2": "§7§oand the roots did manifest the first emotion, joy.'",
+  "tooltip.doremitales.hardagsteelalloy.tooltip": "§7§o'The forging of Hardagsteel is a process of great complexity,",
+  "tooltip.doremitales.hardagsteelalloy.tooltip_2": "§7§orequiring profound knowledge of metallurgy.",
+  "tooltip.doremitales.hardagsteelalloy.tooltip_3": "§7§oVerily, it is a formidable challenge even unto me!'",
+  "tooltip.doremitales.hardagsteelalloy.tooltip_4": "§7§o- Lauren",
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
   "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",

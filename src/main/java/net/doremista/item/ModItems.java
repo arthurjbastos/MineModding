@@ -147,6 +147,25 @@ public class ModItems {
     public static final Item ADAGSTEELBOOTS = registerItem("adagsteelboots",
             new ArmorItem(ModArmorMaterials.ADAGSTEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
+    //      HARDAGSTEEL
+    public static final Item ADAGSTEELIMBUED = registerItem("adagsteelimbued", new AdagsteelImbuedItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
+    public static final Item MELTEDADAGSTEELALLOY = registerItem("meltedadagsteelalloy", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON).fireproof()));
+    public static final Item HARDAGSTEELALLOY = registerItem("hardagsteelalloy", new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()) {
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            if (Screen.hasShiftDown()) {
+                tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelalloy.tooltip"));
+                tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelalloy.tooltip_2"));
+                tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelalloy.tooltip_3"));
+                tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelalloy.tooltip_4"));
+            } else {
+                tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+            }
+            super.appendTooltip(stack, world, tooltip, context);
+        }
+    });
+
+
     // MOBS
 
     public static final Item RUBBERCHICKENSPAWNEGG = registerItem("rubberchickenspawnegg",

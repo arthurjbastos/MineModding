@@ -95,6 +95,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADAGSTEELLEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADAGSTEELBOOTS));
 
+        // HARDAGSTEEL
+        itemModelGenerator.register(ModItems.ADAGSTEELIMBUED, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MELTEDADAGSTEELALLOY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HARDAGSTEELALLOY, Models.GENERATED);
+
+        // TESTS
         itemModelGenerator.register(ModItems.KIKIANMASSPICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.HANDHELD);
 
