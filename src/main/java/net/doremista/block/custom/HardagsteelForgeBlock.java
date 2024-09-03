@@ -32,7 +32,7 @@ public class HardagsteelForgeBlock extends BlockWithEntity implements BlockEntit
     public static final BooleanProperty LIT = Properties.LIT;
 
     public HardagsteelForgeBlock(Settings settings) {
-        super(settings.luminance(state -> state.get(LIT) ? 13 : 0));
+        super(settings.luminance(state -> state.get(LIT) ? 10 : 0));
         this.setDefaultState(this.stateManager.getDefaultState()
                 .with(LIT, false)); // Define LIT=false como padrão
     }

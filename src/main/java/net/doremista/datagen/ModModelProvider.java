@@ -63,6 +63,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CODEXPAGE1, Models.GENERATED);
         itemModelGenerator.register(ModItems.EVELYNLORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELEPHASTICLORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BATCHERSLORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUMSHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAGIOREDUCER, Models.GENERATED);
@@ -70,11 +71,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ADAGSTEELINGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAWADAGSTEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.HARDAGSTEELMOLD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.LETTERA, Models.GENERATED);
         itemModelGenerator.register(ModItems.HEALERBOOK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PERFECTTENCAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EVELYNTHEMEMUSICDISC, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SUSUTHEMEMUSICDISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BATCHERSTHEMEMUSICDISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELEPHASTICTHEMEMUSICDISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.RATCHATTS, Models.GENERATED);

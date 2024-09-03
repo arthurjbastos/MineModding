@@ -25,7 +25,6 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELINGOT);
                         entries.add(ModItems.RAWADAGSTEEL);
                         entries.add(ModItems.HARDAGSTEELMOLD);
-                        entries.add(ModItems.LETTERA);
                         entries.add(ModItems.PERFECTTENCAKE);
 
                         // TOOLS
@@ -59,10 +58,11 @@ public class ModItemGroups {
                         entries.add(ModItems.CODEXPAGE1);
                         entries.add(ModItems.EVELYNLORE);
                         entries.add(ModItems.ELEPHASTICLORE);
+                        entries.add(ModItems.BATCHERSLORE);
 
                         // music disc no final
                         entries.add(ModItems.EVELYNTHEMEMUSICDISC);
-                        entries.add(ModItems.SUSUTHEMEMUSICDISC);
+                        entries.add(ModItems.BATCHERSTHEMEMUSICDISC);
                         entries.add(ModItems.ELEPHASTICTHEMEMUSICDISC);
 
                         // spawn egg

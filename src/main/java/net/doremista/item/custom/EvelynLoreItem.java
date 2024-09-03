@@ -29,7 +29,7 @@ public class EvelynLoreItem extends Item {
         if (world.isClient) {
             openScreen();
             if (MinecraftClient.getInstance().player != null) {
-                MinecraftClient.getInstance().player.sendMessage(Text.literal("Read more at: ").styled(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://doremiworld.fandom.com/pt-br/wiki/Evelyn"))).append(Text.literal("https://doremiworld.fandom.com/pt-br/wiki/Evelyn").styled(style -> style.withUnderline(true).withColor(0x00AACC))));
+                MinecraftClient.getInstance().player.sendMessage(Text.literal("Read more at: ").styled(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://doremiworld.fandom.com/pt-br/wiki/Evelyn"))).append(Text.literal("The Wiki page (Only in PT-BR for now!)").styled(style -> style.withUnderline(true).withColor(0x00AACC))));
             }
         }
         return new TypedActionResult<>(ActionResult.SUCCESS, user.getStackInHand(hand));

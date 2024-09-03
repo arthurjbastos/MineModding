@@ -20,7 +20,11 @@ import java.util.List;
 public class ModLootTableModifiers {
 
 
+    private static final Identifier SHIPWRECK_SUPPLY_ID =
+            new Identifier("minecraft", "chests/shipwreck_supply");
 
+    private static final Identifier SHIPWRECK_TREASURE_ID =
+            new Identifier("minecraft", "chests/shipwreck_treasure");
 
     private static final Identifier VILLAGE_WEAPONSMITH_ID =
             new Identifier("minecraft", "chests/village/village_weaponsmith");
@@ -81,6 +85,15 @@ public class ModLootTableModifiers {
 
                         tableBuilder.pool(poolBuilder.build());
                     }
+            if (VILLAGE_WEAPONSMITH_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .with(ItemEntry.builder(ModItems.MELTEDADAGSTEELALLOY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                        tableBuilder.pool(poolBuilder.build());
+                    }
 
             //              DISCOS
 
@@ -92,7 +105,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } //evelyn
 
             if (SIMPLE_DUNGEON_ID.equals(id)) { // disco em dungeon
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -102,7 +115,37 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } //elephastic
+
+            if (SIMPLE_DUNGEON_ID.equals(id)) { // disco em dungeon
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.BATCHERSTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            } //batchers
+
+            if (SHIPWRECK_SUPPLY_ID.equals(id)) { // disco em dungeon
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(ModItems.BATCHERSTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            } //batchers
+
+            if (SHIPWRECK_TREASURE_ID.equals(id)) { // disco em dungeon
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(ModItems.BATCHERSTHEMEMUSICDISC))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            } //batchers
 
             if (FISHING_TREASURE_ID.equals(id)) { // disco em pesca
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -113,7 +156,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } //evelyn + elephastic
 
             if (ABANDONED_MINESHAFT_ID.equals(id)) { // disco em mineshaft
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -124,7 +167,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } //evelyn + elephastic
 
             if (BASTION_BRIDGE_ID.equals(id)) { // disco em bastion
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -135,7 +178,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } //evelyn + elephastic
 
             if (DESERT_PYRAMID_ID.equals(id)) { // codex em piramide
                 LootPool.Builder poolBuilder = LootPool.builder()
@@ -145,7 +188,7 @@ public class ModLootTableModifiers {
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
                 tableBuilder.pool(poolBuilder.build());
-            }
+            } //codex
 
         });
 

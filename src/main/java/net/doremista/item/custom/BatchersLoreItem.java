@@ -1,6 +1,7 @@
 package net.doremista.item.custom;
 
-import net.doremista.screen.ElephasticLoreScreen;
+import net.doremista.screen.BatchersLoreScreen;
+import net.doremista.screen.EvelynLoreScreen;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
@@ -18,9 +19,9 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class ElephasticLoreItem extends Item {
+public class BatchersLoreItem extends Item {
 
-    public ElephasticLoreItem(Settings settings) {
+    public BatchersLoreItem(Settings settings) {
         super(settings);
     }
 
@@ -29,7 +30,7 @@ public class ElephasticLoreItem extends Item {
         if (world.isClient) {
             openScreen();
             if (MinecraftClient.getInstance().player != null) {
-                MinecraftClient.getInstance().player.sendMessage(Text.literal("Read more at: ").styled(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://doremiworld.fandom.com/pt-br/wiki/Quinteto_Elefástico"))).append(Text.literal("The Wiki page (Only in PT-BR for now!)").styled(style -> style.withUnderline(true).withColor(0x00AACC))));
+                MinecraftClient.getInstance().player.sendMessage(Text.literal("Read more at: ").styled(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://doremiworld.fandom.com/pt-br/wiki/Irm%C3%A3os_Batchers"))).append(Text.literal("The Wiki page (Only in PT-BR for now!)").styled(style -> style.withUnderline(true).withColor(0x00AACC))));
             }
         }
         return new TypedActionResult<>(ActionResult.SUCCESS, user.getStackInHand(hand));
@@ -37,14 +38,15 @@ public class ElephasticLoreItem extends Item {
 
     @Environment(EnvType.CLIENT)
     private void openScreen() {
-        MinecraftClient.getInstance().setScreen(new ElephasticLoreScreen());
+        MinecraftClient.getInstance().setScreen(new BatchersLoreScreen());
     }
 
     @Override
     @Environment(EnvType.CLIENT)
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.doremitales.elephasticlore.tooltip"));
-        tooltip.add(Text.translatable("tooltip.doremitales.elephasticlore.tooltip_2"));
+        tooltip.add(Text.translatable("tooltip.doremitales.batcherslore.tooltip"));
+        tooltip.add(Text.translatable("tooltip.doremitales.batcherslore.tooltip_2"));
+        tooltip.add(Text.translatable("tooltip.doremitales.batcherslore.tooltip_3"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 
@@ -52,4 +54,5 @@ public class ElephasticLoreItem extends Item {
     public boolean hasGlint(ItemStack stack) {
         return true;
     }
+
 }

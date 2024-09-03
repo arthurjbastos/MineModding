@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "L": {
+      "item": "minecraft:milk_bucket"
+    },
+    "O": {
+      "item": "minecraft:egg"
+    },
+    "T": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "TLT",
+    "OOO",
+    "TCT"
+  ],
+  "result": {
+    "item": "doremitales:perfecttencake"
+  },
+  "show_notification": true
+}

@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -24,15 +25,6 @@ import java.util.List;
 public class ModItems {
 
     //              TEST ITEMS
-
-    public static final Item LETTERA = registerItem("lettera", new Item(new FabricItemSettings()){
-        //todo
-        @Override
-        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-            tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
-            super.appendTooltip(stack, world, tooltip, context);
-        }
-    });
 
     public static final Item KIKIANMASS = registerItem("kikianmass", new Item(new FabricItemSettings()) {
         //todo
@@ -69,12 +61,11 @@ public class ModItems {
     public static final Item ILUM = registerItem("ilum", new IlumItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item EVELYNTHEMEMUSICDISC = registerItem("evelynthememusicdisc",
             new MusicDiscItem(7, ModSounds.EVELYNTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 140));
-    public static final Item SUSUTHEMEMUSICDISC = registerItem("susuthememusicdisc",
-            new MusicDiscItem(7, ModSounds.SUSUTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 73));
+    public static final Item BATCHERSTHEMEMUSICDISC = registerItem("batchersthememusicdisc",
+            new MusicDiscItem(7, ModSounds.BATCHERSTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 79));
     public static final Item ELEPHASTICTHEMEMUSICDISC = registerItem("elephasticthememusicdisc",
             new MusicDiscItem(7, ModSounds.ELEPHASTICTHEME, new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), 197));
 
-    //todo musica HORRIVEL MEU DEUS FAZ DIREITO DPS OK
 
     public static final Item CODEXPAGE1 = registerItem("codexpage1",
             new CodexPage1Item(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
@@ -85,6 +76,8 @@ public class ModItems {
     public static final Item ELEPHASTICLORE = registerItem("elephasticlore",
             new ElephasticLoreItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
+    public static final Item BATCHERSLORE = registerItem("batcherslore",
+            new BatchersLoreItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
     public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)) {
@@ -149,7 +142,7 @@ public class ModItems {
 
     //      HARDAGSTEEL
     public static final Item ADAGSTEELIMBUED = registerItem("adagsteelimbued", new AdagsteelImbuedItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
-    public static final Item MELTEDADAGSTEELALLOY = registerItem("meltedadagsteelalloy", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON).fireproof()));
+    public static final Item MELTEDADAGSTEELALLOY = registerItem("meltedadagsteelalloy", new MeltedAdagsteelAlloyItem(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
     public static final Item HARDAGSTEELALLOY = registerItem("hardagsteelalloy", new Item(new FabricItemSettings().rarity(Rarity.RARE).fireproof()) {
         @Override
         public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
@@ -163,6 +156,8 @@ public class ModItems {
             }
             super.appendTooltip(stack, world, tooltip, context);
         }
+
+
     });
 
 

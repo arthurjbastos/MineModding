@@ -55,6 +55,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSingleOutputShapelessRecipe(exporter, ModItems.ELEPHASTICLORE, ModItems.ELEPHASTICTHEMEMUSICDISC, "elephasticlore");
         offerSingleOutputShapelessRecipe(exporter, ModItems.ELEPHASTICTHEMEMUSICDISC, ModItems.ELEPHASTICLORE, "elephasticthememusicdisc");
+
+        offerSingleOutputShapelessRecipe(exporter, ModItems.BATCHERSLORE, ModItems.BATCHERSTHEMEMUSICDISC, "batcherslore");
+        offerSingleOutputShapelessRecipe(exporter, ModItems.BATCHERSTHEMEMUSICDISC, ModItems.BATCHERSLORE, "batchersthememusicdisc");
         //
 
         // CRAFT DE PLANKS/LOG
@@ -115,6 +118,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.ADAGSTEELSTAIRS, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELSTAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PERFECTTENCAKE, 1)
+                .pattern("TLT")
+                .pattern("OOO")
+                .pattern("TCT")
+                .input('O', Items.EGG)
+                .input('L', Items.MILK_BUCKET)
+                .input('T', Items.WHEAT)
+                .input('C', Items.COCOA_BEANS)
+                .criterion(hasItem(Items.EGG), conditionsFromItem(Items.EGG))
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
+                .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
+                .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(Items.COCOA_BEANS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PERFECTTENCAKE)));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VERDANOVASAPBOTTLE, 1)
                 .pattern("###")

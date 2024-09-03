@@ -2,6 +2,7 @@
   "item.doremitales.codexpage1": "Códex A - First Page",
   "item.doremitales.evelynlore": "Evelyn's Lore",
   "item.doremitales.elephasticlore": "Elephastic Quintet's Lore",
+  "item.doremitales.batcherslore": "Batchers Brothers Lore",
 
   "item.doremitales.kikianmass": "Kikian Mass",
   "item.doremitales.ilum": "Condensed Ilum",
@@ -10,7 +11,6 @@
   "item.doremitales.adagsteelingot": "Adagsteel ingot",
   "item.doremitales.rawadagsteel": "Raw Adagsteel",
   "item.doremitales.hardagsteelmold": "Hardagsteel Mold",
-  "item.doremitales.lettera": "A",
   "item.doremitales.healerbook": "Healer Book",
   "item.doremitales.perfecttencake": "Perfect Ten Cake!",
   "item.doremitales.kikianmasspickaxe": "Kikian Mass Pickaxe",
@@ -18,10 +18,10 @@
   "item.doremitales.rubberchickenspawnegg": "Rubber Chicken Spawn Egg",
 
   "item.doremitales.evelynthememusicdisc": "Music Disc",
-  "item.doremitales.susuthememusicdisc": "Music Disc",
+  "item.doremitales.batchersthememusicdisc": "Music Disc",
   "item.doremitales.elephasticthememusicdisc": "Music Disc",
   "item.doremitales.evelynthememusicdisc.desc": "Blonde Redhead - Evelyn Theme (Remixed)",
-  "item.doremitales.susuthememusicdisc.desc": "§6WORK IN PROGRESS! - This item is not finished!",
+  "item.doremitales.batchersthememusicdisc.desc": "Dorémista - Batchers Brothers Theme",
   "item.doremitales.elephasticthememusicdisc.desc": "Susumu Hirasawa - Elephastic Quintet Theme (Instrumental)",
 
   "item.doremitales.ratchatts": "Ratchatts",
@@ -57,6 +57,9 @@
   "tooltip.doremitales.evelynlore.tooltip_2": "§7§oand thus raised him to a position of great authority.'",
   "tooltip.doremitales.elephasticlore.tooltip": "§7§o'There, the Pachyderms cultivated a new way of life,",
   "tooltip.doremitales.elephasticlore.tooltip_2": "§7§oadapting to the depths of the caves, named as 'Surreal'",
+  "tooltip.doremitales.batcherslore.tooltip": "§7§o'If we felt different from our enemies, compassion would speak louder ",
+  "tooltip.doremitales.batcherslore.tooltip_2": "§7§oand compassion does not save lives.'",
+  "tooltip.doremitales.batcherslore.tooltip_3": "§7§o- Ruffus, the Titan",
   "tooltip.doremitales.carnation.tooltip": "§7§o'The sound caused the roots to dance,",
   "tooltip.doremitales.carnation.tooltip_2": "§7§oand the roots did manifest the first emotion, joy.'",
   "tooltip.doremitales.hardagsteelalloy.tooltip": "§7§o'The forging of Hardagsteel is a process of great complexity,",
