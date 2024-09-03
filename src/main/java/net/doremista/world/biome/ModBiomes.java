@@ -38,7 +38,7 @@ public class ModBiomes {
         DefaultBiomeFeatures.addPlainsTallGrass(builder);
     }
 
-    public static Biome alcatraz(Registerable<Biome> context) { //TODO CONFIGURAR use OverworldBiomeCreator vanilla method for e.g.
+    public static Biome alcatraz(Registerable<Biome> context) { // CONFIGURAR use OverworldBiomeCreator vanilla method for e.g.
 
         //          THE ORDER MATTERS
 

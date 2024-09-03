@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "batcherslore",
+  "ingredients": [
+    {
+      "item": "doremitales:batchersthememusicdisc"
+    }
+  ],
+  "result": {
+    "item": "doremitales:batcherslore"
+  }
+}

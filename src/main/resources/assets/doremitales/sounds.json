@@ -13,10 +13,10 @@
       }
     ]
   },
-  "susutheme": {
+  "batcherstheme": {
     "sounds": [
       {
-        "name": "doremitales:susutheme",
+        "name": "doremitales:batcherstheme",
         "stream": true
       }
     ]

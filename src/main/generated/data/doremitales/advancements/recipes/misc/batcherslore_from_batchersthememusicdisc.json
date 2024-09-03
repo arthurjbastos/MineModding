@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_batchersthememusicdisc": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:batchersthememusicdisc"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:batcherslore_from_batchersthememusicdisc"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_batchersthememusicdisc",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:batcherslore_from_batchersthememusicdisc"
+    ]
+  },
+  "sends_telemetry_event": false
+}

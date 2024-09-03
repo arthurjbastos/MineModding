@@ -2,17 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "#": {
-      "item": "doremitales:kikianmass"
+    "A": {
+      "item": "doremitales:adagioreducer"
     },
     "B": {
       "item": "minecraft:book"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "doremitales:verdanovasapbottle"
     }
   },
   "pattern": [
-    "###",
-    "#B#",
-    "###"
+    "PAP",
+    "SBS",
+    "PAP"
   ],
   "result": {
     "item": "doremitales:healerbook"

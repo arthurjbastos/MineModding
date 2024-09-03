@@ -12,7 +12,7 @@ public class ModSounds {
 
     public static final SoundEvent EVELYNTHEME = registerSoundEvent("evelyntheme");
 
-    public static final SoundEvent SUSUTHEME = registerSoundEvent("susutheme");
+    public static final SoundEvent BATCHERSTHEME = registerSoundEvent("batcherstheme");
 
     public static final SoundEvent ELEPHASTICTHEME = registerSoundEvent("elephastictheme");
 

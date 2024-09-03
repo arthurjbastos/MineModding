@@ -1,36 +1,36 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_book": {
+    "has_cocoa_beans": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:book"
+              "minecraft:cocoa_beans"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_kikianmass": {
+    "has_egg": {
       "conditions": {
         "items": [
           {
             "items": [
-              "doremitales:kikianmass"
+              "minecraft:egg"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_paper": {
+    "has_milk_bucket": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:paper"
+              "minecraft:milk_bucket"
             ]
           }
         ]
@@ -39,16 +39,16 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:healerbook"
+        "recipe": "minecraft:perfecttencake"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_verdanovasapbottle": {
+    "has_wheat": {
       "conditions": {
         "items": [
           {
             "items": [
-              "doremitales:verdanovasapbottle"
+              "minecraft:wheat"
             ]
           }
         ]
@@ -58,16 +58,16 @@
   },
   "requirements": [
     [
-      "has_book",
-      "has_paper",
-      "has_kikianmass",
-      "has_verdanovasapbottle",
+      "has_egg",
+      "has_milk_bucket",
+      "has_wheat",
+      "has_cocoa_beans",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:healerbook"
+      "minecraft:perfecttencake"
     ]
   },
   "sends_telemetry_event": false

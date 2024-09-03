@@ -37,7 +37,7 @@ public class HardagsteelForgeBlockEntity extends BlockEntity implements Extended
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 70;
+    private int maxProgress = 190;
 
     public HardagsteelForgeBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.HARDAGSTEEL_FORGE_BLOCK_ENTITY, pos, state);
