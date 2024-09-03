@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_dye": {
+    "has_carnation": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:pink_dye"
+              "doremitales:carnation"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:carnation_from_pink_dye"
+        "recipe": "minecraft:pink_dye_from_carnation"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_pink_dye",
+      "has_carnation",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:carnation_from_pink_dye"
+      "minecraft:pink_dye_from_carnation"
     ]
   },
   "sends_telemetry_event": false

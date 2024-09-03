@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "carnation",
+  "group": "pink_dye",
   "ingredients": [
     {
-      "item": "minecraft:pink_dye"
+      "item": "doremitales:carnation"
     }
   ],
   "result": {
-    "item": "doremitales:carnation"
+    "item": "minecraft:pink_dye"
   }
 }

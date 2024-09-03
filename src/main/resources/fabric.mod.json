@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "doremitales",
 	"version": "${version}",
-	"name": "doremitales",
+	"name": "Do Re Mi Tales",
 	"description": "This is an example description! pipe is the fatest ever",
 	"authors": [
 		"Dorémista"
@@ -26,6 +26,9 @@
   ],
    "terrablender": [
      "net.doremista.world.biome.ModTerrablenderAPI"
+			],
+		"rei_client": [
+			"net.doremista.compat.DoremitalesREIClientPlugin"
 		]
 	},
 	"mixins": [

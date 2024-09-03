@@ -122,7 +122,7 @@
   "sounds.doremitales.rubberchicken_hurt": "Rubber Chicken got hurt",
   "sounds.doremitales.rubberchicken_death": "Rubber Chicken dies",
   "sounds.doremitales.rubberchicken_attack": "Rubber Chicken attacks",
-
+  "category.doremitales.hardagsteel_forge": "Hardagsteel Forge",
   "itemgroup.miscgroup": "DRM Tales Misc.",
   "itemgroup.blocksgroup": "DRM Tales Blocks"
 }
