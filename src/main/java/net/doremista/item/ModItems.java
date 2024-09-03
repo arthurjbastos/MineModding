@@ -79,6 +79,14 @@ public class ModItems {
     public static final Item BATCHERSLORE = registerItem("batcherslore",
             new BatchersLoreItem(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE)));
 
+    public static final Item HARDAGSTEELGUIDE1 = registerItem("hardagsteelguide1",
+            new HardagsteelGuide1Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+
+    public static final Item HARDAGSTEELGUIDE2 = registerItem("hardagsteelguide2",
+            new HardagsteelGuide2Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
+
+
+
     public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)) {
                 @Override

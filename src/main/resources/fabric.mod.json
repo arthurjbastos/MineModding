@@ -3,7 +3,7 @@
 	"id": "doremitales",
 	"version": "${version}",
 	"name": "Do Re Mi Tales",
-	"description": "This is an example description! pipe is the fatest ever",
+  "description": "This is an example description! pipe is the Fatest ever",
 	"authors": [
 		"Dorémista"
 	],

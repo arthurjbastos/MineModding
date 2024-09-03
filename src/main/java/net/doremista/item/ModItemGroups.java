@@ -55,6 +55,8 @@ public class ModItemGroups {
 
 
                         // lores at the end
+                        entries.add(ModItems.HARDAGSTEELGUIDE1);
+                        entries.add(ModItems.HARDAGSTEELGUIDE2);
                         entries.add(ModItems.CODEXPAGE1);
                         entries.add(ModItems.EVELYNLORE);
                         entries.add(ModItems.ELEPHASTICLORE);

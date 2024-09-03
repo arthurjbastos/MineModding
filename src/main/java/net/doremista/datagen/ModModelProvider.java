@@ -64,6 +64,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.EVELYNLORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.ELEPHASTICLORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BATCHERSLORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HARDAGSTEELGUIDE1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HARDAGSTEELGUIDE2, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ILUMSHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ADAGIOREDUCER, Models.GENERATED);

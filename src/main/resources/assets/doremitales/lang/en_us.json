@@ -3,6 +3,8 @@
   "item.doremitales.evelynlore": "Evelyn's Lore",
   "item.doremitales.elephasticlore": "Elephastic Quintet's Lore",
   "item.doremitales.batcherslore": "Batchers Brothers Lore",
+  "item.doremitales.hardagsteelguide1": "Hardagsteel Forging Guide - 1",
+  "item.doremitales.hardagsteelguide2": "Hardagsteel Forging Guide - 2",
 
   "item.doremitales.kikianmass": "Kikian Mass",
   "item.doremitales.ilum": "Condensed Ilum",
@@ -66,6 +68,10 @@
   "tooltip.doremitales.hardagsteelalloy.tooltip_2": "§7§orequiring profound knowledge of metallurgy.",
   "tooltip.doremitales.hardagsteelalloy.tooltip_3": "§7§oVerily, it is a formidable challenge even unto me!'",
   "tooltip.doremitales.hardagsteelalloy.tooltip_4": "§7§o- Lauren",
+  "tooltip.doremitales.hardagsteelguide1.tooltip": "§7§o'Ruffus compeled a forger to craft his teeth from Adagsteel.",
+  "tooltip.doremitales.hardagsteelguide1.tooltip_2": "§7§oYet the forger lacked the mastery to work the mightier alloy.'",
+  "tooltip.doremitales.hardagsteelguide2.tooltip": "§7§o'Bamerindus is among the few who have",
+  "tooltip.doremitales.hardagsteelguide2.tooltip_2": "§7§ouncovered the secret of Hardagsteel by his own hand.'",
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
   "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",

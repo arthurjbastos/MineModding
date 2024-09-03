@@ -44,7 +44,6 @@ public class HardagsteelForgeCategory implements DisplayCategory<BasicDisplay> {
         final Point startPoint = new Point(bounds.getCenterX() - 88, bounds.getCenterY() - 47);
         List<Widget> widgets = new LinkedList<>();
         widgets.add(Widgets.createTexturedWidget(TEXTURE, new Rectangle(startPoint.x, startPoint.y, 175, 83)));
-
         //slots input/output renderer
         widgets.add(Widgets.createSlot(new Point(startPoint.x + 26, startPoint.y + 11))
                 .entries(display.getInputEntries().get(0)));

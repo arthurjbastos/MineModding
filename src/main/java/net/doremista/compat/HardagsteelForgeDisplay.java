@@ -26,7 +26,6 @@ public class HardagsteelForgeDisplay extends BasicDisplay {
         list.add(EntryIngredients.ofIngredient(recipe.getIngredients().get(0)));
         list.add(EntryIngredients.ofIngredient(recipe.getIngredients().get(1)));
         list.add(EntryIngredients.ofIngredient(recipe.getIngredients().get(2)));
-
         return list;
     }
 
