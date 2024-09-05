@@ -35,25 +35,6 @@ public class ModItems {
         }
     });
 
-    public static final Item KIKIANMASSPICKAXE = registerItem("kikianmasspickaxe",
-            new PickaxeItem(ModToolMaterial.KIKIANMASS, 3, 4f, new FabricItemSettings()){
-                @Override
-                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-                    tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
-                    super.appendTooltip(stack, world, tooltip, context);
-                }
-            });
-
-
-    public static final Item KIKIANMASSSWORD = registerItem("kikianmasssword",
-            new SwordItem(ModToolMaterial.KIKIANMASS, 8, 3f, new FabricItemSettings()){
-                @Override
-                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-                    tooltip.add(Text.translatable("tooltip.doremitales.test.tooltip"));
-                    super.appendTooltip(stack, world, tooltip, context);
-                }
-            });
-
     //              FIM DOS TEST ITEMS
 
 
@@ -123,7 +104,7 @@ public class ModItems {
             new FrequencyExtractorItem(new FabricItemSettings().maxCount(1).maxDamage(150).rarity(Rarity.UNCOMMON)));
 
 
-    //      ADAGSTEEL TOOL
+    //      ADAGSTEEL TOOL VALORES IGUAIS AO FERRO literalmente
     public static final Item ADAGSTEELSWORD = registerItem("adagsteelsword",
             new SwordItem(ModToolMaterial.ADAGSTEEL, 3, -2.4f, new FabricItemSettings()));
     public static final Item ADAGSTEELPICKAXE = registerItem("adagsteelpickaxe",
@@ -133,7 +114,7 @@ public class ModItems {
     public static final Item ADAGSTEELSHOVEL = registerItem("adagsteelshovel",
             new ShovelItem(ModToolMaterial.ADAGSTEEL, 1.5f, -3.0f, new FabricItemSettings()));
     public static final Item ADAGSTEELHOE = registerItem("adagsteelhoe",
-            new HoeItem(ModToolMaterial.ADAGSTEEL, -2, -3.0f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterial.ADAGSTEEL, -2, -1.0f, new FabricItemSettings()));
 
     //      ADAGSTEEL ARMOR
     public static final Item ADAGSTEELHELMET = registerItem("adagsteelhelmet",
@@ -163,7 +144,21 @@ public class ModItems {
         }
     });
 
-    //      LUMANDIA ARMOR
+    //      HARDAGSTEEL TOOLS
+    //      ToolMaterials.class might help but not actually IDK about those values they are weird
+    public static final Item HARDAGSTEELSWORD = registerItem("hardagsteelsword",
+            new SwordItem(ModToolMaterial.HARDAGSTEEL, 3, -2.2f, new FabricItemSettings()));
+    public static final Item HARDAGSTEELPICKAXE = registerItem("hardagsteelpickaxe",
+            new PickaxeItem(ModToolMaterial.HARDAGSTEEL, 1, -2.7f, new FabricItemSettings()));
+    public static final Item HARDAGSTEELAXE = registerItem("hardagsteelaxe",
+            new AxeItem(ModToolMaterial.HARDAGSTEEL, 5.0f, -2.9f, new FabricItemSettings()));
+    public static final Item HARDAGSTEELSHOVEL = registerItem("hardagsteelshovel",
+            new ShovelItem(ModToolMaterial.HARDAGSTEEL, 1.6f, -3.0f, new FabricItemSettings()));
+    public static final Item HARDAGSTEELHOE = registerItem("hardagsteelhoe",
+            new HoeItem(ModToolMaterial.HARDAGSTEEL, -3, 0.0f, new FabricItemSettings()));
+
+
+    //  HARDAGSTEEL ARMOR
     public static final Item LUMANDIAHELMET = registerItem("lumandiahelmet",
             new ModArmorItem(ModArmorMaterials.LUMANDIA, ArmorItem.Type.HELMET, new FabricItemSettings()) {
                 @Override
@@ -221,10 +216,69 @@ public class ModItems {
                 }
             });
 
+
+    //      LUMANDIA ARMOR
+    public static final Item HARDAGSTEELHELMET = registerItem("hardagsteelhelmet",
+            new ModArmorItem(ModArmorMaterials.HARDAGSTEEL, ArmorItem.Type.HELMET, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+    public static final Item HARDAGSTEELCHESTPLATE = registerItem("hardagsteelchestplate",
+            new ArmorItem(ModArmorMaterials.HARDAGSTEEL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+    public static final Item HARDAGSTEELLEGGINGS = registerItem("hardagsteelleggings",
+            new ArmorItem(ModArmorMaterials.HARDAGSTEEL, ArmorItem.Type.LEGGINGS, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+    public static final Item HARDAGSTEELBOOTS = registerItem("hardagsteelboots",
+            new ArmorItem(ModArmorMaterials.HARDAGSTEEL, ArmorItem.Type.BOOTS, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.hardagsteelset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+
     // MOBS
 
     public static final Item RUBBERCHICKENSPAWNEGG = registerItem("rubberchickenspawnegg",
-            new SpawnEggItem(ModEntities.RUBBERCHICKEN, 0xFF0000, 0xFF0000, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.RUBBERCHICKEN, 0xcf0000, 0xf7ff1c, new FabricItemSettings()));
     
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries){
         // items p/ tab de ingredientes padrao do mine, n sei pq serve n

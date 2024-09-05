@@ -11,8 +11,7 @@ public class ModMaterialRules {
 
     private static final MaterialRules.MaterialRule DIRT = makeStateRule(Blocks.DIRT);
     private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
-    private static final MaterialRules.MaterialRule RUBY = makeStateRule(ModBlocks.CARNATION);
-    private static final MaterialRules.MaterialRule RAW_RUBY = makeStateRule(ModBlocks.SURREALCRYSTAL);
+    private static final MaterialRules.MaterialRule CARNATION = makeStateRule(ModBlocks.CARNATION);
 
 //    public static MaterialRules.MaterialRule makeRules() {
 //        MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);

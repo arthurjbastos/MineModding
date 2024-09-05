@@ -268,9 +268,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELAXE) // Machado
-                .pattern("AA ")
-                .pattern("AB ")
-                .pattern(" B ")
+                .pattern("AA")
+                .pattern("AB")
+                .pattern(" B")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
@@ -279,9 +279,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // Adicionar receita para machado virado para o outro lado
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELAXE) // Machado virado
-                .pattern(" AA")
-                .pattern(" BA")
-                .pattern(" B ")
+                .pattern("AA")
+                .pattern("BA")
+                .pattern("B ")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
@@ -289,9 +289,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELAXE) + "_flipped"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELHOE) // Enxada
-                .pattern("AA ")
-                .pattern(" B ")
-                .pattern(" B ")
+                .pattern("AA")
+                .pattern(" B")
+                .pattern(" B")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
@@ -299,9 +299,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELHOE) // Enxada flipada
-                .pattern(" AA")
-                .pattern(" B ")
-                .pattern(" B ")
+                .pattern("AA")
+                .pattern("B ")
+                .pattern("B ")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))

@@ -53,7 +53,6 @@ public class ModModelProvider extends FabricModelProvider {
         // SPACEBOX
         // HARDAGSTEEL FORGE
         // BENCH BLOCK
-        // SURREAL CYSTAL
         // VERDANOVA LEAVES
     }
 
@@ -98,6 +97,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ADAGSTEELBOOTS));
 
         // HARDAGSTEEL
+        itemModelGenerator.register(ModItems.HARDAGSTEELHOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.HARDAGSTEELAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.HARDAGSTEELPICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.HARDAGSTEELSHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.HARDAGSTEELSWORD, Models.HANDHELD);
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HARDAGSTEELHELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HARDAGSTEELCHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HARDAGSTEELLEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.HARDAGSTEELBOOTS));
+
         itemModelGenerator.register(ModItems.ADAGSTEELIMBUED, Models.GENERATED);
         itemModelGenerator.register(ModItems.MELTEDADAGSTEELALLOY, Models.GENERATED);
         itemModelGenerator.register(ModItems.HARDAGSTEELALLOY, Models.GENERATED);
@@ -108,11 +117,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.LUMANDIALEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.LUMANDIABOOTS));
 
-
-
-        // TESTS
-        itemModelGenerator.register(ModItems.KIKIANMASSPICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.HANDHELD);
 
         // ----- ITEM MODEL GERADO MANUALMENTE POR JSON -----
         //ITEM BENCH

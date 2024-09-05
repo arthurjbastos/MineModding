@@ -10,9 +10,9 @@
     }
   },
   "pattern": [
-    " AA",
-    " BA",
-    " B "
+    "AA",
+    "BA",
+    "B "
   ],
   "result": {
     "item": "doremitales:adagsteelaxe"

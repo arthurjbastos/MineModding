@@ -20,7 +20,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider  {
                 .add(ModItems.ADAGSTEELHELMET)
                 .add(ModItems.ADAGSTEELCHESTPLATE)
                 .add(ModItems.ADAGSTEELLEGGINGS)
-                .add(ModItems.ADAGSTEELBOOTS);
+                .add(ModItems.ADAGSTEELBOOTS)
+                .add(ModItems.HARDAGSTEELHELMET)
+                .add(ModItems.HARDAGSTEELCHESTPLATE)
+                .add(ModItems.HARDAGSTEELLEGGINGS)
+                .add(ModItems.HARDAGSTEELBOOTS);
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
                 .add(ModItems.EVELYNTHEMEMUSICDISC)

@@ -60,11 +60,6 @@ public class ModBlocks {
 
             ));
 
-    public static final Block SURREALCRYSTAL = registerBlock("surrealcrystal",
-            new SurrealCrystalBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK).nonOpaque()//  
-
-            ));
-
     public static final Block ADAGSTEELORE = registerBlock("adagsteelore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2, 5)
 

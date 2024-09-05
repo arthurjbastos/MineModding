@@ -14,7 +14,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     // EXEMPLOS ACESSÍVEIS EM ArmorMaterials.clas
     ADAGSTEEL("adagsteel", 20, new int[]{ 2, 6, 5, 2}, 10,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.05f, () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT)),
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.02f, () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT)),
+
+    HARDAGSTEEL("hardagsteel", 39, new int[]{3, 8, 6, 3}, 18,
+            SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 2.2f, 0.04f, () -> Ingredient.ofItems(ModItems.HARDAGSTEELALLOY)),
 
     LUMANDIA("lumandia", 10, new int[]{2, 3, 4, 2}, 18,
             SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.00f, () -> Ingredient.ofItems(ModBlocks.VERDANOVALOG));

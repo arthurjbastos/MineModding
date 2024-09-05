@@ -25,12 +25,14 @@ public class ModItemGroups {
                         entries.add(ModItems.ADAGSTEELINGOT);
                         entries.add(ModItems.RAWADAGSTEEL);
                         entries.add(ModItems.HARDAGSTEELMOLD);
+                        entries.add(ModItems.ADAGSTEELIMBUED);
+                        entries.add(ModItems.MELTEDADAGSTEELALLOY);
+                        entries.add(ModItems.HARDAGSTEELALLOY);
+
                         entries.add(ModItems.PERFECTTENCAKE);
 
                         // TOOLS
                         entries.add(ModItems.HEALERBOOK);
-                        entries.add(ModItems.KIKIANMASSPICKAXE);
-                        entries.add(ModItems.KIKIANMASSSWORD);
 
                         entries.add(ModItems.RATCHATTS);
                         entries.add(ModItems.AEONFLUTE);
@@ -38,20 +40,30 @@ public class ModItemGroups {
 
 
                         //ADAGSTEEL TOOLS
-                        entries.add(ModItems.ADAGSTEELAXE);
-                        entries.add(ModItems.ADAGSTEELHOE);
+                        entries.add(ModItems.ADAGSTEELSWORD);
                         entries.add(ModItems.ADAGSTEELPICKAXE);
                         entries.add(ModItems.ADAGSTEELSHOVEL);
-                        entries.add(ModItems.ADAGSTEELSWORD);
+                        entries.add(ModItems.ADAGSTEELAXE);
+                        entries.add(ModItems.ADAGSTEELHOE);
                         entries.add(ModItems.ADAGSTEELHELMET);
                         entries.add(ModItems.ADAGSTEELCHESTPLATE);
                         entries.add(ModItems.ADAGSTEELLEGGINGS);
                         entries.add(ModItems.ADAGSTEELBOOTS);
 
                         //  HARDAGSTEEL
-                        entries.add(ModItems.ADAGSTEELIMBUED);
-                        entries.add(ModItems.MELTEDADAGSTEELALLOY);
-                        entries.add(ModItems.HARDAGSTEELALLOY);
+
+                        entries.add(ModItems.HARDAGSTEELSWORD);
+                        entries.add(ModItems.HARDAGSTEELPICKAXE);
+                        entries.add(ModItems.HARDAGSTEELAXE);
+                        entries.add(ModItems.HARDAGSTEELSHOVEL);
+                        entries.add(ModItems.HARDAGSTEELHOE);
+
+                        entries.add(ModItems.HARDAGSTEELHELMET);
+                        entries.add(ModItems.HARDAGSTEELCHESTPLATE);
+                        entries.add(ModItems.HARDAGSTEELLEGGINGS);
+                        entries.add(ModItems.HARDAGSTEELBOOTS);
+
+                        //  LUMANDIAS
 
                         entries.add(ModItems.LUMANDIAHELMET);
                         entries.add(ModItems.LUMANDIACHESTPLATE);
@@ -85,7 +97,6 @@ public class ModItemGroups {
 
                         //BLOCKS
                         entries.add(ModBlocks.BENCH);
-                        //entries.add(ModBlocks.SURREALCRYSTAL);
                         entries.add(ModBlocks.KIKIANMASSBLOCK);
                         entries.add(ModBlocks.ADAGSTEELORE);
                         entries.add(ModBlocks.DEEPSLATEADAGSTEELORE);

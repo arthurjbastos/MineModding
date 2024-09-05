@@ -49,7 +49,18 @@
   "tooltip.doremitales.lumandiaset.tooltip": "§7§eSet Bonus:",
   "tooltip.doremitales.lumandiaset.tooltip_2": "§7§oThe blessing of Celeste Verdanova and",
   "tooltip.doremitales.lumandiaset.tooltip_3": "§7§oit's sacred sap grants you regeneration of the body",
-
+  "item.doremitales.hardagsteelpickaxe": "Hardagsteel Pickaxe",
+  "item.doremitales.hardagsteelsword": "Hardagsteel Sword",
+  "item.doremitales.hardagsteelshovel": "Hardagsteel Shovel",
+  "item.doremitales.hardagsteelaxe": "Hardagsteel Axe",
+  "item.doremitales.hardagsteelhoe": "Hardagsteel Hoe",
+  "item.doremitales.hardagsteelhelmet": "Hardagsteel Helmet",
+  "item.doremitales.hardagsteelchestplate": "Hardagsteel Chestplate",
+  "item.doremitales.hardagsteelleggings": "Hardagsteel Leggings",
+  "item.doremitales.hardagsteelboots": "Hardagsteel Boots",
+  "tooltip.doremitales.hardagsteelset.tooltip": "§7'§oWithout a doubt, Hardagsteel is a clear proof",
+  "tooltip.doremitales.hardagsteelset.tooltip_2": "§7§oof the excellent services I can offer.'",
+  "tooltip.doremitales.hardagsteelset.tooltip_3": "§7§o- Neeth Nicael",
 
   "tooltip.doremitales.space.tooltip": "",
   "tooltip.doremitales.test.tooltip": "§6WORK IN PROGRESS! - This item is not finished!",
@@ -99,7 +110,6 @@
   "block.doremitales.kikianmassblock": "Kikian Mass block",
   "block.doremitales.adagsteelore": "Adagsteel ore",
   "block.doremitales.deepslateadagsteelore": "Deepslate Adagsteel ore",
-  "block.doremitales.surrealcrystal": "Surreal Crystal",
 
   "block.doremitales.adagsteelstairs": "Adagsteel Stairs",
   "block.doremitales.adagsteelslab": "Adagsteel Slab",

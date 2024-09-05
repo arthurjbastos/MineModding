@@ -16,11 +16,11 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    KIKIANMASS(5, 666, 9.5f, 3.5f, 26,
-            () -> Ingredient.ofItems(ModItems.KIKIANMASS)),
-
     ADAGSTEEL(MiningLevels.IRON, 350, 6.0f, 2.0f, 15,
-            () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT));
+            () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT)),
+
+    HARDAGSTEEL(MiningLevels.DIAMOND, 2020, 8.3f, 3f, 15,
+            () -> Ingredient.ofItems(ModItems.HARDAGSTEELALLOY));
 
     private final int miningLevel;
     private final int itemDurability;
