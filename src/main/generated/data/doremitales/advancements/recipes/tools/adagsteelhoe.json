@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:adagsteelhoe"
+        "recipe": "doremitales:adagsteelhoe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:adagsteelhoe"
+      "doremitales:adagsteelhoe"
     ]
   },
   "sends_telemetry_event": false

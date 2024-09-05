@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "doremitales:verdanovalog"
+    },
+    "B": {
+      "item": "doremitales:verdanovasapbottle"
+    }
+  },
+  "pattern": [
+    "B B",
+    "# #",
+    "# #"
+  ],
+  "result": {
+    "item": "doremitales:lumandiaboots"
+  },
+  "show_notification": true
+}

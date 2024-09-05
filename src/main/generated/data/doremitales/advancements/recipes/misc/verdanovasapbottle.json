@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:verdanovasapbottle"
+        "recipe": "doremitales:verdanovasapbottle"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:verdanovasapbottle"
+      "doremitales:verdanovasapbottle"
     ]
   },
   "sends_telemetry_event": false

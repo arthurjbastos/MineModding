@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:adagsteelslab"
+        "recipe": "doremitales:adagsteelslab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:adagsteelslab"
+      "doremitales:adagsteelslab"
     ]
   },
   "sends_telemetry_event": false

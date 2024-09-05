@@ -13,18 +13,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_kikianmass": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "doremitales:kikianmass"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_paper": {
       "conditions": {
         "items": [
@@ -39,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:healerbook"
+        "recipe": "doremitales:healerbook"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -60,14 +48,13 @@
     [
       "has_book",
       "has_paper",
-      "has_kikianmass",
       "has_verdanovasapbottle",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:healerbook"
+      "doremitales:healerbook"
     ]
   },
   "sends_telemetry_event": false

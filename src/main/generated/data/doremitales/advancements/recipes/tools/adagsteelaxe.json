@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:adagsteelaxe"
+        "recipe": "doremitales:adagsteelaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:adagsteelaxe"
+      "doremitales:adagsteelaxe"
     ]
   },
   "sends_telemetry_event": false

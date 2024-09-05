@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:adagsteelstairs"
+        "recipe": "doremitales:adagsteelstairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:adagsteelstairs"
+      "doremitales:adagsteelstairs"
     ]
   },
   "sends_telemetry_event": false

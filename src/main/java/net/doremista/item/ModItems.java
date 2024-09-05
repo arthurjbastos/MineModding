@@ -85,8 +85,6 @@ public class ModItems {
     public static final Item HARDAGSTEELGUIDE2 = registerItem("hardagsteelguide2",
             new HardagsteelGuide2Item(new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON)));
 
-
-
     public static final Item ADAGIOREDUCER = registerItem("adagioreducer",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)) {
                 @Override
@@ -107,7 +105,6 @@ public class ModItems {
     public static final Item ADAGSTEELINGOT = registerItem("adagsteelingot", new Item(new FabricItemSettings()));
     public static final Item RAWADAGSTEEL = registerItem("rawadagsteel", new Item(new FabricItemSettings()));
     public static final Item HARDAGSTEELMOLD = registerItem("hardagsteelmold", new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
-
 
     public static final Item PERFECTTENCAKE = registerItem("perfecttencake", new Item(new FabricItemSettings().food(ModFoodComponents.PERFECTTENCAKE)));
     public static final Item VERDANOVAWOODSPLINTERS = registerItem("verdanovawoodsplinters", new Item(new FabricItemSettings()));
@@ -164,10 +161,65 @@ public class ModItems {
             }
             super.appendTooltip(stack, world, tooltip, context);
         }
-
-
     });
 
+    //      LUMANDIA ARMOR
+    public static final Item LUMANDIAHELMET = registerItem("lumandiahelmet",
+            new ModArmorItem(ModArmorMaterials.LUMANDIA, ArmorItem.Type.HELMET, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+    public static final Item LUMANDIACHESTPLATE = registerItem("lumandiachestplate",
+            new ArmorItem(ModArmorMaterials.LUMANDIA, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+    public static final Item LUMANDIALEGGINGS = registerItem("lumandialeggings",
+            new ArmorItem(ModArmorMaterials.LUMANDIA, ArmorItem.Type.LEGGINGS, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
+    public static final Item LUMANDIABOOTS = registerItem("lumandiaboots",
+            new ArmorItem(ModArmorMaterials.LUMANDIA, ArmorItem.Type.BOOTS, new FabricItemSettings()) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    if (Screen.hasShiftDown()) {
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_2"));
+                        tooltip.add(Text.translatable("tooltip.doremitales.lumandiaset.tooltip_3"));
+                    } else {
+                        tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
+                    }
+                    super.appendTooltip(stack, world, tooltip, context);
+                }
+            });
 
     // MOBS
 

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:verdanovatrapdoor"
+        "recipe": "doremitales:verdanovatrapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:verdanovatrapdoor"
+      "doremitales:verdanovatrapdoor"
     ]
   },
   "sends_telemetry_event": false

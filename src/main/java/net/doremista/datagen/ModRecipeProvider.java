@@ -74,53 +74,53 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
             createDoorRecipe(ModBlocks.VERDANOVADOOR, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
                     .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
-                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVADOOR)));
+                    .offerTo(exporter);
 
             createFenceRecipe(ModBlocks.VERDANOVAFENCE, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
                     .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
-                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVAFENCE)));
+                    .offerTo(exporter);
 
             createFenceGateRecipe(ModBlocks.VERDANOVAFENCEGATE, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
                     .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
-                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVAFENCEGATE)));
+                    .offerTo(exporter);
 
             createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.VERDANOVASLAB, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
                     .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
-                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVASLAB)));
+                    .offerTo(exporter);
 
             createTrapdoorRecipe(ModBlocks.VERDANOVATRAPDOOR, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
                     .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
-                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVATRAPDOOR)));
+                    .offerTo(exporter);
 
             createStairsRecipe(ModBlocks.VERDANOVASTAIRS, Ingredient.ofItems(ModBlocks.VERDANOVAPLANKS))
                     .criterion(hasItem(ModBlocks.VERDANOVAPLANKS), conditionsFromItem(ModBlocks.VERDANOVAPLANKS))
-                    .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.VERDANOVASTAIRS)));
+                    .offerTo(exporter);
 
         //
 
         createDoorRecipe(ModBlocks.ADAGSTEELDOOR, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELDOOR)));
+                .offerTo(exporter);
 
         createFenceRecipe(ModBlocks.ADAGSTEELFENCE, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELFENCE)));
+                .offerTo(exporter);
 
         createFenceGateRecipe(ModBlocks.ADAGSTEELFENCEGATE, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELFENCEGATE)));
+                .offerTo(exporter);
 
         createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ADAGSTEELSLAB, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELSLAB)));
+                .offerTo(exporter);
 
         createTrapdoorRecipe(ModBlocks.ADAGSTEELTRAPDOOR, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELTRAPDOOR)));
+                .offerTo(exporter);
 
         createStairsRecipe(ModBlocks.ADAGSTEELSTAIRS, Ingredient.ofItems(ModItems.ADAGSTEELINGOT))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ADAGSTEELSTAIRS)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PERFECTTENCAKE, 1)
                 .pattern("TLT")
@@ -134,8 +134,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
                 .criterion(hasItem(Items.WHEAT), conditionsFromItem(Items.WHEAT))
                 .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(Items.COCOA_BEANS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PERFECTTENCAKE)));
+                .offerTo(exporter);
 
+        //      **** VERDANOVA STUFF ****
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VERDANOVASAPBOTTLE, 1)
                 .pattern("###")
@@ -145,8 +146,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Items.GLASS_BOTTLE)
                 .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
                 .criterion(hasItem(ModItems.VERDANOVASAP), conditionsFromItem(ModItems.VERDANOVASAP))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.VERDANOVASAPBOTTLE)));
-
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HEALERBOOK, 1)
                 .pattern("PAP")
@@ -158,9 +158,48 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', Items.PAPER)
                 .criterion(hasItem(Items.BOOK), conditionsFromItem(Items.BOOK))
                 .criterion(hasItem(Items.PAPER), conditionsFromItem(Items.PAPER))
-                .criterion(hasItem(ModItems.KIKIANMASS), conditionsFromItem(ModItems.KIKIANMASS))
                 .criterion(hasItem(ModItems.VERDANOVASAPBOTTLE), conditionsFromItem(ModItems.VERDANOVASAPBOTTLE))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALERBOOK)));
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LUMANDIAHELMET, 1)
+                .pattern("###")
+                .pattern("#B#")
+                .pattern("   ")
+                .input('B', ModItems.VERDANOVASAPBOTTLE)
+                .input('#', ModBlocks.VERDANOVALOG)
+                .criterion(hasItem(ModItems.VERDANOVASAPBOTTLE), conditionsFromItem(ModItems.VERDANOVASAPBOTTLE))
+                .criterion(hasItem(ModBlocks.VERDANOVALOG), conditionsFromItem(ModBlocks.VERDANOVALOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LUMANDIABOOTS, 1)
+                .pattern("B B")
+                .pattern("# #")
+                .pattern("# #")
+                .input('B', ModItems.VERDANOVASAPBOTTLE)
+                .input('#', ModBlocks.VERDANOVALOG)
+                .criterion(hasItem(ModItems.VERDANOVASAPBOTTLE), conditionsFromItem(ModItems.VERDANOVASAPBOTTLE))
+                .criterion(hasItem(ModBlocks.VERDANOVALOG), conditionsFromItem(ModBlocks.VERDANOVALOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LUMANDIACHESTPLATE, 1)
+                .pattern("#B#")
+                .pattern("###")
+                .pattern("###")
+                .input('B', ModItems.VERDANOVASAPBOTTLE)
+                .input('#', ModBlocks.VERDANOVALOG)
+                .criterion(hasItem(ModItems.VERDANOVASAPBOTTLE), conditionsFromItem(ModItems.VERDANOVASAPBOTTLE))
+                .criterion(hasItem(ModBlocks.VERDANOVALOG), conditionsFromItem(ModBlocks.VERDANOVALOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LUMANDIALEGGINGS, 1)
+                .pattern("###")
+                .pattern("#B#")
+                .pattern("# #")
+                .input('B', ModItems.VERDANOVASAPBOTTLE)
+                .input('#', ModBlocks.VERDANOVALOG)
+                .criterion(hasItem(ModItems.VERDANOVASAPBOTTLE), conditionsFromItem(ModItems.VERDANOVASAPBOTTLE))
+                .criterion(hasItem(ModBlocks.VERDANOVALOG), conditionsFromItem(ModBlocks.VERDANOVALOG))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ADAGIOREDUCER, 1)
                 .pattern(" O ")
@@ -171,7 +210,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('V', Items.GLASS_PANE)
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(ModItems.ILUMSHARD), conditionsFromItem(ModItems.ILUMSHARD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGIOREDUCER)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FREQUENCYEXTRACTOR, 1)
                 .pattern(" AD")
@@ -182,7 +221,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D', Items.DIAMOND)
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .criterion(hasItem(ModItems.ADAGIOREDUCER), conditionsFromItem(ModItems.ADAGIOREDUCER))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FREQUENCYEXTRACTOR)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.HARDAGSTEELFORGE, 1)
                 .pattern("CCC")
@@ -192,23 +231,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', ModBlocks.ADAGSTEELBLOCK)
                 .input('G', Blocks.MAGMA_BLOCK)
                 .input('C', Blocks.DEEPSLATE_TILES)
-                .criterion(hasItem(Blocks.MAGMA_BLOCK), conditionsFromItem(Blocks.MAGMA_BLOCK))
                 .criterion(hasItem(ModItems.HARDAGSTEELMOLD), conditionsFromItem(ModItems.HARDAGSTEELMOLD))
-                .criterion(hasItem(ModBlocks.ADAGSTEELBLOCK), conditionsFromItem(ModBlocks.ADAGSTEELBLOCK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.HARDAGSTEELFORGE)));
+                .offerTo(exporter);
 
 
         // ferramentas usando ADAGSTEELINGOT
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELSWORD) // Espada
-                .pattern(" A ")
-                .pattern(" A ")
-                .pattern(" B ")
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELSWORD)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELPICKAXE) // Picareta
                 .pattern("AAA")
@@ -218,17 +255,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELPICKAXE)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELSHOVEL) // Pá
-                .pattern(" A ")
-                .pattern(" B ")
-                .pattern(" B ")
+                .pattern("A")
+                .pattern("B")
+                .pattern("B")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELSHOVEL)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELAXE) // Machado
                 .pattern("AA ")
@@ -238,7 +275,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELAXE)));
+                .offerTo(exporter);
 
         // Adicionar receita para machado virado para o outro lado
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELAXE) // Machado virado
@@ -259,7 +296,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', Items.STICK)
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELHOE)));
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.ADAGSTEELHOE) // Enxada flipada
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .input('A', ModItems.ADAGSTEELINGOT)
+                .input('B', Items.STICK)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELHOE) + "_flipped"));
 
         //  armaduras ADAGSTEELINGOT
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELHELMET) // Capacete
@@ -267,7 +314,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("A A")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELHELMET)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELCHESTPLATE) // Peitoral
                 .pattern("A A")
@@ -275,7 +322,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("AAA")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELCHESTPLATE)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELLEGGINGS) // Calças
                 .pattern("AAA")
@@ -283,14 +330,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("A A")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELLEGGINGS)));
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ADAGSTEELBOOTS) // Botas
                 .pattern("A A")
                 .pattern("A A")
                 .input('A', ModItems.ADAGSTEELINGOT)
                 .criterion(hasItem(ModItems.ADAGSTEELINGOT), conditionsFromItem(ModItems.ADAGSTEELINGOT))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ADAGSTEELBOOTS)));
+                .offerTo(exporter);
 
     }
 

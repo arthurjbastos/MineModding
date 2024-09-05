@@ -16,7 +16,6 @@ import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 
-import static net.doremista.block.ModBlocks.HARDAGSTEELFORGE;
 import static net.doremista.block.ModBlocks.VERDANOVALEAVES;
 
 

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "doremitales:lumandiaboots"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdanovalog": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:verdanovalog"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_verdanovasapbottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:verdanovasapbottle"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdanovasapbottle",
+      "has_verdanovalog",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "doremitales:lumandiaboots"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -39,7 +39,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:perfecttencake"
+        "recipe": "doremitales:perfecttencake"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -67,7 +67,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:perfecttencake"
+      "doremitales:perfecttencake"
     ]
   },
   "sends_telemetry_event": false

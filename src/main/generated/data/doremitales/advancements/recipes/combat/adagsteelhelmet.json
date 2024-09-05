@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:adagsteelhelmet"
+        "recipe": "doremitales:adagsteelhelmet"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:adagsteelhelmet"
+      "doremitales:adagsteelhelmet"
     ]
   },
   "sends_telemetry_event": false

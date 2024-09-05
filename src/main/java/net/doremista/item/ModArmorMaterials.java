@@ -1,6 +1,7 @@
 package net.doremista.item;
 
 import net.doremista.Doremitales;
+import net.doremista.block.ModBlocks;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -10,11 +11,15 @@ import net.minecraft.sound.SoundEvents;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
+
+    // EXEMPLOS ACESSÍVEIS EM ArmorMaterials.clas
     ADAGSTEEL("adagsteel", 20, new int[]{ 2, 6, 5, 2}, 10,
-            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.05f,() -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT));
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.05f, () -> Ingredient.ofItems(ModItems.ADAGSTEELINGOT)),
+
+    LUMANDIA("lumandia", 10, new int[]{2, 3, 4, 2}, 18,
+            SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.00f, () -> Ingredient.ofItems(ModBlocks.VERDANOVALOG));
 
 
-    
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;

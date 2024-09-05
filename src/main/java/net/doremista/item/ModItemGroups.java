@@ -53,6 +53,11 @@ public class ModItemGroups {
                         entries.add(ModItems.MELTEDADAGSTEELALLOY);
                         entries.add(ModItems.HARDAGSTEELALLOY);
 
+                        entries.add(ModItems.LUMANDIAHELMET);
+                        entries.add(ModItems.LUMANDIACHESTPLATE);
+                        entries.add(ModItems.LUMANDIALEGGINGS);
+                        entries.add(ModItems.LUMANDIABOOTS);
+
 
                         // lores at the end
                         entries.add(ModItems.HARDAGSTEELGUIDE1);

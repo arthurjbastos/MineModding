@@ -102,6 +102,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MELTEDADAGSTEELALLOY, Models.GENERATED);
         itemModelGenerator.register(ModItems.HARDAGSTEELALLOY, Models.GENERATED);
 
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LUMANDIAHELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LUMANDIACHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LUMANDIALEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.LUMANDIABOOTS));
+
+
+
         // TESTS
         itemModelGenerator.register(ModItems.KIKIANMASSPICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.KIKIANMASSSWORD, Models.HANDHELD);

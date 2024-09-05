@@ -42,6 +42,14 @@
   "item.doremitales.adagsteelimbued": "Adagsteel Imbued",
   "item.doremitales.meltedadagsteelalloy": "Melted Adagsteel Alloy",
   "item.doremitales.hardagsteelalloy": "Hardagsteel Alloy",
+  "item.doremitales.lumandiahelmet": "Lumandias Hat",
+  "item.doremitales.lumandiachestplate": "Lumandias Plate",
+  "item.doremitales.lumandialeggings": "Lumandias Leggings",
+  "item.doremitales.lumandiaboots": "Lumandias Boots",
+  "tooltip.doremitales.lumandiaset.tooltip": "§7§eSet Bonus:",
+  "tooltip.doremitales.lumandiaset.tooltip_2": "§7§oThe blessing of Celeste Verdanova and",
+  "tooltip.doremitales.lumandiaset.tooltip_3": "§7§oit's sacred sap grants you regeneration of the body",
+
 
   "tooltip.doremitales.space.tooltip": "",
   "tooltip.doremitales.test.tooltip": "§6WORK IN PROGRESS! - This item is not finished!",
