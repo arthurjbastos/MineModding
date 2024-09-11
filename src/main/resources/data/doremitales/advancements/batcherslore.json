@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:batcherslore"
+    },
+    "title": "The Batchers Brothers",
+    "description": "Learn more about the Pirates!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:lores",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:batcherslore"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

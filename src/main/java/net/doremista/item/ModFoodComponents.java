@@ -13,6 +13,9 @@ public class ModFoodComponents {
             .alwaysEdible()
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100), 0.45f).build();
 
+    public static final FoodComponent RUBBEREGG = new FoodComponent.Builder().hunger(2).saturationModifier(0.001f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100), 0.45f).build();
+
     public static final FoodComponent VERDANOVASAPBOTTLE = new FoodComponent.Builder().hunger(1).saturationModifier(0.4f)
             .alwaysEdible()
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 700), 1.00f).build();

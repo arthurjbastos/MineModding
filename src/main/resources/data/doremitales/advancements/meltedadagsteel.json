@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:meltedadagsteelalloy"
+    },
+    "title": "Hot (and Dangerous) Stuff",
+    "description": "Find out the true furnace, hot melting lava!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "doremitales:hardagsteelforge",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:meltedadagsteelalloy"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

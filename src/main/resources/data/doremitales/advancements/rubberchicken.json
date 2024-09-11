@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:feather"
+    },
+    "title": "Chicken Attack!",
+    "description": "Now this... thing... is after you!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:alcatraz",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "doremitales:rubberchicken"
+        }
+      }
+    }
+  }
+}

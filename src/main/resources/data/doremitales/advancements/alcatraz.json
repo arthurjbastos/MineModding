@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:verdanovasapling"
+    },
+    "title": "The Symphonic Forest",
+    "description": "Meet Alcatraz, the many stories forest",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:doremitales",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "biome": "doremitales:alcatraz"
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,6 +21,8 @@ public class ModSounds {
     public static final SoundEvent RUBBERCHICKEN_AMBIENT = registerSoundEvent("rubberchicken_ambient");
     public static final SoundEvent RUBBERCHICKEN_ATTACK = registerSoundEvent("rubberchicken_attack");
 
+    public static final SoundEvent RUBBERTRUMPET = registerSoundEvent("rubbertrumpet");
+
 
     private static SoundEvent registerSoundEvent(String name){
         Identifier id = new Identifier(Doremitales.MOD_ID, name);

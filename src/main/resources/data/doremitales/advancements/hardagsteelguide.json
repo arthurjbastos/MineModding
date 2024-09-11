@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:hardagsteelguide2"
+    },
+    "title": "Heavy Family Secrets",
+    "description": "Figure out how to forge the Hardagsteel, by stealing families!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:adagsteelingot",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:hardagsteelguide1"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelguide2"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

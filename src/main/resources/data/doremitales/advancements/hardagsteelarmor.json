@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:hardagsteelhelmet"
+    },
+    "title": "A True Dorémier Outfit!",
+    "description": "Craft every Hardagsteel armor piece, you look shiny!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:hardagsteelalloy",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:hardagsteelhelmet"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelchestplate"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelleggings"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelboots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  }
+}

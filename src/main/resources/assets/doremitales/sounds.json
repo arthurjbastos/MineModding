@@ -52,5 +52,11 @@
     "sounds": [
       "doremitales:rubberchicken_attack"
     ]
+  },
+  "rubbertrumpet": {
+    "subtitle": "sounds.doremitales.rubbertrumpet",
+    "sounds": [
+      "doremitales:rubbertrumpet"
+    ]
   }
 }

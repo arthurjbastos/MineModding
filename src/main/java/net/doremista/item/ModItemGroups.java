@@ -30,9 +30,12 @@ public class ModItemGroups {
                         entries.add(ModItems.HARDAGSTEELALLOY);
 
                         entries.add(ModItems.PERFECTTENCAKE);
+                        entries.add(ModItems.RUBBEREGG);
+                        entries.add(ModItems.MELTEDRUBBEREGG);
 
                         // TOOLS
                         entries.add(ModItems.HEALERBOOK);
+                        entries.add(ModItems.RUBBERTRUMPET);
 
                         entries.add(ModItems.RATCHATTS);
                         entries.add(ModItems.AEONFLUTE);
@@ -42,8 +45,8 @@ public class ModItemGroups {
                         //ADAGSTEEL TOOLS
                         entries.add(ModItems.ADAGSTEELSWORD);
                         entries.add(ModItems.ADAGSTEELPICKAXE);
-                        entries.add(ModItems.ADAGSTEELSHOVEL);
                         entries.add(ModItems.ADAGSTEELAXE);
+                        entries.add(ModItems.ADAGSTEELSHOVEL);
                         entries.add(ModItems.ADAGSTEELHOE);
                         entries.add(ModItems.ADAGSTEELHELMET);
                         entries.add(ModItems.ADAGSTEELCHESTPLATE);

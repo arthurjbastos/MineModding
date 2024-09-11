@@ -1,7 +1,7 @@
-// 1.20.1	2024-09-05T17:39:02.4389996	Do Re Mi Tales/Tags for minecraft:block
-667645854266b4c75267f371761083149f50d92c data\minecraft\tags\blocks\needs_stone_tool.json
+// 1.20.1	2024-09-10T20:09:52.8035138	Do Re Mi Tales/Tags for minecraft:block
 06020f3cd2d317f4f1e4e5209c7e0a6110aa82ad data\minecraft\tags\blocks\fences.json
 4eda054622e1fe9cfdb162cd2a01a7138dbc1b3c data\minecraft\tags\blocks\logs_that_burn.json
+667645854266b4c75267f371761083149f50d92c data\minecraft\tags\blocks\needs_stone_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
 db7e672141ae2ea7369227a8cf6c1c4594d79922 data\minecraft\tags\blocks\mineable\axe.json
 dece773cc7084e68f442bb580c17fb53dc662dbc data\minecraft\tags\blocks\needs_iron_tool.json

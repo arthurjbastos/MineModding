@@ -18,6 +18,8 @@
   "item.doremitales.kikianmasspickaxe": "Kikian Mass Pickaxe",
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
   "item.doremitales.rubberchickenspawnegg": "Rubber Chicken Spawn Egg",
+  "item.doremitales.rubberegg": "Rubber Egg",
+  "item.doremitales.meltedrubberegg": "Melted Rubber Egg",
 
   "item.doremitales.evelynthememusicdisc": "Music Disc",
   "item.doremitales.batchersthememusicdisc": "Music Disc",
@@ -29,6 +31,7 @@
   "item.doremitales.ratchatts": "Ratchatts",
   "item.doremitales.aeonflute": "Aeon Flute",
   "item.doremitales.frequencyextractor": "Frequency Extractor",
+  "item.doremitales.rubbertrumpet": "Rubber Trumpet",
 
   "item.doremitales.adagsteelpickaxe": "Adagsteel Pickaxe",
   "item.doremitales.adagsteelsword": "Adagsteel Sword",
@@ -67,7 +70,8 @@
 
   "tooltip.doremitales.ilum.tooltip": "§7'§oThese sounds were bestowed a name, which was sung by Isabel,",
   "tooltip.doremitales.ilum.tooltip_2": "§7§oand the sounds were made into the Ilums, by the decree of Isabel.'",
-  "tooltip.doremitales.healerbook.tooltip": "§7Heals the caster through divine knowledge",
+  "tooltip.doremitales.healerbook.tooltip": "§7§o'The book that Kiko carries is just",
+  "tooltip.doremitales.healerbook.tooltip_2": "§7§oa fraction of an invaluable healing power!''",
   "tooltip.doremitales.healerbook.tooltip.description": "§7Regenerates two hearts from the caster",
   "tooltip.doremitales.ratchatts.tooltip": "§7A cruel weapon against the soulless",
   "tooltip.doremitales.adagioreducer.tooltip": "§7Slows down the rhythm of primal sounds",
@@ -91,10 +95,18 @@
   "tooltip.doremitales.hardagsteelguide1.tooltip_2": "§7§oYet the forger lacked the mastery to work the mightier alloy.'",
   "tooltip.doremitales.hardagsteelguide2.tooltip": "§7§o'Bamerindus is among the few who have",
   "tooltip.doremitales.hardagsteelguide2.tooltip_2": "§7§ouncovered the secret of Hardagsteel by his own hand.'",
+  "tooltip.doremitales.rubberegg.tooltip": "§7§oGross. Too hard to use as rubber.",
+  "tooltip.doremitales.meltedrubberegg.tooltip": "§7§oToo soft to use as an egg.",
+
+
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
   "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",
   "tooltip.doremitales.mutemagic.tooltip": "§4Mute Magic - This object alters forbidden properties§r",
+  "tooltip.doremitales.rubbertrumpet.tooltip": "§7Burns nearby foes with guttural screams",
+  "tooltip.doremitales.rubbertrumpet.tooltip.description": "§7Deals damage to nearby enemies while in use",
+  "tooltip.doremitales.rubber.tooltip": "§eRubber Chicken Weapon - This weapon contains an ancient creature§r",
+
 
   "tooltip.doremitales.frequencyextractor.tooltip": "§7Captures hidden particles of harmony",
   "tooltip.doremitales.frequencyextractor.tooltip.description": "§7Can slowly extract Ilum fragments from specific blocks",
@@ -146,7 +158,10 @@
   "sounds.doremitales.rubberchicken_hurt": "Rubber Chicken got hurt",
   "sounds.doremitales.rubberchicken_death": "Rubber Chicken dies",
   "sounds.doremitales.rubberchicken_attack": "Rubber Chicken attacks",
+  "sounds.doremitales.rubbertrumpet": "Rubber Trumpet attacking",
   "category.doremitales.hardagsteel_forge": "Hardagsteel Forge",
   "itemgroup.miscgroup": "DRM Tales Misc.",
-  "itemgroup.blocksgroup": "DRM Tales Blocks"
+  "itemgroup.blocksgroup": "DRM Tales Blocks",
+  "tooltip.doremitales.jukebox.tooltip": "§7§o§eAs the music plays, dancing particles",
+  "tooltip.doremitales.jukebox.tooltip_2": "§7§o§efill the heart of the disc, can you find them?"
 }

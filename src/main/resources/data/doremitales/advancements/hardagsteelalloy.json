@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:hardagsteelalloy"
+    },
+    "title": "Mastery Forging",
+    "description": "Obtain the Hardagsteel Alloy, after a secret process",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "doremitales:meltedadagsteel",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:hardagsteelalloy"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 50
+  }
+}

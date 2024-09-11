@@ -1,6 +1,7 @@
 package net.doremista.entity;
 
 import net.doremista.Doremitales;
+import net.doremista.entity.custom.RatchattsProjectileEntity;
 import net.doremista.entity.custom.RubberChickenEntity;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
@@ -17,7 +18,13 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, RubberChickenEntity::new)
                     .dimensions(EntityDimensions.fixed(0.6f, 0.7f))  // Adjusted dimensions for a chicken-like entity
                     .build()
+
     );
+
+    public static final EntityType<RatchattsProjectileEntity> RATCHATTS_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(Doremitales.MOD_ID, "ratchatts_projectile"),
+            FabricEntityTypeBuilder.<RatchattsProjectileEntity>create(SpawnGroup.MISC, RatchattsProjectileEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
 
     public static void registerModEntities() {
         Doremitales.LOGGER.info("Registering Entities for " + Doremitales.MOD_ID);

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:codexpage1"
+    },
+    "title": "The Códex A",
+    "description": "You feel as if this knowledge is forbidden...",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "doremitales:lores",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:codexpage1"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

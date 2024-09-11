@@ -91,6 +91,18 @@ public class ModItems {
     public static final Item VERDANOVAWOODSPLINTERS = registerItem("verdanovawoodsplinters", new Item(new FabricItemSettings()));
     public static final Item VERDANOVASAP = registerItem("verdanovasap", new VerdanovaSapItem(new FabricItemSettings().food(ModFoodComponents.VERDANOVASAP).rarity(Rarity.UNCOMMON)));
     public static final Item VERDANOVASAPBOTTLE = registerItem("verdanovasapbottle", new VerdanovaSapBottleItem(new FabricItemSettings().food(ModFoodComponents.VERDANOVASAPBOTTLE).maxCount(16).rarity(Rarity.UNCOMMON)));
+    public static final Item RUBBEREGG = registerItem("rubberegg", new Item(new FabricItemSettings().food(ModFoodComponents.RUBBEREGG).maxCount(16)) {
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.doremitales.rubberegg.tooltip"));
+        }
+    });
+    public static final Item MELTEDRUBBEREGG = registerItem("meltedrubberegg", new Item(new FabricItemSettings().maxCount(16)) {
+        @Override
+        public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+            tooltip.add(Text.translatable("tooltip.doremitales.meltedrubberegg.tooltip"));
+        }
+    });
 
 
     //      TOOLS
@@ -102,6 +114,8 @@ public class ModItems {
             new AeonFluteItem(new FabricItemSettings().maxCount(1).maxDamage(560).rarity(Rarity.UNCOMMON)));
     public static final Item FREQUENCYEXTRACTOR = registerItem("frequencyextractor",
             new FrequencyExtractorItem(new FabricItemSettings().maxCount(1).maxDamage(150).rarity(Rarity.UNCOMMON)));
+    public static final Item RUBBERTRUMPET = registerItem("rubbertrumpet",
+            new RubberTrumpetItem(new FabricItemSettings().maxCount(1).maxDamage(250).rarity(Rarity.UNCOMMON)));
 
 
     //      ADAGSTEEL TOOL VALORES IGUAIS AO FERRO literalmente

@@ -81,9 +81,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RATCHATTS, Models.GENERATED);
         itemModelGenerator.register(ModItems.AEONFLUTE, Models.GENERATED);
         itemModelGenerator.register(ModItems.FREQUENCYEXTRACTOR, Models.GENERATED);
+
+
         itemModelGenerator.register(ModItems.VERDANOVAWOODSPLINTERS, Models.GENERATED);
         itemModelGenerator.register(ModItems.VERDANOVASAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.VERDANOVASAPBOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBBEREGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MELTEDRUBBEREGG, Models.GENERATED);
+
 
         // ADAGSTEEL TOOL
         itemModelGenerator.register(ModItems.ADAGSTEELHOE, Models.HANDHELD);
@@ -120,6 +125,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         // ----- ITEM MODEL GERADO MANUALMENTE POR JSON -----
         //ITEM BENCH
+        //RUBBER TRUMPET (3D)
 
         // egg spawn
         itemModelGenerator.register(ModItems.RUBBERCHICKENSPAWNEGG,

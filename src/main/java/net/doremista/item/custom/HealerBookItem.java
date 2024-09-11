@@ -73,10 +73,12 @@ public class HealerBookItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip"));
+            tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip_2"));
             tooltip.add(Text.translatable("tooltip.doremitales.space.tooltip"));
             tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip.description"));
         } else {
             tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip"));
+            tooltip.add(Text.translatable("tooltip.doremitales.healerbook.tooltip_2"));
             tooltip.add(Text.translatable("tooltip.doremitales.tooltip.shift"));
         }
         super.appendTooltip(stack, world, tooltip, context);

@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:ilum"
+    },
+    "title": "Time to compose your Tale!",
+    "description": "Welcome to Do Re Mi World!",
+    "background": "doremitales:textures/block/verdanovalog.png",
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

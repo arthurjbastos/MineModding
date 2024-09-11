@@ -8,6 +8,7 @@
 	"client": [
 		"ItemRendererAccessor",
 		"ItemRendererMixin",
+   "JukeboxTooltipMixin",
 		"ModelLoaderMixin"
 	],
 	"injectors": {

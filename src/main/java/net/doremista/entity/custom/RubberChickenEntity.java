@@ -2,6 +2,7 @@ package net.doremista.entity.custom;
 
 import net.doremista.entity.ModEntities;
 import net.doremista.entity.ai.RubberChickenAttackGoal;
+import net.doremista.item.ModItems;
 import net.doremista.sound.ModSounds;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
@@ -17,16 +18,22 @@ import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.world.World;
+import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
 public class RubberChickenEntity extends AnimalEntity {
+
+    public int eggLayTime;
+
 
     private static final TrackedData<Boolean> ATTACKING =
             DataTracker.registerData(RubberChickenEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
@@ -39,6 +46,8 @@ public class RubberChickenEntity extends AnimalEntity {
 
     public RubberChickenEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
+        this.eggLayTime = this.random.nextInt(6000) + 6000;
+
     }
 
     private void setupAnimationStates() {
@@ -82,6 +91,30 @@ public class RubberChickenEntity extends AnimalEntity {
     }
 
     @Override
+    public void tickMovement() {
+        super.tickMovement();
+        if (!this.getWorld().isClient && this.isAlive() && !this.isBaby() && --this.eggLayTime <= 0) {
+            this.playSound(SoundEvents.ENTITY_CHICKEN_EGG, 1.0F, (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+            this.dropItem(ModItems.RUBBEREGG);
+            this.emitGameEvent(GameEvent.ENTITY_PLACE);
+            this.eggLayTime = this.random.nextInt(6000) + 6000;
+        }
+    }
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        if (nbt.contains("EggLayTime")) {
+            this.eggLayTime = nbt.getInt("EggLayTime");
+        }
+    }
+
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putInt("EggLayTime", this.eggLayTime);
+    }
+
+    @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(1, new RubberChickenAttackGoal(this, 1.2, true));
@@ -92,7 +125,6 @@ public class RubberChickenEntity extends AnimalEntity {
         this.goalSelector.add(6, new FollowParentGoal(this, 1.1));
         this.goalSelector.add(7, new LookAtEntityGoal(this, PlayerEntity.class, 4.0f));
         this.goalSelector.add(8, new LookAroundGoal(this));
-        this.goalSelector.add(9, new EatGrassGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createRubberChickenAttributes() {

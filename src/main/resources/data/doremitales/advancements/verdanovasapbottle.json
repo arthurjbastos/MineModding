@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:verdanovasapbottle"
+    },
+    "title": "Delicious Mucus!",
+    "description": "Drink from the Verdanova sap, feel renewed!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:alcatraz",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "doremitales:verdanovasapbottle"
+          ]
+        }
+      }
+    }
+  }
+}

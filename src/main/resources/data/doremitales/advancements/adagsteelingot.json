@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:adagsteelingot"
+    },
+    "title": "The Science's Ingot",
+    "description": "A big step into your forging skills",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:doremitales",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:adagsteelingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

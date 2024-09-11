@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:hardagsteelsword"
+    },
+    "title": "Ready for the Great War!",
+    "description": "Have all Hardagsteel tools at the same time, expensive!",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:hardagsteelalloy",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:hardagsteelaxe"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelhoe"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelshovel"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelpickaxe"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:hardagsteelsword"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 15
+  }
+}

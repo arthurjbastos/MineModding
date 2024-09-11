@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:lumandiahelmet"
+    },
+    "title": "Protector of Verdanova",
+    "description": "Craft the Lumandias Armor, and protect Verdanova!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:alcatraz",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:lumandiahelmet"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:lumandiachestplate"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:lumandialeggings"
+            ]
+          },
+          {
+            "items": [
+              "doremitales:lumandiaboots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "doremitales:ilumshard"
+    },
+    "title": "The First Chord!",
+    "description": "Obtain your first Ilum Fragment, and so it begins...",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "doremitales:doremitales",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "doremitales:ilumshard"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
