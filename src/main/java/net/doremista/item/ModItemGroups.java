@@ -31,7 +31,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PERFECTTENCAKE);
                         entries.add(ModItems.RUBBEREGG);
-                        entries.add(ModItems.MELTEDRUBBEREGG);
 
                         // TOOLS
                         entries.add(ModItems.HEALERBOOK);

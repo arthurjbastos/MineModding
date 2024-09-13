@@ -19,7 +19,6 @@
   "item.doremitales.kikianmasssword": "Kikian Mass Sword",
   "item.doremitales.rubberchickenspawnegg": "Rubber Chicken Spawn Egg",
   "item.doremitales.rubberegg": "Rubber Egg",
-  "item.doremitales.meltedrubberegg": "Melted Rubber Egg",
 
   "item.doremitales.evelynthememusicdisc": "Music Disc",
   "item.doremitales.batchersthememusicdisc": "Music Disc",
@@ -95,14 +94,13 @@
   "tooltip.doremitales.hardagsteelguide1.tooltip_2": "§7§oYet the forger lacked the mastery to work the mightier alloy.'",
   "tooltip.doremitales.hardagsteelguide2.tooltip": "§7§o'Bamerindus is among the few who have",
   "tooltip.doremitales.hardagsteelguide2.tooltip_2": "§7§ouncovered the secret of Hardagsteel by his own hand.'",
-  "tooltip.doremitales.rubberegg.tooltip": "§7§oGross. Too hard to use as rubber.",
-  "tooltip.doremitales.meltedrubberegg.tooltip": "§7§oToo soft to use as an egg.",
-
+  "tooltip.doremitales.rubberegg.tooltip": "§7§oGross.",
 
 
   "tooltip.doremitales.aeonflute.tooltip": "§7Silences time's rhythm for nearby foes",
   "tooltip.doremitales.aeonflute.tooltip.description": "§7Paralyzes living beings within a 5 block radius",
   "tooltip.doremitales.mutemagic.tooltip": "§4Mute Magic - This object alters forbidden properties§r",
+
   "tooltip.doremitales.rubbertrumpet.tooltip": "§7Burns nearby foes with guttural screams",
   "tooltip.doremitales.rubbertrumpet.tooltip.description": "§7Deals damage to nearby enemies while in use",
   "tooltip.doremitales.rubber.tooltip": "§eRubber Chicken Weapon - This weapon contains an ancient creature§r",
@@ -158,7 +156,12 @@
   "sounds.doremitales.rubberchicken_hurt": "Rubber Chicken got hurt",
   "sounds.doremitales.rubberchicken_death": "Rubber Chicken dies",
   "sounds.doremitales.rubberchicken_attack": "Rubber Chicken attacks",
-  "sounds.doremitales.rubbertrumpet": "Rubber Trumpet attacking",
+  "sounds.doremitales.rubbertrumpet1": "Rubber Trumpet attacking",
+  "sounds.doremitales.rubbertrumpet2": "Rubber Trumpet attacking",
+  "sounds.doremitales.rubbertrumpet3": "Rubber Trumpet attacking",
+  "sounds.doremitales.rubbertrumpet4": "Rubber Trumpet attacking",
+  "sounds.doremitales.rubbertrumpet5": "Rubber Trumpet attacking",
+  "sounds.doremitales.rubberjumpscare": "RAAAH RUBBER CHICKEN JUMPSCARE!",
   "category.doremitales.hardagsteel_forge": "Hardagsteel Forge",
   "itemgroup.miscgroup": "DRM Tales Misc.",
   "itemgroup.blocksgroup": "DRM Tales Blocks",

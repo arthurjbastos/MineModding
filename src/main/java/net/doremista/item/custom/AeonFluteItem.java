@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
@@ -57,12 +58,13 @@ public class AeonFluteItem extends Item {
                     // Iniciar partículas contínuas
                     World world = player.getWorld();
                     if (world instanceof ServerWorld serverWorld) {
-                        serverWorld.spawnParticles(ParticleTypes.SMALL_FLAME, player.getX(), player.getY() + 1.0, player.getZ(), 13, 0.0, 0.0, 0.0, 0.1);
+                        serverWorld.spawnParticles(ParticleTypes.NOTE, player.getX(), player.getY() + 0.5, player.getZ(), 2, 0.5, 0.5, 0.5, 0.3);
                     }
                 }
 
                 if (remainingTicks <= 0) {
                     applyParalysisEffect(player.getWorld(), player);
+                    player.getWorld().playSound(null, player.getBlockPos(), SoundEvents.BLOCK_BEACON_DEACTIVATE, SoundCategory.PLAYERS, 1.0F, 1.0f);
                     player.getItemCooldownManager().set(AeonFluteItem.this, COOLDOWN_TICKS);
                     ItemStack stack = player.getStackInHand(player.getActiveHand());
                     stack.damage(1, player, p -> p.sendToolBreakStatus(player.getActiveHand()));

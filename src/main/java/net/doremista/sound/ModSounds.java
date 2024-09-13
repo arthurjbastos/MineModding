@@ -20,8 +20,14 @@ public class ModSounds {
     public static final SoundEvent RUBBERCHICKEN_HURT = registerSoundEvent("rubberchicken_hurt");
     public static final SoundEvent RUBBERCHICKEN_AMBIENT = registerSoundEvent("rubberchicken_ambient");
     public static final SoundEvent RUBBERCHICKEN_ATTACK = registerSoundEvent("rubberchicken_attack");
+    public static final SoundEvent RUBBERCHICKEN_JUMPSCARE = registerSoundEvent("rubberchicken_jumpscare");
 
-    public static final SoundEvent RUBBERTRUMPET = registerSoundEvent("rubbertrumpet");
+
+    public static final SoundEvent RUBBERTRUMPET1 = registerSoundEvent("rubbertrumpet1");
+    public static final SoundEvent RUBBERTRUMPET2 = registerSoundEvent("rubbertrumpet2");
+    public static final SoundEvent RUBBERTRUMPET3 = registerSoundEvent("rubbertrumpet3");
+    public static final SoundEvent RUBBERTRUMPET4 = registerSoundEvent("rubbertrumpet4");
+    public static final SoundEvent RUBBERTRUMPET5 = registerSoundEvent("rubbertrumpet5");
 
 
     private static SoundEvent registerSoundEvent(String name){

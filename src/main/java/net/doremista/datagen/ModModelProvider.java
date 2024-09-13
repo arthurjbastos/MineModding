@@ -87,7 +87,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VERDANOVASAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.VERDANOVASAPBOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBBEREGG, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MELTEDRUBBEREGG, Models.GENERATED);
 
 
         // ADAGSTEEL TOOL

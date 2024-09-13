@@ -74,6 +74,8 @@ public class FrequencyExtractorItem extends Item {
 
     @Override
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        if (currentBlockPos == null) return stack;
+
         if (!world.isClient) {
             boolean correctBlock = currentBlockPos != null &&
                     (world.getBlockState(currentBlockPos).isOf(Blocks.JUKEBOX) || world.getBlockState(currentBlockPos).isOf(Blocks.NOTE_BLOCK) ||

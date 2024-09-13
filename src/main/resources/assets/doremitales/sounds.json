@@ -53,10 +53,40 @@
       "doremitales:rubberchicken_attack"
     ]
   },
-  "rubbertrumpet": {
+  "rubberchicken_jumpscare": {
+    "subtitle": "sounds.doremitales.rubberchicken_jumpscare",
+    "sounds": [
+      "doremitales:rubberchicken_jumpscare"
+    ]
+  },
+  "rubbertrumpet1": {
     "subtitle": "sounds.doremitales.rubbertrumpet",
     "sounds": [
       "doremitales:rubbertrumpet"
+    ]
+  },
+  "rubbertrumpet2": {
+    "subtitle": "sounds.doremitales.rubbertrumpet2",
+    "sounds": [
+      "doremitales:rubbertrumpet2"
+    ]
+  },
+  "rubbertrumpet3": {
+    "subtitle": "sounds.doremitales.rubbertrumpet3",
+    "sounds": [
+      "doremitales:rubbertrumpet3"
+    ]
+  },
+  "rubbertrumpet4": {
+    "subtitle": "sounds.doremitales.rubbertrumpet4",
+    "sounds": [
+      "doremitales:rubbertrumpet4"
+    ]
+  },
+  "rubbertrumpet5": {
+    "subtitle": "sounds.doremitales.rubbertrumpet5",
+    "sounds": [
+      "doremitales:rubbertrumpet5"
     ]
   }
 }

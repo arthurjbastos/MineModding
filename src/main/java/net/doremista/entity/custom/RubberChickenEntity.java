@@ -19,11 +19,14 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
@@ -33,6 +36,8 @@ import java.util.Random;
 public class RubberChickenEntity extends AnimalEntity {
 
     public int eggLayTime;
+    private int goldIngotCount = 0;
+    private boolean hasReceivedIlumshard = false;
 
 
     private static final TrackedData<Boolean> ATTACKING =
@@ -140,6 +145,72 @@ public class RubberChickenEntity extends AnimalEntity {
         this.dataTracker.set(ATTACKING, attacking);
     }
 
+    @Override
+    public ActionResult interactMob(PlayerEntity player, Hand hand) {
+        ItemStack itemStack = player.getStackInHand(hand);
+
+        if (!player.getWorld().isClient()) {
+            // Se o jogador der um ILUMSHARD
+            if (itemStack.isOf(ModItems.ILUMSHARD) && !hasReceivedIlumshard) {
+                hasReceivedIlumshard = true;
+                itemStack.decrement(1); // Remove uma unidade do item
+
+                // Feedback visual para o ILUMSHARD
+                ((ServerWorld) this.getWorld()).spawnParticles(ParticleTypes.HAPPY_VILLAGER, this.getX(), this.getY() + 1, this.getZ(), 5, 0.5, 0.5, 0.5, 0.1);
+                this.playSound(SoundEvents.ENTITY_PLAYER_BURP, 1.0F, random.nextFloat() * 0.1F + 0.9F);
+
+                return ActionResult.SUCCESS;
+            }
+
+            // Se o jogador der uma barra de ouro
+            if (itemStack.isOf(Items.GOLD_INGOT) && goldIngotCount < 7) {
+                goldIngotCount++;
+                itemStack.decrement(1); // Remove uma unidade do item
+
+                // Feedback visual para cada barra de ouro
+                ((ServerWorld) this.getWorld()).spawnParticles(ParticleTypes.HAPPY_VILLAGER, this.getX(), this.getY() + 1, this.getZ(), 5, 0.5, 0.5, 0.5, 0.1);
+                this.playSound(SoundEvents.ENTITY_PLAYER_BURP, 1.0F, random.nextFloat() * 0.1F + 0.9F);
+
+                return ActionResult.SUCCESS;
+            }
+
+            // Quando o mob receber 5 barras de ouro e 1 ILUMSHARD
+            if (goldIngotCount >= 7 && hasReceivedIlumshard) {
+                isImmobile();
+
+                // 0.01% chance for an instant kill and jumpscare because why not funny hehe.
+                Random random = new Random();
+                if (random.nextDouble() < 0.001) {
+                    // High-volume jumpscare sound
+                    this.playSound(ModSounds.RUBBERCHICKEN_JUMPSCARE, 10.0F, 1.0F);
+
+                    // Real explosion (using the mob's coordinates)
+                    this.getWorld().createExplosion(this, this.getX(), this.getY(), this.getZ(), 9.0F, World.ExplosionSourceType.MOB);
+                    this.remove(RemovalReason.DISCARDED);
+
+                    return ActionResult.SUCCESS;
+                }
+
+
+                // Partículas de explosão
+                ((ServerWorld) this.getWorld()).spawnParticles(ParticleTypes.EXPLOSION, this.getX(), this.getY(), this.getZ(), 10, 0.5, 0.8, 0.5, 0.1);
+
+                // Toca o som de explosão
+                this.playSound(ModSounds.RUBBERCHICKEN_DEATH, 1.0F, 1.0F);
+                this.playSound(SoundEvents.ENTITY_GENERIC_EXPLODE, 1.0F, 0.6F);
+
+                // Dropar o item RUBBERTRUMPET
+                this.dropStack(new ItemStack(ModItems.RUBBERTRUMPET));
+
+                // Remove a entidade (despawns the mob)
+                this.remove(RemovalReason.DISCARDED);
+
+                return ActionResult.SUCCESS;
+            }
+        }
+
+        return super.interactMob(player, hand);
+    }
 
     @Override
     public boolean isAttacking() {

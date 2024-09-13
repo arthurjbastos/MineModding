@@ -25,8 +25,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     private static final List<ItemConvertible> VERDANOVASAPSMELTABLES = List.of(ModItems.VERDANOVAWOODSPLINTERS);
 
-    private static final List<ItemConvertible> RUBBEREGGSMELTABLES = List.of(ModItems.RUBBEREGG);
-
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -43,9 +41,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSmelting(exporter, VERDANOVASAPSMELTABLES, RecipeCategory.MISC, ModItems.VERDANOVASAP,
                 0.5f, 450, "verdanovasap");
-
-        offerSmelting(exporter, RUBBEREGGSMELTABLES, RecipeCategory.MISC, ModItems.MELTEDRUBBEREGG,
-                0.6f, 250, "rubberegg");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.KIKIANMASS, RecipeCategory.DECORATIONS,
                 ModBlocks.KIKIANMASSBLOCK);
