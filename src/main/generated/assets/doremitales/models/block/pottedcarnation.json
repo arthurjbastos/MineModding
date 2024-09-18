@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/flower_pot_cross",
   "textures": {
-    "plant": "doremitales:block/carnation"
+    "plant": "doremitales:block/carnation1"
   }
 }

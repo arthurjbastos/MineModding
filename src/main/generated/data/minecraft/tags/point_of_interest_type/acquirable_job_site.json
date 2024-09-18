@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "doremitales:bookshelfpoi",
+      "required": false
+    }
+  ]
+}

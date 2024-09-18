@@ -7,11 +7,13 @@ import net.doremista.entity.ModEntitiesSpawn;
 import net.doremista.entity.custom.RubberChickenEntity;
 import net.doremista.item.ModItemGroups;
 import net.doremista.item.ModItems;
+import net.doremista.item.customBooks.CustomBooks;
 import net.doremista.recipe.ModRecipes;
 import net.doremista.screen.ModScreenHandlers;
 import net.doremista.sound.ModSounds;
 import net.doremista.util.ModCustomTrades;
 import net.doremista.util.ModLootTableModifiers;
+import net.doremista.villager.ModVillagers;
 import net.doremista.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
@@ -50,6 +52,7 @@ public class Doremitales implements ModInitializer {
 		ModWorldGeneration.generateModWorldGen();
 		ModEntities.registerModEntities();
 		ModScreenHandlers.registerScreenHandlers();
+		ModVillagers.registerVillagers();
 		FabricDefaultAttributeRegistry.register(ModEntities.RUBBERCHICKEN, RubberChickenEntity.createRubberChickenAttributes());
 		ModEntitiesSpawn.addEntitySpawn();
 

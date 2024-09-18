@@ -137,7 +137,7 @@
   "block.doremitales.strippedverdanovawood": "Stripped Verdanova Wood",
   "block.doremitales.verdanovaplanks": "Verdanova Planks",
   "block.doremitales.verdanovaleaves": "Verdanova Leaves",
-  "block.doremitales.carnation": "Carnation",
+  "block.doremitales.carnation1": "Carnation",
 
   "block.doremitales.verdanovastairs": "Verdanova Stairs",
   "block.doremitales.verdanovaslab": "Verdanova Slab",
@@ -148,6 +148,7 @@
   "item.doremitales.verdanovawoodsplinters": "Verdanova Wood Bark",
   "item.doremitales.verdanovasap": "Verdanova Sap",
   "item.doremitales.verdanovasapbottle": "Verdanova Sap Bottle",
+  "entity.minecraft.villager.lore_master": "Loremaster",
   "entity.doremitales.rubberchicken": "Rubber Chicken",
 
 

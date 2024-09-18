@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "doremitales:block/carnation"
+    "cross": "doremitales:block/carnation3"
   }
 }

@@ -92,7 +92,7 @@ public class ModBlocks {
 
     //  ************* ALCATRAZ SET ************
 
-    public static final Block CARNATION = registerBlock("carnation",
+    public static final Block CARNATION = registerBlock("carnation1",
             new CarnationBlock(FabricBlockSettings.copyOf(Blocks.DANDELION).nonOpaque().noCollision().breakInstantly().luminance(state -> 6)));
 
     public static final Block POTTEDCARNATION = Registry.register(Registries.BLOCK,

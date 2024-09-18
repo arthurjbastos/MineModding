@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "doremitales:block/carnation1"
+      },
+      {
+        "model": "doremitales:block/carnation2"
+      },
+      {
+        "model": "doremitales:block/carnation3"
+      }
+    ]
+  }
+}
