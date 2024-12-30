@@ -65,6 +65,16 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             } // CÓDEX I PAGE
 
+            if (SIMPLE_DUNGEON_ID.equals(id)) { // página 1 em dungeon
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.09f))
+                        .with(ItemEntry.builder(ModItems.AEONFLUTE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder.build());
+            } // AEON FLUTE
+
                 //              ADAGSTEEL EM VILA
 
                     if(VILLAGE_ARMORER_ID.equals(id)) {

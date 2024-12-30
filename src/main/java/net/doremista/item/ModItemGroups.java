@@ -36,7 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.HEALERBOOK);
                         entries.add(ModItems.RUBBERTRUMPET);
 
-                        entries.add(ModItems.RATCHATTS);
+                        //entries.add(ModItems.RATCHATTS);
                         entries.add(ModItems.AEONFLUTE);
                         entries.add(ModItems.FREQUENCYEXTRACTOR);
 
